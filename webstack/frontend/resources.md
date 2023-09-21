@@ -7,7 +7,7 @@
 - [Hvad er UX/UI?]()
 - [HTML basics]() - kod med tutorial
 - [CSS basics]() - kod med tutorial
-- [Responsivt webdesign]()
+- [Responsivt webdesign]() - kod med tutorial
 
 ## UX / UI
 
