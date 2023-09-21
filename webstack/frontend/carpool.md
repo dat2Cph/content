@@ -43,4 +43,4 @@ Testbrugeren må ikke have været med til at lave mockup’en, så lån en
 fra en anden gruppe
 6. Overvej hvordan I vil teste brugergrænsefladen af hos jeres kunde
 
-![Carpool](./images/carpool.webp)
+![Carpool](./images/carpool.jpg)
