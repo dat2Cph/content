@@ -6,8 +6,9 @@
 - [Hvad er full stack we development? (18:57)](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=a17856b5-4dfd-4a9f-bb49-b08301221b06)
 - [Hvad er UX/UI?](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=3e8bfcf9-49ca-4587-890b-b08500ede1b6)
 - [HTML basics](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=b6652f11-6708-4e14-b892-b08801607448) - kod med tutorial. [Eksempelkode fra videoen](https://github.com/dat2Cph/content/blob/main/webstack/frontend/basic_html/index.html)
-- [CSS basics]() - kod med tutorial
-- [Responsivt webdesign]() - kod med tutorial
+- [CSS basics]() - kod med tutorial (ikke klart endnu)
+- [Git i terminalen](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=56347a0b-13cd-43f8-bdc6-b08a00f4b736) - vi laver et repo på Github og lokalt og synkroniserer de to
+- [Responsivt webdesign]() - kod med tutorial (ikke klar endnu)
 
 ## UX / UI
 
