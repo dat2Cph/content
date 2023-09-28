@@ -7,9 +7,9 @@ skal du lave en skabelon (template) som vi kan bruge til projektet. Her er krav 
 2. Kald forsiden for index.html
 3. Kald dit stylesheet for style.css
 4. Lav en header med et stykke cupcake-grafik. Brug evt. billedet nedenfor
-5. Lav en <div> med en topmenu
-6. Lav en <div> til hovedindholdet på siden
-7. Lav de viste dropdowns og knap
+5. Lav et div element med en topmenu
+6. Lav et div element til hovedindholdet på siden
+7. Lav de viste dropdowns og knappen
 8. Gør hvad du kan for at gøre siden responsiv. F.eks. ved at bruge media queries og flexbox
 
 ## Mockup
