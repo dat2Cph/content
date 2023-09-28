@@ -27,4 +27,5 @@
 - [MDN webdocs](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
 ## Responsivt webdesign (RWD)
-- [RWD: 10 basics you need to know](https://www.youtube.com/watch?v=zF6VSky4SIc)
+- [RWD: 10 basics you need to know (6:37)](https://www.youtube.com/watch?v=zF6VSky4SIc)
+- [Useful & Responsive Layouts, no Media Queries required (11:02)](https://www.youtube.com/watch?v=p3_xN2Zp1TY)
