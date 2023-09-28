@@ -29,3 +29,5 @@
 ## Responsivt webdesign (RWD)
 - [RWD: 10 basics you need to know (6:37)](https://www.youtube.com/watch?v=zF6VSky4SIc)
 - [Useful & Responsive Layouts, no Media Queries required (11:02)](https://www.youtube.com/watch?v=p3_xN2Zp1TY)
+- [Media queries in 7 minutes](https://www.youtube.com/watch?v=yU7jJ3NbPdA)
+- [Flexbox in 15 minutes](https://www.youtube.com/watch?v=fYq5PXgSsbE)
