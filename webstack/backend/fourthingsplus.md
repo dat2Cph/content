@@ -8,6 +8,21 @@ Mandag skal vi først have udviklet noget "startkode" vi kan implementere websit
 
  Vi gør det sammen klassen og begynder selvfølgelig med en lille foranalyse og sådan. Så sid på hænderne og vent med at kode til mandag.
 
+Stikord:
+
+1. Lav et use-case diagram
+2. Beskriv hver use-case som en user story
+3. Lav et navigationsdiagram (tilstandsdiagram) over systemet
+4. Opret et Java / Maven projekt i IntelliJ
+5. Byg en skabelon til websiderne med html og css.
+6. Lav en htmlside til hver underside
+7. Opret en database i Postgres
+8. Skitser et EER diagram til applikationen
+7. Begynd med at kode login funktionaliteten
+8. Kom nogle opgaver i databasen
+9. Lav en side, der viser opgaverne
+10. Implementer diverse CRUD funktioner
+
 Her er et logo vi kan sakse:
 
 ![FourThingsPlusLogo](./images/fourthingsplus.png)
