@@ -2,7 +2,7 @@
 
 ## Jons videoserie til Backend-ugen
 
-- [Introduktion til tilstandsdiagrammer</a>](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f0102497-7c37-4c44-9bda-b08d00c83e40") (18:04)
+- [Introduktion til tilstandsdiagrammer</a>](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f0102497-7c37-4c44-9bda-b08d00c83e40) (18:04)
 
 ## Diagrammering
 
