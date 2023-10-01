@@ -19,8 +19,8 @@ Begin creating a new project from scratch using this [tutorial](./setup.md). The
 ## [Javalin & Thymeleaf](#javalin--thymeleaf-1)
 
 1. [How to transfer data between frontend and backend](#1-how-to-transfer-data-between-frontend-and-backend)
-  a. [From backend to frontend](#1a-from-backend-to-frontend)
-  b. [From frontend to backend](#1b-from-frontend-to-backend)
+    a. [From backend to frontend](#1a-from-backend-to-frontend)
+    b. [From frontend to backend](#1b-from-frontend-to-backend)
 2. [How to work with forms](#2-how-to-work-with-forms)
 
 
@@ -49,9 +49,53 @@ Begin creating a new project from scratch using this [tutorial](./setup.md). The
 
 ### 1. How to transfer data between frontend and backend
 
+To make the website dynamic means to adapt the html pages to user-input.
+
 #### 1.a From backend to frontend
 
+Use a hashmap to add objects you want to transfer to a Thymeleaf template. Either add to the built-in maps in the `ctx` object:
+
+`ctx` maps:
+
+- Application scope:
+
+```Java 
+app.attribute("counter", count);
+```
+
+- Session Scope
+```Java
+ctx.sessionAttribute("userList", userList);
+```
+
+- Request Scope
+```Java
+ctx.attribute("totalSum", 1025);
+```
+
+Or use your own hashmap (model):
+
+```Java
+Map<String, Object> model = new HashMap<>();
+model.put("totalSum", 1025);
+```
+
+and add it to the render method:
+
+```Java
+ctx.render("index.html", model)
+```
+
+If you don't use your own model object, then there is no need for adding to the render method. It will all be contained in `ctx`:
+
+```Java
+ctx.render("index.html");
+```
+
 #### 1.b From frontend to backend
+
+
+
 
 ### 2. How to work with forms
 
