@@ -1,4 +1,4 @@
-# Four Things Plus Øvelse
+# Four Things Plus
 
 Vi skal bygge en huskeseddel applikation. Det er som bekendt svært at holde mere end tre ting i hovedet, så derfor skal vi bygge en lille webapplikation, som  vi kalder for "fourthingsplus".
 
