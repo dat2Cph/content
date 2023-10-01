@@ -13,7 +13,7 @@ Stikord:
 1. Lav et use-case diagram
 2. Beskriv hver use-case som en user story
 3. Lav et navigationsdiagram (tilstandsdiagram) over systemet
-4. Opret et Java / Maven projekt i IntelliJ
+4. Opret et Java / Maven projekt i IntelliJ ([instruktioner](./javalin/setup.md))
 5. Byg en skabelon til websiderne med html og css.
 6. Lav en htmlside til hver underside
 7. Opret en database i Postgres
