@@ -19,8 +19,8 @@ Begin creating a new project from scratch using this [tutorial](./setup.md). The
 ## [Javalin & Thymeleaf](#javalin--thymeleaf-1)
 
 1. [How to transfer data between frontend and backend](#1-how-to-transfer-data-between-frontend-and-backend)
-    a. [From backend to frontend](#1a-from-backend-to-frontend)
-    b. [From frontend to backend](#1b-from-frontend-to-backend)
+   a. [From backend to frontend](#1a-from-backend-to-frontend)
+   b. [From frontend to backend](#1b-from-frontend-to-backend)
 2. [How to work with forms](#2-how-to-work-with-forms)
 
 
