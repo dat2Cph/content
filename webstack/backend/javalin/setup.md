@@ -16,6 +16,8 @@ Learn how to get started building websites with Javalin and Thymeleaf.
 
 First create a brand new project in IntelliJ. Remember to add a `groupId` called "app" and tick the "Add sample code".
 
+![New project](./images/createjavalinproject.png)
+
 ## 2. Pimp the pom.xml file
 
 We need a load of dependencies and plugins. So override your default pom.xml file with this version:
@@ -156,6 +158,8 @@ We need a load of dependencies and plugins. So override your default pom.xml fil
 
 Yup - it's a long one, but it will make us able to later add database connection, tests, logging, and a possibility for deployment build.
 
+Depending on your project-name, remember to rename `<artifactId>app-demo</artifactId>` to your liking.
+
 ## 3. Add a folder-structure for the frontend files
 
 All static files for the frontend should be located in the `resources` folder. To prepare ourselves, create these folders:
@@ -215,7 +219,7 @@ public static void main(String[] args)
     }
 ```
 
-Third, we need to add an index.html file template in the template folder:
+Third, we need to add an index.html file in the `resources/templates` folder:
 
 ```html
 <!DOCTYPE html>
@@ -238,7 +242,7 @@ Third, we need to add an index.html file template in the template folder:
 
 ```
 
-As the last step, we need to add this css file in the `/public/css` folder:
+As the last step, we need to add this css file in the `/public/css` folder. Name it `styles.css`:
 
 ```css
 /* Stylesheet for the application */
