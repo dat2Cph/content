@@ -6,7 +6,7 @@ Learn how to get started building websites with Javalin and Thymeleaf.
 
 | Technology  | Version  | 
 |---|---|
-| Java | 17   | 
+| JDK | 17   | 
 | Javalin  | 5.6.1  | 
 | Thymeleaf  | 3.1.1  | 
 | Maven  | 3.9.2  |  
