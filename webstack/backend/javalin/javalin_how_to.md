@@ -29,9 +29,76 @@ Begin creating a new project from scratch using this [tutorial](./setup.md). The
 
 ### 1. How to organize files
 
-### 2. How to add more routes 
+It's generally a good idea to organize the Java App into meaningful packages. Suggested packages are:
+
+- config (configuration files, Thymeleaf etc)
+- controllers (first stop for each route, these can call service methods, facade DB methods etc)
+- services (domain / business logic and methods, can also call facade DB methods)
+- entities (domain classes that mirrors the DB)
+- exceptions (custom exceptions)
+- persistence (database related mapper classes and database facade classes)
+- resources
+  - public
+    - css
+    - images
+  - templates
+
+### 2. How to add more routes
+
+GET og POST request can be added like this:
+
+```Java
+app.get("/users", ctx -> UserController.showUserList(ctx, connectionPool));
+app.post("/login", ctx -> UserController.login(ctx, connectionPool));
+```
+
+In this example a Class `UserController` has been created to organize the code. The methods `showUserList` and `login`
+are made static for ease of use.
 
 ### 3. How to add a database
+
+Add a connection pool with 3 JDBC Postgresql connections:
+
+Add to beginning of Main-class:
+
+```Java
+private static final String USER = "postgres";
+private static final String PASSWORD = "postgres";
+private static final String URL = "jdbc:postgresql://localhost:5432/startcode?currentSchema=public";
+
+private static final ConnectionPool connectionPool = ConnectionPool.getInstance(USER, PASSWORD, URL);
+```
+
+Then the database can be accessed like this:
+
+```Java
+public static List<User> getAllUsers(ConnectionPool connectionPool) throws DatabaseException
+    {
+        List<User> userList = new ArrayList<>();
+        String sql = "select * from \"user\"";
+        try (Connection connection = connectionPool.getConnection())
+        {
+            try (PreparedStatement ps = connection.prepareStatement(sql))
+            {
+                ResultSet rs = ps.executeQuery();
+
+                while (rs.next())
+                {
+                    String userName = rs.getString("username");
+                    String password = rs.getString("password");
+                    String role = rs.getString("role");
+                    User user = new User(userName, password, role);
+                    userList.add(user);
+                }
+            }
+        }
+        catch (SQLException ex)
+        {
+            throw new DatabaseException(ex, "Could not get users from database");
+        }
+        return userList;
+    }
+```
 
 ## Thymeleaf
 
@@ -94,9 +161,4 @@ ctx.render("index.html");
 
 #### 1.b From frontend to backend
 
-
-
-
 ### 2. How to work with forms
-
-
