@@ -21,9 +21,6 @@ Begin creating a new project from scratch using this [tutorial](./setup.md). The
 1. [How to transfer data between frontend and backend](#1-how-to-transfer-data-between-frontend-and-backend)
    - [From backend to frontend](#1a-from-backend-to-frontend)
    - [From frontend to backend](#1b-from-frontend-to-backend)
-2. [How to work with forms](#2-how-to-work-with-forms)
-
-
 
 ## Javalin
 
@@ -104,13 +101,96 @@ public static List<User> getAllUsers(ConnectionPool connectionPool) throws Datab
 
 ### 1. How to re-use fragments in templates
 
+Re-use html fragments like this:
+
+- Create a html-file in the `templates`-folder to contain all the fragments. One file to rule them all. Call it `fragments.html`
+This is an example with a re-usable `<head>` fragment, a header-fragment, and a footer-fragment:
+
+```html
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head th:fragment="head(title)">
+    <title th:text="${title}"></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../public/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet"/>
+</head>
+
+<body>
+
+    <header th:fragment="header" style="width:100%;border-bottom:1px solid black;">
+        <img src="../public/images/fourthingsplus.png" th:src="@{/images/fourthingsplus.png}" width="100%"/>
+    </header>
+
+    <footer th:fragment="footer" style="width:100%;border-top:1px solid black;">
+        Dette er så en footer.
+    </footer>
+
+</body>
+</html>
+```
+
+These fragments can replace html-elements in another document like this:
+
+```html
+<div th:replace="~{fragments :: head('Frontpage')}"></div>
+<div th:replace="~{fragments :: header}"></div>
+<div th:replace="~{fragments :: footer}"></div>
+```
+
 ### 2. How to use fragments with parameters
+
+In the fragment-example above - notice how the text 'Frontpage' is passed as an argument to the fragment.
+Also notice how the parameter is used in the fragment: `<title th:text="${title}"></title>`
 
 ### 3. How to add an image
 
+To insert an image do like this:
+
+```html
+ <img src="../public/images/fourthingsplus.png" th:src="@{/images/fourthingsplus.png}" width="100%"/>
+```
+
+Note: place the image file in the `/public/images` folder. The `th:src="@{/images/fourthingsplus.png}"` attribute
+is used by Thymeleaf. The other attribute: `src="../public/images/fourthingsplus.png"` will be applied in case
+you open the file directly in a browser instead of through the Thymeleaf template engine.
+
 ### 4. How to iterate through a list (each ....)
 
+This example assumed that a list of user objects are passed from Javalin:
+
+```html
+ <h1>Users</h1>
+<table>
+   <thead>
+   <tr>
+   <th>username</th>
+   <th>password</th>
+   <th>role</th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr th:each="user : ${userList}">
+      <td th:text="${user.username}">username</td>
+      <td th:text="${user.password}">password</td>
+      <td th:text="${user.role}">role</td>
+   </tr>
+   </tbody>
+</table>
+```
+
+That how the `th:each` attribute works. It's is important that you spell the attribute names correctly. `username`, 
+`password`, and `role` should be attributes in the Java User class.
+
 ### 5. How to use conditionals (if ...)
+
+Check for details in the [Thymeleaf docs](https://www.thymeleaf.org/doc/tutorials/3.1/usingthymeleaf.html#simple-conditionals-if-and-unless).
+
+An example of how to apply `if`:
+```html
+  <p th:if="${not #lists.isEmpty(userList)}">Listen er ikke tom</p>
+```
 
 ## Javalin & Thymeleaf
 
@@ -161,4 +241,43 @@ ctx.render("index.html");
 
 #### 1.b From frontend to backend
 
-### 2. How to work with forms
+There are two ways to send values from a html page to the Javalin backend:
+
+1. As query parameters (GET link)
+
+In the html page:
+
+```html
+<a href="/users?usergroup=1&page=2">view users</a>
+```
+
+The two query parameters `usergroup` and `page` is sent to the backend route `/users`. When arrived you can
+retrieve the parameters like this:
+
+```Java
+int usergroup = Integer.parseInt(ctx.queryParam("usergroup"));
+int page = Integer.parseInt(ctx.queryParam("page"));
+```
+
+Note: In an ideal world we should wrap the conversions in a try-catch block, since `ctx.queryParam("usergroup")` and
+`ctx.queryParam("page")` return a `String` - hopefully with a value.
+
+2. As form parameters (GET or POST )
+
+In the html page:
+
+```html
+<form method="post">
+        <input type="text" name="username" placeholder="username">
+        <input type="password" name="password" placeholder="password">
+        <button formaction="/login" type="submit" value="login">Login</button>
+    </form>
+```
+
+The two form parameters `username` and `password` are sent along the http POST request to Javalin and lands at the route "/login". 
+Then the values can be retrieved like this:
+
+```Java
+String userName = ctx.formParam("username");
+String password = ctx.formParam("password");
+```
