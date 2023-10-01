@@ -281,3 +281,5 @@ Then the values can be retrieved like this:
 String userName = ctx.formParam("username");
 String password = ctx.formParam("password");
 ```
+
+Note: it is easy to spell the name attribute wrong in the form element. In the `<input type="text" name="username" placeholder="username">` element `name="username"` is the form parameter that we expect on the Javalin side.
