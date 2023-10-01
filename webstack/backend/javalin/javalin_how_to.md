@@ -239,6 +239,42 @@ If you don't use your own model object, then there is no need for adding to the 
 ctx.render("index.html");
 ```
 
+From HTML and Thymeleaf, the hashmaps are accessible in various ways.
+
+- Application scope:
+
+```html 
+
+```
+
+- Session Scope
+```html
+<p th:text="${#ctx.session.email}"></p>
+```
+
+- Request Scope
+```html
+<p th:text="${#ctx.name}"></p>
+```
+
+Or use your own hashmap (model):
+
+```html
+<div th:text="${hello}"></div>
+```
+
+Note: unfortunately, IntelliJ is not able to provide autocompletion and name resolution for scope and model variables.
+Luckily it works anyway. A work-a-round is to define the variables as Thymeleaf variables in the beginning of the body block:
+
+```html
+<body>
+   <!--@thymesVar id="hello" type="String"-->
+   <div th:text="${hello}"></div>
+</body>
+```
+
+In this way we get autocompletion.
+
 #### 1.b From frontend to backend
 
 There are two ways to send values from a html page to the Javalin backend:
