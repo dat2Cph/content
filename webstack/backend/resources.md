@@ -11,7 +11,8 @@
 ## Java backend (Javalin)
 
 - [javalin.io](https://javalin.io/)
-- [Javalin setup instructions](https://github.com/dat2Cph/content/blob/main/webstack/backend/javalin/setup.md)
+- [Javalin setup instructions](./javalin/setup.md)
+- [Javalin and Thymeleaf How-To cookbook tutorial](./javalin/javalin_how_to.md)
 
 ## Frontend
 
