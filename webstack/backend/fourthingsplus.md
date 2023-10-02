@@ -16,7 +16,7 @@ Stikord:
 4. Opret et Java / Maven projekt i IntelliJ ([instruktioner](./javalin/setup.md))
 5. Byg en skabelon til websiderne med html og css.
 6. Lav en htmlside til hver underside
-7. Opret en database i Postgres
+7. Opret en database i Postgres (mock evt. databasen med Java datastrukturer i stedet til en start)
 8. Skitser et EER diagram til applikationen
 7. Begynd med at kode login funktionaliteten
 8. Kom nogle opgaver i databasen
