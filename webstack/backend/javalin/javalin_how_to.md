@@ -13,8 +13,9 @@ Begin creating a new project from scratch using this [tutorial](./setup.md). The
 1. [How to re-use fragments in templates](#1-how-to-re-use-fragments-in-templates)
 2. [How to use fragments with parameters](#2-how-to-use-fragments-with-parameters)
 3. [How to add an image](#3-how-to-add-an-image)
-4. [How to iterate through a list (each ....)](#4-how-to-iterate-through-a-list-each-)
-5. [How to use conditionals (if ...)](#5-how-to-use-conditionals-if-)
+4. [How to add a link]()
+5. [How to iterate through a list (each ....)](#4-how-to-iterate-through-a-list-each-)
+6. [How to use conditionals (if ...)](#5-how-to-use-conditionals-if-)
 
 ## [Javalin & Thymeleaf](#javalin--thymeleaf-1)
 
@@ -302,8 +303,24 @@ That how the `th:each` attribute works. It's is important that you spell the att
 Check for details in the [Thymeleaf docs](https://www.thymeleaf.org/doc/tutorials/3.1/usingthymeleaf.html#simple-conditionals-if-and-unless).
 
 An example of how to apply `if`:
+
 ```html
   <p th:if="${not #lists.isEmpty(userList)}">Listen er ikke tom</p>
+```
+
+Another way is to use the ternary operator `If-then-else: (if) ? (then) : (else)` like this:
+
+```html
+<p th:text="${not #lists.isEmpty(userList) ? userList.size + ' in list' : 'Den er tom' }">Ikke tom</p>
+```
+
+### 6. How to add a link
+
+The link (url/route) should be given in the th:href attribute. In this example as `th:href="@{/createuser}"`. It means
+that the navigation will be forwarded to /createuser. However, if you want to open the html document in a browser directly, then the first link will work: `href="createuser.html"`.
+
+```html
+<a href="createuser.html" th:href="@{/createuser}">Create account</a>
 ```
 
 ## Javalin & Thymeleaf
