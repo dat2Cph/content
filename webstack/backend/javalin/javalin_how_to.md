@@ -13,9 +13,9 @@ Begin creating a new project from scratch using this [tutorial](./setup.md). The
 1. [How to re-use fragments in templates](#1-how-to-re-use-fragments-in-templates)
 2. [How to use fragments with parameters](#2-how-to-use-fragments-with-parameters)
 3. [How to add an image](#3-how-to-add-an-image)
-4. [How to add a link]()
-5. [How to iterate through a list (each ....)](#4-how-to-iterate-through-a-list-each-)
-6. [How to use conditionals (if ...)](#5-how-to-use-conditionals-if-)
+4. [How to iterate through a list (each ....)](#4-how-to-iterate-through-a-list-each-)
+5. [How to use conditionals (if ...)](#5-how-to-use-conditionals-if-)
+6. [How to add a link](#6-how-to-add-a-link)
 
 ## [Javalin & Thymeleaf](#javalin--thymeleaf-1)
 
