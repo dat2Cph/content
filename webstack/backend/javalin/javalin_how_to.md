@@ -13,8 +13,8 @@ Begin creating a new project from scratch using this [tutorial](./setup.md). The
 1. [How to re-use fragments in templates](#1-how-to-re-use-fragments-in-templates)
 2. [How to use fragments with parameters](#2-how-to-use-fragments-with-parameters)
 3. [How to add an image](#3-how-to-add-an-image)
-4. [How to iterate through a list (each ....)](#4-how-to-iterate-through-a-list-each)
-5. [How to use conditionals (if ...)](#5-how-to-use-conditionals-if)
+4. [How to iterate through a list (each ....)](#4-how-to-iterate-through-a-list-each-)
+5. [How to use conditionals (if ...)](#5-how-to-use-conditionals-if-)
 
 ## [Javalin & Thymeleaf](#javalin--thymeleaf-1)
 
@@ -54,16 +54,130 @@ are made static for ease of use.
 
 ### 3. How to add a database
 
-Add a connection pool with 3 JDBC Postgresql connections:
+Add a connection pool with 3 JDBC Postgresql connections. Create a package called `persistence` and drop the ConnectionPool class and the rest of DB classes into it:
+
+```Java
+package app.persistence;
+
+import com.zaxxer.hikari.HikariConfig;
+import com.zaxxer.hikari.HikariDataSource;
+
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+/***
+ * Singleton pattern applied to handling a Hikari ConnectionPool
+ */
+public class ConnectionPool {
+    // TODO: Change default access credentials for MySql server as needed below:
+    private static final String DEFAULT_USER = "postgres";
+    private static final String DEFAULT_PASSWORD = "postgres";
+    private static final String DEFAULT_URL = "jdbc:postgresql://localhost:5432/%s?currentSchema=public";
+    private static final String DEFAULT_DB = "startcode";
+
+    public static ConnectionPool instance = null;
+    public static HikariDataSource ds = null;
+
+    /***
+     * Empty and private constructor due to single pattern. Use getInstance methods to
+     * instantiate and get a connection pool.
+     */
+    private ConnectionPool() {
+    }
+
+    /***
+     * Getting a singleton instance of a Hikari Connection Pool with default credentials and
+     * connection string hardcoded in class
+     * @return ConnectionPool object
+     */
+    public static ConnectionPool getInstance()
+    {
+        return getInstance(DEFAULT_USER, DEFAULT_PASSWORD, DEFAULT_URL, DEFAULT_DB);
+    }
+
+    /***
+     * Getting a singleton instance of a Hikari Connection Pool with specific credentials
+     * and connection string. If an environment variable "DEPLOYED" exists then local
+     * environment variables will be inserted with user credentials and DB connection string
+     * @param user for Postgresql database user
+     * @param password for Postgresql database user
+     * @param url connection string for postgresql database. Remember to add currentSchema to string
+     * @param db database name for connection
+     * @return A ConnectionPool object
+     */
+    public static ConnectionPool getInstance(String user, String password, String url, String db) {
+        if (instance == null) {
+            if (System.getenv("DEPLOYED") != null) {
+                ds = createHikariConnectionPool(
+                        System.getenv("JDBC_USER"),
+                        System.getenv("JDBC_PASSWORD"),
+                        System.getenv("JDBC_CONNECTION_STRING_STARTCODE"),
+                        System.getenv("JDBC_DB"));
+            } else {
+                ds = createHikariConnectionPool(user, password, url, db);
+            }
+            instance = new ConnectionPool();
+        }
+        return instance;
+    }
+
+    /***
+     * Getting a live connection from a Hikari Connection Pool
+     * @return a database connection to be used in sql requests
+     * @throws SQLException
+     */
+    public synchronized Connection getConnection() throws SQLException {
+        Logger.getLogger("web").log(Level.INFO, ": get data connection");
+        return ds.getConnection();
+    }
+
+    /***
+     * Closing a Hikari Connection Pool after use.
+     */
+    public synchronized void close() {
+        Logger.getLogger("web").log(Level.INFO, "Shutting down connection pool");
+        ds.close();
+    }
+
+    /***
+     * Configuring a Hikari DataSource ConnectionPool. Default pool size is 3.
+     * @param user for Postgresql database user
+     * @param password for Postgresql database user
+     * @param url connection string for postgresql database. Remember to add currentSchema to string
+     * @param db database name for connection
+     * @return a Hikari DataSource
+     */
+    private static HikariDataSource createHikariConnectionPool(String user, String password, String url, String db) {
+        Logger.getLogger("web").log(Level.INFO,
+                String.format("Connection Pool created for: (%s, %s, %s, %s)", user, password, url, db));
+        HikariConfig config = new HikariConfig();
+        config.setDriverClassName("org.postgresql.Driver");
+        config.setJdbcUrl(String.format(url, db));
+        config.setUsername(user);
+        config.setPassword(password);
+        config.setMaximumPoolSize(3);
+        config.setPoolName("Postgresql Pool");
+        config.addDataSourceProperty("cachePrepStmts", "true");
+        config.addDataSourceProperty("prepStmtCacheSize", "250");
+        config.addDataSourceProperty("prepStmtCacheSqlLimit", "2048");
+        return new HikariDataSource(config);
+    }
+
+}
+```
 
 Add to beginning of Main-class:
 
 ```Java
 private static final String USER = "postgres";
 private static final String PASSWORD = "postgres";
-private static final String URL = "jdbc:postgresql://localhost:5432/startcode?currentSchema=public";
+private static final String URL = "jdbc:postgresql://localhost:5432/%s?currentSchema=public";
+private static final String DB = "databasename";
 
-private static final ConnectionPool connectionPool = ConnectionPool.getInstance(USER, PASSWORD, URL);
+private static final ConnectionPool connectionPool = ConnectionPool.getInstance(USER, PASSWORD, URL, DB);
+
 ```
 
 Then the database can be accessed like this:
