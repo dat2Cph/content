@@ -1,4 +1,4 @@
-# Javalin how-to
+# Javalin Cookbook
 
 Begin creating a new project from scratch using this [tutorial](./setup.md). Then you might need to know how to ...
 
@@ -7,6 +7,7 @@ Begin creating a new project from scratch using this [tutorial](./setup.md). The
 1. [How to organize files](#1-how-to-organize-files)
 2. [How to add more routes](#2-how-to-add-more-routes)
 3. [How to add a database](#3-how-to-add-a-database)
+4. [How to export and import a Postgres database]()
 
 ## [Thymeleaf](#thymeleaf-1)
 
@@ -211,6 +212,31 @@ public static List<User> getAllUsers(ConnectionPool connectionPool) throws Datab
         return userList;
     }
 ```
+
+### 4. How to export and import a database
+
+This is how you share a database between team members (when not having a shared database in the cloud):
+
+1. Right-click your database in PG-Admin and choose `Backup ...`
+2. Find a filename. Use same name as database `cupcake`
+3. Format: Custom (the most efficient)
+4. Encoding: UTF8
+5. Data Option Tab: select `Pre-data`, `Data`, and `Post-data`. These three ensure that everything is copied.
+6. Once the backup is done. Go to the topmenu, and choose: `Tools -> Store manager ...`
+7. Pick the backup file you just created in click the download button.
+8. Find the backup file in your `download` folder on disk, and copy it to your team members.
+
+This is how you import / restore the file on another machine
+
+1. Create a new database in PG-Admin with the same name as the back-up'ed version
+2. Right-click the new database and choose `Restore ...`
+3. Choose `Custom or tar` as Format
+4. Click the folder icon in the `Filename` to open the file picker
+5. Click the 3 small dots in the upper right corner to open a local menu, and then click `Upload`
+6. Drop the cupcake file into the file picker to upload - cancel to get back to the file list, and then mark the `cupcake` file
+7. Click `Restore` to import
+8. Refresh the database to see the newly imported database and data
+
 
 ## Thymeleaf
 
