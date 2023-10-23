@@ -7,7 +7,7 @@ Begin creating a new project from scratch using this [tutorial](./setup.md). The
 1. [How to organize files](#1-how-to-organize-files)
 2. [How to add more routes](#2-how-to-add-more-routes)
 3. [How to add a database](#3-how-to-add-a-database)
-4. [How to export and import a Postgres database]()
+4. [How to export and import a Postgres database](#4-how-to-export-and-import-a-database)
 
 ## [Thymeleaf](#thymeleaf-1)
 
@@ -236,7 +236,6 @@ This is how you import / restore the file on another machine
 6. Drop the cupcake file into the file picker to upload - cancel to get back to the file list, and then mark the `cupcake` file
 7. Click `Restore` to import
 8. Refresh the database to see the newly imported database and data
-
 
 ## Thymeleaf
 
