@@ -1,0 +1,94 @@
+# Opret en Droplet hos Digital Ocean
+
+Vi skal til at oprette en virtuel maskine hos Digital Ocean. En såkaldt "Droplet".
+
+Det koster ca. 6$ at have en virtuel maskine kørende hos Digital Ocean. De første 50$ kan du få gratis gennem GitHub Education. Tilmeld dig straks og få rabat, når du lige om lidt skal oprette en Droplet.
+
+Følg denne vejledning for at oprette maskinen:
+
+Opret en profil hos Digital Ocean
+
+Tilmeld dig via [https://cloud.digitalocean.com/registrations/new](https://cloud.digitalocean.com/registrations/new). Du skal bruge et betalingskort ved tilmeldingen. Hvis du har fået en rabatkupon via [GitHub Education](https://education.github.com/students) kan du indtaste den senere.
+
+## Choose Region
+Frankfurt for low latency
+
+## Choose an image
+
+From OS Marketplace: `Docker 23.0.6 on Ubuntu 22.04`
+
+## Choose size
+
+- Droplet Type: Basic
+- CPU options: Regular, Disk type: SSD
+- $6/mo with 1GB VRAM / 1 CPU / 25 GB SSD Disk / 1000 GB transer
+
+## Choose Authentication Method
+
+- Åbn din offentlige ssh-nøgle og kopier indholdet. Dvs, nøglen `id_rsa.pub` vises i terminalen sådan her: 
+
+```bash
+cat id_rsa.pub
+```
+
+- Kommandoen `cat` viser indholdet af en fil på skærmen.
+- Herefter markerer du hele nøglen og kopierer den til clipboardet. Vi skal bruge den hos Digital Ocean lige om lidt. Det er vigtigt at du får det hele med:
+
+![sshpublic](./images/ssh_public.png)
+
+- Vælg "New SSH key". Kopier nøglen fra dit clipboard ind i "SSH key content" og kald nøglen for "id_rsa".
+- Nu er du klar til at oprette din droplet. Du kan evt. give den et godt navn inden du trykker "Create Droplet" i bunden af siden.
+- Nu tager det et minuts tid - og så er din Droplet klar til brug - og du kan gå videre til næste lektion.
+
+## Finalize Details
+
+- Giv din droplet et godt navn. F.eks. `2sem` som Hostname.
+
+## Create droplet
+
+Når din droplet er oprettet skal du notere IP nummer.
+
+# Lav en ekstra bruger (som ikke er root)
+
+Ideen med dette er at have en user, som ikke har gude-agtige beføjelser som `root`. Altså af sikkerhedsmæssige grunde. 
+
+## Log på din Droplet via ssh
+
+## Opret user:
+
+adduser jetty
+usermod -aG sudo jetty
+su - jetty
+
+## Fix ssh key:
+
+mkdir .ssh
+chmod 700 .ssh
+cd .ssh
+nano authorized_keys
+
+>> kopier din public key (fra lokale .ssh folder)
+
+## Genskab access level:
+
+chmod 600 authorized_keys
+
+## Firewall
+
+Vi lukker kun trafik ind til ssh, postgres fra specifikke IP-numre (hvor du arbejder fra) og på port 7070, hvor
+dit website skal køre fra. Hvis du har flere websites kørende, skal de køre på hver deres port - og så må du
+åbne op for flere porte.
+
+```bash 
+sudo ufw status
+sudo ufw allow ssh
+sudo ufw allow from <IP> to any port 5432/tcp
+sudo ufw allow 7070/tcp
+sudo ufw enable
+```
+
+## Login fra localhost:
+
+ssh jetty@ip
+
+
