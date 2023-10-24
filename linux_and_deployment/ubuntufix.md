@@ -29,6 +29,8 @@ nano authorized_keys
 
 >> kopier din public key (fra lokal .ssh folder)
 
+![ssh](./images/ssh_public.png)
+
 ### 4. Genskab access level:
 
 ```bash
