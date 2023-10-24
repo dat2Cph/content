@@ -1,7 +1,13 @@
-# Setting up a virtual environment in the cloud for deployment
+# Opsætning af virtuelt miljø i "skyen" til deployment
 
-1. Getting ssh to work
-2. Creating a Droplet (virtual machine)
-3. Setting up Postgres in a Docker container
-4. Configuring a firewall
-5. Deploying your web application
+1. [Opret (eller find din) ssh nøgle](./sshkeys.md)
+2. [Opsætning af virtuel server hos Digital Ocean](./droplet.md)
+3. [Log på Droplet første gang](./logpaadroplet.md)
+4. [Installation af Java 17 på Droplet](./java.md)
+5. [Installation af Postgres 15.3 i en Docker container](./postgres_setup.md)
+6. [Tag et snapshot af din Droplet](./snapshot.md)
+7. [Deploy dit website](./deployment.md)
+
+Her er en oversigt over den overordnede system arkitektur:
+
+![System](./images/systemarchitecture.png)
