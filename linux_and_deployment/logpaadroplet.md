@@ -38,3 +38,5 @@ Når du har kigger dig lidt omkring kan du altid komme tilbage til udgangspunkt 
 ```
 
 Nu er du klar til næste lektion, hvor vi skal installere Java
+
+[Hop tilbage til oversigten](./README.md)
