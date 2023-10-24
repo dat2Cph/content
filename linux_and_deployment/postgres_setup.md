@@ -13,3 +13,4 @@ som kører lokalt på vores laptops. Det kræver blot at vi kloner, tilpasser og
 
 3. Følg instruktionerne i README filen.
 
+[Hop tilbage til oversigten](./README.md)

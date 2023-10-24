@@ -21,3 +21,5 @@ OpenJDK 64-Bit Server VM (build 17.0.7+7-Ubuntu-0ubuntu122.10.2, mixed mode, sha
 ```
 
 Når det er fikset, kan du gå videre til næste lektion.
+
+[Hop tilbage til oversigten](./README.md)

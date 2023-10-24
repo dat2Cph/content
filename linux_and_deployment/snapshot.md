@@ -5,3 +5,5 @@ Når du har installeret din Droplet og alt ser ud til at virke, er det et perfek
 ![snapshot](./images/snapshot.png)
 
 Det tager nogle minutter før dit snapshot er klart. Så kan du starte din Droplet bagefter.
+
+[Hop tilbage til oversigten](./README.md)
