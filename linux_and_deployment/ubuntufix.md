@@ -27,9 +27,11 @@ cd .ssh
 nano authorized_keys
 ```
 
->> kopier din public key (fra lokal .ssh folder)
+Kopier din public key (fra lokal .ssh folder). Den ser nogenlunde således ud:
 
 ![ssh](./images/ssh_public.png)
+
+Vær omhyggelig med KUN at kopiere nøglen - og undgå at få blanktegn med.
 
 ### 4. Genskab access level:
 
