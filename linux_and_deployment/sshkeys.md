@@ -10,7 +10,7 @@ Check om du har en ssh-nøgle liggende allerede:
 
 I terminalen:
 
-Hvis du allerede har en ssh-nøgle liggende, så kan du gå videre til næste lektion. Hvis ikke så tjek om du har en nøgle liggende i folderen `~/.ssh``. Tegnet "~" hedder "tilde" og er et symbol i Linux for din hjemmefolder. Så vi indholdet af folderen således:
+Hvis du allerede har en ssh-nøgle liggende, så kan du gå videre til næste lektion. Hvis ikke så tjek om du har en nøgle liggende i folderen `~/.ssh`. Tegnet `~` hedder `tilde` og er et symbol i Linux for din hjemmefolder. Så vi indholdet af folderen således:
 
 ```bash
 cd ~/.ssh

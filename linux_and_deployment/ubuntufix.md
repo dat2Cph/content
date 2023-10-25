@@ -48,7 +48,7 @@ dit website skal køre fra. Hvis du har flere websites kørende, skal de køre p
 ```bash 
 sudo ufw status
 sudo ufw allow ssh
-sudo ufw allow from <IP> to any port 5432/tcp
+sudo ufw allow from <ip> to any port 5432/tcp
 sudo ufw allow 7070/tcp
 sudo ufw enable
 ```

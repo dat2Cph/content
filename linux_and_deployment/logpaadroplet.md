@@ -15,7 +15,7 @@ Når der er skabt forbindelse til din Droplet bliver du første gang spurgt om d
 Nu skulle du gerne være logget på. Beviset er at din kommando-prompt fx hedder:
 
 ```bash
-> root@ditdropnavn
+root @ ditdropnavn >
 ```
 
 ## Opdater din Ubuntu
@@ -23,8 +23,8 @@ Nu skulle du gerne være logget på. Beviset er at din kommando-prompt fx hedder
 Vi begynder med at opdatere Ubuntu:
 
 ```bash
-> apt update
-> apt upgrade (den her tager lidt tid)
+apt update
+apt upgrade (den her tager lidt tid)
 ```
 
 ## Kig dig omkring
@@ -34,7 +34,7 @@ Brug nu `cd` og `ls` kommandoerne til at kigge dig lidt omkring på din maskine.
 Når du har kigger dig lidt omkring kan du altid komme tilbage til udgangspunkt ved at taste
 
 ```bash
- > cd ~
+cd ~
 ```
 
 Nu er du klar til næste lektion, hvor vi skal installere Java

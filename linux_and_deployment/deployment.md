@@ -22,16 +22,16 @@ Log på remote som `jetty` brugeren og lav folderen `~/webs`
 
 ## 3. Kopier applikationen med secure copy
 
-    ```bash
-        scp app.jar jetty@IP:~/webs/
-    ```
+```bash
+scp app.jar jetty@IP:~/webs/
+```
 
 ## 4. Gør din applikation til en service på Dropletten
 
 Log på remote igen. Du skal nu oprette en såkaldt `service-fil` ved navnet `jettyapp` eller hvad du ønsker at kalde den (`cupcake`, `carport` etc)
 
 ```bash
-    nano /etc/systemd/system/jettyapp.service
+nano /etc/systemd/system/jettyapp.service
 ```
 
 Kopier denne konfiguration ind - og ret den til mht. password og databasenavn hørende til dit projekt:
@@ -69,26 +69,26 @@ WantedBy=multi-user.target
 
 Gem filen i Nano og gør service filen klar til brug:
 
-    ```bash
-    systemctl daemon-reload
-    ```
+```bash
+systemctl daemon-reload
+```
 
 Herefter kan du starte, gen-starte, stoppe og få en status på servicen således:
 
-    ```bash
-        service jettyapp start
-        service jettyapp restart
-        service jettyapp stop
-        service jettyapp status
-    ```
+```bash
+service jettyapp start
+service jettyapp restart
+service jettyapp stop
+service jettyapp status
+```
 
 Du skal selvfølgelig ændre `jettyapp` med det du har kaldt din service.
 
 Hvis du har brug for at se log fra jetty, så brug:
 
-    ```bash
-        service jettyapp status
-    ```
+```bash
+service jettyapp status
+```
 
 ## 5. Overfør din database til Dropletten - hvis den ikke allerede er der
 
