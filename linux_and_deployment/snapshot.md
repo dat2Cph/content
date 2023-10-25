@@ -6,5 +6,7 @@ Når du har installeret din Droplet og alt ser ud til at virke, er det et perfek
 
 Det tager nogle minutter før dit snapshot er klart. Så kan du starte din Droplet bagefter.
 
-[Næste trin](./deployment.md)
-[Hop tilbage til oversigten](./README.md)
+## Videre herfra
+
+- [Næste trin](./deployment.md)
+- [Hop tilbage til oversigten](./README.md)

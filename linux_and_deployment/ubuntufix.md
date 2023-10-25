@@ -61,6 +61,8 @@ Fremover kan du logge på din Droplet via den nyligt oprettede `jetty` bruger:
 ssh jetty@ip
 ```
 
-[Næste trin](./java.md)
-[Hop tilbage til oversigten](./README.md)
+## Videre herfra
+
+- [Næste trin](./java.md)
+- [Hop tilbage til oversigten](./README.md)
 

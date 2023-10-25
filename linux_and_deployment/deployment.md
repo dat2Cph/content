@@ -94,4 +94,8 @@ service jettyapp status
 
 - [How to export and import a Postgres database](../webstack/backend/javalin/javalin_how_to.md#4-how-to-export-and-import-a-database)
 
-[Hop tilbage til oversigten](./README.md)
+## Videre herfra
+
+Du er sådan set færdig med oprettelse og konfiguration af din Droplet - og har fået deployet din web applikation. Måske er det tid til en kop kaffe?
+
+- [Hop tilbage til oversigten](./README.md)

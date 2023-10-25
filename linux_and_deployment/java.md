@@ -22,5 +22,7 @@ OpenJDK 64-Bit Server VM (build 17.0.7+7-Ubuntu-0ubuntu122.10.2, mixed mode, sha
 
 Når det er fikset, kan du gå videre til næste lektion.
 
-[Næste trin](./postgres_setup.md)
-[Hop tilbage til oversigten](./README.md)
+## Videre herfra
+
+- [Næste trin](./postgres_setup.md)
+- [Hop tilbage til oversigten](./README.md)
