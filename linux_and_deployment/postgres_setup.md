@@ -7,9 +7,9 @@ som kører lokalt på vores laptops. Det kræver blot at vi kloner, tilpasser og
 1. Log ind på din droplet som `jetty` og stå i din hjemme folder `~jetty`
 2. Klon denne docker-compose.yml fil:
 
-    ```bash
-    git clone https://github.com/dat2Cph/2semDockerSetupRemote.git
-    ```
+```bash
+git clone https://github.com/dat2Cph/2semDockerSetupRemote.git
+```
 
 3. Følg instruktionerne i [README](https://github.com/dat2Cph/2semDockerSetupRemote) filen.
 

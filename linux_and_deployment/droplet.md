@@ -30,7 +30,7 @@ From OS Marketplace: `Docker 23.0.6 on Ubuntu 22.04`
 
 ## Choose Authentication Method
 
-- Åbn din offentlige ssh-nøgle og kopier indholdet. Dvs, nøglen `id_rsa.pub` vises i terminalen sådan her: 
+- Åbn din offentlige ssh-nøgle og kopier indholdet. Dvs, nøglen `id_rsa.pub` vises i terminalen sådan her:
 
 ```bash
 cat id_rsa.pub

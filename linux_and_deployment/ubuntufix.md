@@ -2,7 +2,7 @@
 
 ## Lav en ekstra bruger (som ikke er root)
 
-Ideen med dette er at have en user, som ikke har gude-agtige beføjelser som `root`. Altså af sikkerhedsmæssige grunde. 
+Ideen med dette er at have en user, som ikke har gude-agtige beføjelser som `root`. Altså af sikkerhedsmæssige grunde.
 
 ### 1. Log på din Droplet via ssh
 
@@ -10,7 +10,7 @@ Ideen med dette er at have en user, som ikke har gude-agtige beføjelser som `ro
 ssh root@ip
 ```
 
-### 2. Opret user (vi kalder den for jetty):
+### 2. Opret user (vi kalder den for jetty)
 
 ```bash
 adduser jetty
@@ -18,7 +18,7 @@ usermod -aG sudo jetty
 su - jetty
 ```
 
-### 3. Fix ssh key:
+### 3. Fix ssh key
 
 ```bash
 mkdir .ssh
@@ -33,7 +33,7 @@ Kopier din public key (fra lokal .ssh folder). Den ser nogenlunde således ud:
 
 Vær omhyggelig med KUN at kopiere nøglen - og undgå at få blanktegn med.
 
-### 4. Genskab access level:
+### 4. Genskab access level
 
 ```bash
 chmod 600 authorized_keys
@@ -45,7 +45,7 @@ Vi lukker kun trafik ind til ssh, postgres fra specifikke IP-numre (hvor du arbe
 dit website skal køre fra. Hvis du har flere websites kørende, skal de køre på hver deres port - og så må du
 åbne op for flere porte.
 
-```bash 
+```bash
 sudo ufw status
 sudo ufw allow ssh
 sudo ufw allow from <ip> to any port 5432/tcp
@@ -53,7 +53,7 @@ sudo ufw allow 7070/tcp
 sudo ufw enable
 ```
 
-### 6. Login fra localhost:
+### 6. Login fra localhost
 
 Fremover kan du logge på din Droplet via den nyligt oprettede `jetty` bruger:
 

@@ -2,12 +2,12 @@
 
 Når din Droplet er klar, skal du kopiere IP-nummeret på maskinen.
 
-## Log-ind fra din localhost:
+## Log-ind fra din localhost
 
 Vi skal nu logge ind via en ssh-forbindelse. Det gøres således:
 
 ```bash
-> ssh root@ipnummer
+ssh root@ip
 ```
 
 Når der er skabt forbindelse til din Droplet bliver du første gang spurgt om du vil gemme et såkaldt "fingerprint". Det skal du bare svare "yes" til. Det betyder at din maskine fremover kender til Dropletten.
