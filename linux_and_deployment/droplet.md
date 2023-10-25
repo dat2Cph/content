@@ -52,4 +52,5 @@ cat id_rsa.pub
 - Nu er du klar til at oprette din droplet. Klik på `Create Droplet`
 - Nu tager det et minuts tid - og så er din Droplet klar til brug - og du kan gå videre.
 
+[Næste trin](./logpaadroplet.md)
 [Hop tilbage til oversigten](./README.md)

@@ -39,4 +39,5 @@ cd ~
 
 Nu er du klar til næste lektion, hvor vi skal installere Java
 
+[Næste trin](./ubuntufix.md)
 [Hop tilbage til oversigten](./README.md)

@@ -13,4 +13,5 @@ git clone https://github.com/dat2Cph/2semDockerSetupRemote.git
 
 3. Følg instruktionerne i [README](https://github.com/dat2Cph/2semDockerSetupRemote) filen.
 
+[Næste trin](./snapshot.md)
 [Hop tilbage til oversigten](./README.md)
