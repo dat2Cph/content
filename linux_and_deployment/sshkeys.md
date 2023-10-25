@@ -41,5 +41,5 @@ Hvis du hører til den tjekkede type, så lav en kopi af dine to nøglefiler på
 
 ## Videre herfra
 
-[Næste trin](./droplet.md)
-[Hop tilbage til oversigten](./README.md)
+- [Næste trin](./droplet.md)
+- [Hop tilbage til oversigten](./README.md)
