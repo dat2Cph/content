@@ -39,4 +39,5 @@ ls
 
 Hvis du hører til den tjekkede type, så lav en kopi af dine to nøglefiler på en USB-stick. Så har du en backup - og du kan også overføre dem til en stationær maskine etc.
 
+[Næste trin](./droplet.md)
 [Hop tilbage til oversigten](./README.md)
