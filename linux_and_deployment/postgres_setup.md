@@ -11,7 +11,14 @@ som kører lokalt på vores laptops. Det kræver blot at vi kloner, tilpasser og
 git clone https://github.com/dat2Cph/2semDockerSetupRemote.git
 ```
 
-3. Følg instruktionerne i [README](https://github.com/dat2Cph/2semDockerSetupRemote) filen.
+Hop ned i folderen `2semDockerSetupRemote`:
+
+```bash
+cd 2semDockerSetupRemote
+ls
+```
+
+3. Følg instruktionerne i [README](https://github.com/dat2Cph/2semDockerSetupRemote) filen. Du skal sætte `sudo` foran kommandoerne
 
 ## Videre herfra
 

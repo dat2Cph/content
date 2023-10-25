@@ -3,7 +3,7 @@
 Den her er let nok:
 
 ```bash
-apt-get install openjdk-17-jdk
+sudo apt-get install openjdk-17-jdk
 ```
 
 Nu kan du tjekke at det er gået godt:

@@ -13,9 +13,9 @@ ssh root@ip
 ### 2. Opret user (vi kalder den for jetty)
 
 ```bash
-adduser jetty
+adduser jetty (tast et sikkert password og gem det godt)
 usermod -aG sudo jetty
-su - jetty
+su jetty (tast kodeord for at logge ind som jetty med root rettigheder)
 ```
 
 ### 3. Fix ssh key
@@ -33,11 +33,30 @@ Kopier din public key (fra lokal .ssh folder). Den ser nogenlunde således ud:
 
 Vær omhyggelig med KUN at kopiere nøglen - og undgå at få blanktegn med.
 
-### 4. Genskab access level
+Gem filen (`ctrl + X  Y`)
+
+### 4. Sæt access level til nøglefilen
 
 ```bash
 chmod 600 authorized_keys
 ```
+
+Nu kan du logge på med `ssh jetty@ip` i stedet for root.
+
+Log ud og log på med `jetty` brugeren:
+
+```bash
+exit
+exit
+```
+
+Når du er tilbage i din lokale terminal, så logger du på som `jetty`:
+
+```bash
+ssh jetty@ip
+```
+
+Hvis det går godt, så læg mærke til at prompten hedder noget i stil med `jetty@dropletnavn:~$`
 
 ### 5. Konfigurer en firewall (ufw)
 
@@ -46,12 +65,15 @@ dit website skal køre fra. Hvis du har flere websites kørende, skal de køre p
 åbne op for flere porte.
 
 ```bash
-sudo ufw status
+sudo ufw status (viser de åbne porte - 22, 2375, 2376)
 sudo ufw allow ssh
-sudo ufw allow from <ip> to any port 5432/tcp
+sudo ufw allow from <ip> to any port 5432 proto tcp
 sudo ufw allow 7070/tcp
+sudo ufw status
 sudo ufw enable
 ```
+
+TIP! Find IP nummer hvorfra du sidder via [https://www.myip.com/](https://www.myip.com/). Det er det IP du skal indsætte i <ip> ovenfor. Hvis du vil tilgå din Droplet andre steder fra, så skal du også tilføje de IP-numre.
 
 ### 6. Login fra localhost
 

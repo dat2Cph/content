@@ -4,7 +4,11 @@ Når du har installeret din Droplet og alt ser ud til at virke, er det et perfek
 
 ![snapshot](./images/snapshot.png)
 
-Det tager nogle minutter før dit snapshot er klart. Så kan du starte din Droplet bagefter.
+Hvis du ikke kan finde snapshop menuen, så er det nok fordi du mangler at klikke på din droplet først.
+
+Du bliver også bedt om at slutte for din Droplet. Det gøres på samme side - øverst til højre.
+
+Det tager nogle minutter før dit snapshot er klart. Så kan du starte din Droplet bagefter og logge ind igen.
 
 ## Videre herfra
 

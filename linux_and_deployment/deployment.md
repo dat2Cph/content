@@ -26,15 +26,17 @@ Log på remote som `jetty` brugeren og lav folderen `~/webs`
 scp app.jar jetty@IP:~/webs/
 ```
 
+Check på din Droplet at filen blev kopieret det rigtige sted hen.
+
 ## 4. Gør din applikation til en service på Dropletten
 
 Log på remote igen. Du skal nu oprette en såkaldt `service-fil` ved navnet `jettyapp` eller hvad du ønsker at kalde den (`cupcake`, `carport` etc)
 
 ```bash
-nano /etc/systemd/system/jettyapp.service
+sudo nano /etc/systemd/system/jettyapp.service
 ```
 
-Kopier denne konfiguration ind - og ret den til mht. password og databasenavn hørende til dit projekt:
+Kopier denne konfiguration ind - og ret den til mht. <appnavn>, <dit-sikre-password> og <dit_database_navn> hørende til dit projekt:
 
 ```bash
 [Unit]
@@ -51,7 +53,7 @@ Type=simple
 
 Environment="JAVA_HOME=/usr/bin/java"
 WorkingDirectory=/home/jetty/webs
-ExecStart=/usr/bin/java -jar /home/jetty/webs/lifehack.jar
+ExecStart=/usr/bin/java -jar /home/jetty/webs/<appnavn>.jar
 ExecStop=/bin/kill -15 $MAINPID
 
 RestartSec=10
@@ -59,9 +61,9 @@ Restart=always
 
 Environment="DEPLOYED=PROD"
 Environment="JDBC_USER=postgres"
-Environment="JDBC_PASSWORD=<dit-sikre-password"
+Environment="JDBC_PASSWORD=<dit-sikre-password>"
 Environment="JDBC_CONNECTION_STRING=jdbc:postgresql://localhost:5432/%%s?currentSchema=public"
-Environment="JDBC_DB=<dit_database_navn"
+Environment="JDBC_DB=<dit_database_navn>"
 
 [Install]
 WantedBy=multi-user.target
@@ -70,16 +72,16 @@ WantedBy=multi-user.target
 Gem filen i Nano og gør service filen klar til brug:
 
 ```bash
-systemctl daemon-reload
+sudo systemctl daemon-reload
 ```
 
 Herefter kan du starte, gen-starte, stoppe og få en status på servicen således:
 
 ```bash
-service jettyapp start
-service jettyapp restart
-service jettyapp stop
-service jettyapp status
+sudo service jettyapp start
+sudo service jettyapp restart
+sudo service jettyapp stop
+sudo service jettyapp status
 ```
 
 Du skal selvfølgelig ændre `jettyapp` med det du har kaldt din service.
@@ -87,15 +89,22 @@ Du skal selvfølgelig ændre `jettyapp` med det du har kaldt din service.
 Hvis du har brug for at se log fra jetty, så brug:
 
 ```bash
-service jettyapp status
+sudo service jettyapp status
 ```
+
+Du vil nok bemærke at applikationen ikke kører endnu. Det skyldes at vi mangler at migrere databasen.
 
 ## 5. Overfør din database til Dropletten - hvis den ikke allerede er der
 
 - [How to export and import a Postgres database](../webstack/backend/javalin/javalin_how_to.md#4-how-to-export-and-import-a-database)
 
+## 6. Vis dit website
+
+Nu kan du tilgå dit website på http://ip:7070
+
 ## Videre herfra
 
-Du er sådan set færdig med oprettelse og konfiguration af din Droplet - og har fået deployet din web applikation. Måske er det tid til en kop kaffe?
+Du er sådan set færdig med oprettelse og konfiguration af din Droplet - og har fået deployet din web applikation. 
+Måske er det tid til en kop kaffe?
 
 - [Hop tilbage til oversigten](./README.md)

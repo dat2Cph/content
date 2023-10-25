@@ -15,7 +15,7 @@ Når der er skabt forbindelse til din Droplet bliver du første gang spurgt om d
 Nu skulle du gerne være logget på. Beviset er at din kommando-prompt fx hedder:
 
 ```bash
-root @ ditdropnavn >
+root @ ditdropnavn ~#
 ```
 
 ## Opdater din Ubuntu
@@ -25,6 +25,30 @@ Vi begynder med at opdatere Ubuntu:
 ```bash
 apt update
 apt upgrade (den her tager lidt tid)
+```
+
+- Du skal muligvis svare `Y` for at køre upgrade og tillade at de nye opdateringer bruger lidt diskplads.
+
+- Hvis der kommer en dialog op angående openssh-server, så vælg: `install the package maintainer's version`.
+
+- Hvis der kommer en dialog op angående `Configuration file '/etc/default/docker'` så siger du bare `Y` og kører videre.
+
+- Hvis du får en `Pending kernel upgrade` besked, så trykker du bare [Return] og OK til at genstarte diverse services.
+
+I det hele taget skal du bare tage Ja-hatten på og godkende diverse spørgsmål. Vi har jo ikke noget installeret i forvejen udover default, så der er ikke noget at miste ;-)
+
+
+## Genstart din Droplet og log ind igen
+
+```bash
+reboot
+```
+
+Vent et minuts tid.
+Fra din lokale terminal logger du ind igen:
+
+```bash
+ssh root@ip
 ```
 
 ## Kig dig omkring
