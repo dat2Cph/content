@@ -405,12 +405,12 @@ From HTML and Thymeleaf, the hashmaps are accessible in various ways.
 
 - Session Scope
 ```html
-<p th:text="${#ctx.session.email}"></p>
+<p th:text="${session.email}"></p>
 ```
 
 - Request Scope
 ```html
-<p th:text="${#ctx.name}"></p>
+<p th:text="${name}"></p>
 ```
 
 Or use your own hashmap (model):
@@ -429,7 +429,7 @@ Luckily it works anyway. A work-a-round is to define the variables as Thymeleaf 
 </body>
 ```
 
-In this way we get autocompletion.
+In this way we get autocompletion. But it's probably not worth it.
 
 #### 1.b From frontend to backend
 
