@@ -16,6 +16,7 @@ ssh root@ip
 adduser jetty (tast et sikkert password og gem det godt)
 usermod -aG sudo jetty
 su jetty (tast kodeord for at logge ind som jetty med root rettigheder)
+cd ~jetty (skift til hjemmefolderen for jetty brugeren) 
 ```
 
 ### 3. Fix ssh key
