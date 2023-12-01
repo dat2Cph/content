@@ -2,7 +2,7 @@
 
 Denne vejledning er inspireret af dette [blogindlæg](https://www.twilio.com/blog/send-dynamic-personalized-party-emails-sendgrid-java)
 
-Følg disse video tuturials - og støt dig til vejledningen herunder for snippets etc:
+Følg disse [video tutorials](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx?folderID=cab16aeb-2842-454a-8c5a-b0cb00f4787e) - og støt dig til vejledningen herunder for snippets etc:
 
 1. Opret en konto hos [SendGrid](https://sendgrid.com/)
 2. Lav en `Sender Authentication` og brug en emailadresse som afsender og reply-to - der ikke er din studiemail. Men gerne gmail, hotmail etc.
