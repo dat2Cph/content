@@ -8,20 +8,20 @@ Når du skal eksperimentere med SVG kan du gøre det på to måder:
 
 Lav en flad fil i IntelliJ, som gemmes med `.svg` som filtype. Der findes et preview-mode i IntelliJ, så du løbende kan se ændringerne.
 
-    ```xml
-    <svg  xmlns="http://www.w3.org/2000/svg"
-        xmlns:xlink="http://www.w3.org/1999/xlink"
-        width="127" height="105"  viewBox="0 0 255 210">
-    <rect x="0" y="0" height="90" width="90"
-        style="stroke:#6dab6e; fill: #6d6fab"/>
-    <rect x="120" y="0" height="90" width="135"
-        style="stroke:#000000; fill: #ff0000"/>
-    <rect x="0" y="120" height="90" width="90"
-        style="stroke:#000000; fill: #ff0000"/>
-    <rect x="120" y="120" height="90" width="135"
-        style="stroke:#000000; fill: #ff0000"/>
-    </svg>
-    ```
+```xml
+<svg  xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    width="127" height="105"  viewBox="0 0 255 210">
+<rect x="0" y="0" height="90" width="90"
+    style="stroke:#6dab6e; fill: #6d6fab"/>
+<rect x="120" y="0" height="90" width="135"
+    style="stroke:#000000; fill: #ff0000"/>
+<rect x="0" y="120" height="90" width="90"
+    style="stroke:#000000; fill: #ff0000"/>
+<rect x="120" y="120" height="90" width="135"
+    style="stroke:#000000; fill: #ff0000"/>
+</svg>
+```
 
 ### 2. Indsæt dit svg-tag i en html side
 
@@ -77,7 +77,7 @@ Det kræver at du regner lidt på koordinaterne. Så tag en lommeregner frem.
 <summary>
 Givet punktet (50, 600). Dvs, at x = 50 og y = 600. Hvilken retning afsættes punktet i på websiden? Peger x mod højre, venstre, op eller ned? Og hvad retning peger y?
 </summary>
-Højre er det rigtige svar, da x går mod højre for stigende x.
+X går mod højre for stigende x.
 Og y peger selvfølgelig nedad for stigende y.
 </details>
 
