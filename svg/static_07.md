@@ -132,4 +132,4 @@ Hvis du er kørt fast - så lur her
 
 Ding dong. Du er nu færdig med de statiske SVG tegninger. Tillykke! Nu skal lære at sætte SVG tegninger ind i en `Thymeleaf template` via en Javalin backend. Hop ud til [forsiden](./README.md) - og kom videre derfra. God fornøjelse.
 
-[Gå til forsiden](./README.md) | [Forrige øvelse (6/7)](./static_05.md)
+[Gå til forsiden](./README.md) | [Forrige øvelse (6/7)](./static_06.md)
