@@ -1,8 +1,6 @@
 # 6. Statiske SVG tegningner - tekst
 
-## Indsæt tekst
-
-## Tekst i SVG
+## Indsæt og placer tekst i SVG
 
 Lige som man kan lave grundelementer som linjer, rektangler mv, så kan man også skrive tekst på sine tegninger.
 
