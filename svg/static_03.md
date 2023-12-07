@@ -23,11 +23,9 @@ Hints:
 <summary>
 Hvordan ser de to `line`- elementer du har brugt til at tegne de stiplede linier?
 </summary>
-```xml
 <!-- Kryds -->
 <line x1="55" y1="35" x2="600" y2="569.5" style="stroke:#000000; stroke-dasharray: 5 5;" />
 <line x1="55" y1="569.5" x2="600" y2="35" style="stroke:#000000; stroke-dasharray: 5 5;" />
-```
 </details>
 
 [Gå til forsiden](./README.md) | [Forrige øvelse (2/6)](./static_02.md) | [Næste øvelse (4/6)](./static_04.md)
