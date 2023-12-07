@@ -1,4 +1,4 @@
-# 6. Statiske SVG tegningner - del-tegninger
+# 7. Statiske SVG tegningner - del-tegninger
 
 ## Indsæt en tegning i en tegning
 
