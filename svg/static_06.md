@@ -72,4 +72,4 @@ Hvis du er kørt fast - så lur her
 
 </details>
 
-[Gå til forsiden](./README.md) | [Forrige øvelse (6/7)](./static_05.md) | [Næste øvelse (7/7)](./static_07.md)
+[Gå til forsiden](./README.md) | [Forrige øvelse (5/7)](./static_05.md) | [Næste øvelse (7/7)](./static_07.md)
