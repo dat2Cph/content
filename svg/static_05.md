@@ -2,7 +2,7 @@
 
 At tegne pile er overraskende finurligt, da SVG er lavet sådan, at der kan bruges alle mulige former for pilehoveder (markers). Faktisk skal man selv tegne pilehovederne - de er små SVG tegninger i sig selv.
 
-<SVG width="25%" viewBox="0 0 150 40">
+<svg width="200" height="100" viewBox="0 0 150 40">
 <defs>
  <marker
   id="beginArrow"
@@ -27,7 +27,7 @@ At tegne pile er overraskende finurligt, da SVG er lavet sådan, at der kan brug
  style="stroke: #006600;
  marker-start: url(#beginArrow);
  marker-end: url(#endArrow);" />
-</SVG>
+</svg>
 
 ![SVG Pile](./images/doublearrows.png)
 
