@@ -47,7 +47,6 @@ Tegn nu den simple carport med måleangivelser fra figur 1.
 
 <details>
 <summary>
-
 Hvad er det nu `ViewBox` indeholder? Er det enheder fra den virkelige verden (World Coordinates), eller er det størrelsen på hele tegningen (Canvas) i pixels?
 </summary>
 
