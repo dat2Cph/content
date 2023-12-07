@@ -1,4 +1,4 @@
-# 2. Statiske SVG tegningner - Øvelse 1
+# 2. Statiske SVG tegningner
 
 ## Lav din første tegning
 
@@ -81,4 +81,4 @@ X går mod højre for stigende x.
 Og y peger selvfølgelig nedad for stigende y.
 </details>
 
-[Gå til forsiden](./README.md) | [Forrige øvelse (1/6)](./static_01.md) | [Næste øvelse (3/6)](./static_02.md)
+[Gå til forsiden](./README.md) | [Forrige øvelse (1/7)](./static_01.md) | [Næste øvelse (3/7)](./static_02.md)

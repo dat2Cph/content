@@ -1,4 +1,6 @@
-# 1. Statiske SVG tegningner - Introduktion
+# 1. Statiske SVG tegninger  
+
+## Introduktion og lidt teori
 
 HTML indholder nogle særlige tags der kan bruges til at lave tegninger. Et eksempel kunne være dette dannebrogsflag:
 
@@ -6,7 +8,7 @@ HTML indholder nogle særlige tags der kan bruges til at lave tegninger. Et ekse
 
 som er lavet med følgende stykke HTML:
 
-```SVG
+```xml
 <svg width="255" height=210>
    <rect x="0" y="0" height="90" width="90"
         style="stroke:#000000; fill: #ff0000"/>
@@ -58,7 +60,7 @@ Det kartesiske koordinatsystem vi normalt kender fra matematikundervisningen ven
 
 Et simpelt eksempel på at skifte koordinat system er, at vi ikke har brug for så stort et flag. I stedet for at lave alle koordinaterne om, så angiver vi i SVG elementet en `viewBox` som er det logiske koordinat system. Et flag i halv størrelse er kan laves med:
 
-```SVG
+```xml
 <svg width="127" height=105 viewBox="0 0 255 210">
    <rect x="0" y="0" height="90" width="90"
         style="stroke:#000000; fill: #ff0000"/>
@@ -66,7 +68,7 @@ Et simpelt eksempel på at skifte koordinat system er, at vi ikke har brug for s
 </svg>
 ```
 
-Her siger vi, at vi vil have en canvas der kun er 127 x 105, mens det koordinat system vi bruger til vores tegning stadig er fra (0,0) til (255,210).
+Her siger vi, at vi vil have en canvas der kun er `127 x 105`, mens det koordinat system vi bruger til vores tegning stadig er fra (0,0) til (255,210).
 
 I får nok ikke brug for ret meget mere i denne omgang, men I kan læse mere om ViewBox vs ViewPort på [Jakob Jenkov’s side om dette](http://tutorials.jenkov.com/svg/svg-viewport-view-box.html). Hvis I mod forventning har brug for at gå amok med koordinatsystemer, så [skal i have fat i transformationer](http://tutorials.jenkov.com/svg/svg-transformation.html).
 
@@ -74,7 +76,9 @@ I får nok ikke brug for ret meget mere i denne omgang, men I kan læse mere om 
 
 I det følgende skal du arbejde med en række øvelser, som gradvist introducerer begreberne ovenfor. Du ender med at have lavet en tegning af en carport set ovenfra.
 
-Der er også indsat lidt tjekspørgmål undervejs hist og her, hvor du kan tænke lidt over det du har lært. Som her:
+Der er også indsat lidt onus-spørgsmål undervejs hist og her, hvor du kan tænke lidt over det du har lært. Som her:
+
+### Bonus-spørgsmål
 
 <details>
 <summary>Givet punktet (50, 600). Hvad er x og hvad er y?</summary>
@@ -83,4 +87,4 @@ Svar: x = 50 og y = 600?
 
 God fornøjelse.
 
-[Gå til forsiden](./README.md) | [Næste øvelse (2/6)](./static_02.md)
+[Gå til forsiden](./README.md) | [Næste øvelse (2/7)](./static_02.md)

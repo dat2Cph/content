@@ -1,4 +1,6 @@
-# 5. Statiske SVG tegningner - Pile
+# 5. Statiske SVG tegningner
+
+## Pile
 
 At tegne pile er overraskende finurligt, da SVG er lavet sådan, at der kan bruges alle mulige former for pilehoveder (markers). Faktisk skal man selv tegne pilehovederne - de er små SVG tegninger i sig selv.
 
@@ -39,7 +41,7 @@ Bemærk at det falder i to dele - en `defs` del hvor det forklares hvordan to ma
 
 Sidste del først, så skriver man hvilke markers man vil bruge som start og slut på pilen. Her nævner man de to markers fra `defs` delen.
 
-Vi vil anbefale, at I bare kopierer de to defs til jeres projekt og bruger dem.
+Vi vil anbefale, at I bare kopierer de to `defs` til jeres projekt og bruger dem.
 
 Men her er forklaringen.
 
@@ -67,4 +69,40 @@ Lav et koordinatsystem som dette i SVG:
 
 ![SVG Koordinatsystem](./images/coordinatesystem_sketch.jpg)
 
-[Gå til forsiden](./README.md) | [Forrige øvelse (4/6)](./static_04.md) | [Næste øvelse (6/6)](./static_06.md)
+### Vejledende løsning
+
+<details>
+<summary>
+Hvis du er kørt fast - så lur her
+</summary>
+
+```xml
+<?xml version="1.0" ?>
+
+<svg version="1.1"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink"
+     height="100%" viewBox="0 0 855 690"
+     preserveAspectRatio="xMinYMin">
+
+    <defs>
+        <marker id="beginArrow" markerWidth="12" markerHeight="12" refX="0" refY="6" orient="auto">
+            <path d="M0,6 L12,0 L12,12 L0,6" style="fill: #000000;" />
+        </marker>
+        <marker id="endArrow" markerWidth="12" markerHeight="12" refX="12" refY="6" orient="auto">
+            <path d="M0,0 L12,6 L0,12 L0,0 " style="fill: #000000;" />
+        </marker>
+    </defs>
+
+    <!-- Pile -->
+    <line x1="50" y1="600" x2="50" y2="50" style="stroke:#000000;
+        marker-end: url(#endArrow);" />
+
+    <line x1="50" y1="600" x2="800" y2="600" style="stroke:#000000;
+        marker-end: url(#endArrow);" />
+</svg>
+```
+
+</details>
+
+[Gå til forsiden](./README.md) | [Forrige øvelse (4/7)](./static_04.md) | [Næste øvelse (6/7)](./static_06.md)

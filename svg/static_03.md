@@ -1,4 +1,4 @@
-# 3. Statiske SVG tegningner - carport
+# 3. Statiske SVG tegningner
 
 ## Tegning af en simpel carport
 
@@ -77,4 +77,4 @@ Du må gerne kigge her - men prøv først selv. Du kan altid tjekke din løsning
 
 </details>
 
-[Gå til forsiden](./README.md) | [Forrige øvelse (2/6)](./static_02.md) | [Næste øvelse (4/6)](./static_04.md)
+[Gå til forsiden](./README.md) | [Forrige øvelse (2/7)](./static_02.md) | [Næste øvelse (4/7)](./static_04.md)
