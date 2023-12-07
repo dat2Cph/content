@@ -58,8 +58,6 @@ Hvis du er kørt fast - så lur her
     </defs>
 
     <!-- Ramme -->
-
-
     <!-- Pile -->
     <line x1="50" y1="600" x2="50" y2="50" style="stroke:#000000;
         marker-end: url(#endArrow);" />
@@ -72,6 +70,6 @@ Hvis du er kørt fast - så lur her
 </svg>
 ```
 
-<details>
+</details>
 
 [Gå til forsiden](./README.md) | [Forrige øvelse (6/7)](./static_06.md)
