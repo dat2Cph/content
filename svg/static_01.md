@@ -74,6 +74,13 @@ I får nok ikke brug for ret meget mere i denne omgang, men I kan læse mere om 
 
 I det følgende skal du arbejde med en række øvelser, som gradvist introducerer begreberne ovenfor. Du ender med at have lavet en tegning af en carport set ovenfra.
 
+Der er også indsat lidt tjekspørgmål undervejs hist og her, hvor du kan tænke lidt over det du har lært.
+
 God fornøjelse.
+
+<details>
+<summary>Givet punktet (50, 600). Hvad er x og hvad er y?</summary>
+Svar: x = 50 og y = 600?
+<details>
 
 [Gå til forsiden](./README.md) | [Næste øvelse (2/6)](./static_02.md)
