@@ -47,7 +47,9 @@ Tegn nu den simple carport med måleangivelser fra figur 1.
 
 <details>
 <summary>
+
 Hvad er det nu `ViewBox` indeholder? Er det enheder fra den virkelige verden (World Coordinates), eller er det størrelsen på hele tegningen (Canvas) i pixels?
+
 </summary>
 
 Svar: Det er enheder fra den virkelige verden. Fx. i centimeter på vores carport. Vores ViewBox mål sørger SVG så for at skalere til `width` og `height`.
@@ -128,6 +130,6 @@ Hvis du er kørt fast - så lur her
 
 </details>
 
-Ding dong. Du er nu færdig med de statiske SVG tegninger. Tillykke med det. Nu skal du i gang med at lære hvordan du sætter SVG tegninger ind i en `Thymeleaf template` via en Javalin backend. Hop ud til [forsiden](./README.md) - og kom videre derfra. God fornøjelse.
+Ding dong. Du er nu færdig med de statiske SVG tegninger. Tillykke! Nu skal lære at sætte SVG tegninger ind i en `Thymeleaf template` via en Javalin backend. Hop ud til [forsiden](./README.md) - og kom videre derfra. God fornøjelse.
 
 [Gå til forsiden](./README.md) | [Forrige øvelse (6/7)](./static_05.md)
