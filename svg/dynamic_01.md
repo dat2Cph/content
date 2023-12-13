@@ -52,7 +52,7 @@ Først laver vi et par quick'n dirty eksperimenter:
 
 Her er blot en skitse, hvor der mangler en del klasser. F.eks. kunne man tilføje en `Calculator`-klasse, en `OrderMapper`-klasse osv. Det kommer lidt an på hvordan I har angrebet beregningerne. Hvis I har gemt styklisten i databasen, så er det nok lettest at fiske antal og mål ud til `SVG`-tegningen fra databasen. F.eks. i `CarportSvg` klassen eller i `OrderController`. Ellers skal man udregne dem undervejs.
 
-![Drawing a whole carport](https://www.plantuml.com/plantuml/svg/fL7BJiCm4BpxAtnCQIj1Zvpwu8A416hv0RTU4Wl7hjQRHq7zT-B4TK8Aue2brhkpCwFCUkb881MvPkvTcQD0aVE35iwjY53j2uB7WpKxzG7ybhK3lYjJ_ibuS-Pyrv1CkYwKbe3SbIbh1rDFIfGXNi-ulqwpGEMbWcfjwzXNIb8MkmnKcj64t_FIAXcyX9HRE90mgOQHgRJ5NaEGNTgHfwEJXclB9sM2srsm2tUz2FtYBuiLegt-wV4ADOr2-Gij2LBMH3arl6krNtFpQoG6i2b63BATEl5uLx8pO-4XDmAF5cdudhvsPVg0elBS3bI6kfNsVTXu2_H_qu5b4bMpWM3o-uTrvZxK6aJkaXWbublnHe0_JLwienu-Nm8-emJSM4DejGOCAQVSPRPgPzyqO_RDV3x8mrXVjoEFTMS9HXQv_W80)
+![Drawing a whole carport](https://www.plantuml.com/plantuml/svg/fLBBRkem4DtdAxmC5v1kMRBYqKsbIgsWFs3YQMBLiT5uyg28VwyTZ0EXLHUDb7WUvnpxUBAmn96gKYNsG-ezHrwoJ75hbqGeTnN1KsRqLdu2-vzq3RQjStPCc7kcREj0EbzLKWb0PkiywHfZ3qgb9jPEc5yEam1bjOHcPTgODr9G4RC2P5xGYCrPRQG8Mbo83MJ4TQvW82fCjLCGQ9Tqe6dfeE1UybdgeFOGvCBQpa8--qrYYMYQFsgyGKi3Ktv1GvoaqP5E3dVFzjViNaVHW2uO8CYSsQcldyFab2HXa6kEUuDqFKyVkoa-8cySDXIbflELzdcuyQxGVyPNacbaJQu8evyF5iITgHNmqgRHIgnl-3i1VjTvDPRwykbYy0K5uDfeGgCKO7IPzSRdySZntntIKXz2IooZTdGnUhH-Fjc9sS8q7U5c_-7E_wRJcutwk6lvsWAqg4hr1G00)
 
 Husk at ovenstående er een måde at gøre det på. Det kan sagtens lade sig gøre på mange andre.
 
