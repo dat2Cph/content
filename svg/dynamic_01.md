@@ -4,7 +4,7 @@
 
 Nu skal vi generere `SVG` fra Java. Hele ideen bygger på indsigten om at:
 
-> `SVG er en række af tegn - en tekst-streng, som opfylder`SVG` standarden.
+> `SVG` er en række af tegn - en tekst-streng, som opfylder `SVG` standarden.
 
 Derfor skal vi lave en hjælpe-klasse i Java, hvor man kan bygge tekst-strengene op lidt ad gangen, og hvor man kan kalde de grundliggende `SVG` primitiver:
 
