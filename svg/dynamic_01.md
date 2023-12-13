@@ -1,6 +1,6 @@
 # Dynamiske SVG tegninger
 
-## 1. Introduktion (specs)
+## 0. Introduktion (specs)
 
 Nu skal vi generere `SVG` fra Java. Hele ideen bygger på indsigten om at:
 
@@ -38,17 +38,17 @@ public class Svg {
 
 I det følgende angiver vi en løsning til hvordan man i grove træk kan implementere `Svg`-klassen og hvordan man kan bygge en hel carport. Så se de følgende video-tutorials og kod med undervejs.
 
-## 2. Programmering af Svg klassen
+## 1. Opsætning af demokoden i Javalin
 
-- Se denne [Videotutorial: Svg#1]()
+Hvis du får brug for at se den "færdige version", så ligger den her: [SVG repository](https://github.com/dat2Cph/svg)
 
-## 3. Anvendelse af Svg klassen
+- Se denne [første videotutorial: her varmer vi op](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=d8c8ad34-5701-43f9-b983-b0d7017443f3)
 
-Først laver vi et par quick'n dirty eksperimenter:
+## 2. Konstruktion af en Svg klasse
 
-- Se denne [Videotutorial: Svg#2]()
+- Se denne [anden videotutorial: sådan bygger vi en SVG motor](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=543ae502-67e4-4938-8e82-b0d7017442ae)
 
-## 4. Idé til hvordan man tegner en hel carport
+## 3. Idé til hvordan man tegner en hel carport
 
 Her er blot en skitse, hvor der mangler en del klasser. F.eks. kunne man tilføje en `Calculator`-klasse, en `OrderMapper`-klasse osv. Det kommer lidt an på hvordan I har angrebet beregningerne. Hvis I har gemt styklisten i databasen, så er det nok lettest at fiske antal og mål ud til `SVG`-tegningen fra databasen. F.eks. i `CarportSvg` klassen eller i `OrderController`. Ellers skal man udregne dem undervejs.
 
@@ -56,4 +56,8 @@ Her er blot en skitse, hvor der mangler en del klasser. F.eks. kunne man tilføj
 
 Husk at ovenstående er een måde at gøre det på. Det kan sagtens lade sig gøre på mange andre.
 
-- Se denne [Videotutorial: Svg#3]()
+Men med Svg hjælpe klassen ved hånden, så er resten til at overskue:
+
+- Se denne [sidste og tredie videotutorial: "Så skal der bygges carport"](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=d9323f55-3a20-4ee5-82b1-b0d7017443cf)
+
+![Resultatet](./images/svg_result.png)
