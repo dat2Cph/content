@@ -18,7 +18,7 @@ Man skal også kunne indsætte en `SVG`-tegning inden i en anden.
 
 Det giver tilsammen følgende klasse-diagram:
 
-![PlantUML Diagram](http://www.plantuml.com/plantuml/png/dP51QiOW48NtdcAM2KqNpGdIhBjgUW4R1pDW5NII64hlNcsjf85_ymloVCnx7w93OEbv_J1YDZ84c3ODdmBIUeI9FLazhcGKUWYR5Z-3Xnngo3B43h8SNOd2HhYFBbQ_a-AbkWL9BzmMY5Jg5MUMLXkyq9HRtmsMVBN_OO4FWoVM2zc2UIgSeh4llh_PVVRUxVUMtp3ovVvPl6F9v6pjSSgTQlaDqqvPYpuT_aRiVlDDAxx4W5Qbl_a6)
+![PlantUML Diagram](https://www.plantuml.com/plantuml/svg/dP51QiOW48NtdcAM2KqNpGdIhBjgUW4R1pDW5NII64hlNcsjf85_ymloVCnx7w93OEbv_J1YDZ84c3ODdmBIUeI9FLazhcGKUWYR5Z-3Xnngo3B43h8SNOd2HhYFBbQ_a-AbkWL9BzmMY5Jg5MUMLXkyq9HRtmsMVBN_OO4FWoVM2zc2UIgSeh4llh_PVVRUxVUMtp3ovVvPl6F9v6pjSSgTQlaDqqvPYpuT_aRiVlDDAxx4W5Qbl_a6)
 
 Here is a little snippet you can copy from:
 
