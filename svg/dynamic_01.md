@@ -42,11 +42,11 @@ I det følgende angiver vi en løsning til hvordan man i grove træk kan impleme
 
 Hvis du får brug for at se den "færdige version", så ligger den her: [SVG repository](https://github.com/dat2Cph/svg)
 
-- Se denne [første videotutorial: her varmer vi op](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=d8c8ad34-5701-43f9-b983-b0d7017443f3)
+- Se denne [første videotutorial: "her varmer vi op" (11:33)](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=d8c8ad34-5701-43f9-b983-b0d7017443f3)
 
 ## 2. Konstruktion af en Svg klasse
 
-- Se denne [anden videotutorial: sådan bygger vi en SVG motor](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=543ae502-67e4-4938-8e82-b0d7017442ae)
+- Se denne [anden videotutorial: "sådan bygger vi en SVG motor" (31:19)](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=543ae502-67e4-4938-8e82-b0d7017442ae)
 
 ## 3. Idé til hvordan man tegner en hel carport
 
@@ -58,6 +58,6 @@ Husk at ovenstående er een måde at gøre det på. Det kan sagtens lade sig gø
 
 Men med Svg hjælpe klassen ved hånden, så er resten til at overskue:
 
-- Se denne [sidste og tredie videotutorial: "Så skal der bygges carport"](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=d9323f55-3a20-4ee5-82b1-b0d7017443cf)
+- Se denne [sidste og tredie videotutorial: "Så skal der bygges carport" (27:18)](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=d9323f55-3a20-4ee5-82b1-b0d7017443cf)
 
 ![Resultatet](./images/svg_result.png)
