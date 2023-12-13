@@ -18,21 +18,7 @@ Man skal også kunne indsætte en `SVG`-tegning inden i en anden.
 
 Det giver tilsammen følgende klasse-diagram:
 
-```plantuml
-@startuml
-class Svg {
-    - StringBuilder svg
-
-    + Svg(int x, int y, String viewBox, String width, String height)
-    + addRectangle(int x, int y, double height, double width, String style)
-    + addLine(int x1, int y1, int x2, int y2, String style)
-    + addArrow(int x1, int y1, int x2, int y2, String style)
-    + addText(int x, int y, int rotation, String text)
-    + addSvg(Svg innerSvg)
-    + toString()
-}
-@enduml
-```
+![PlantUML Diagram](http://www.plantuml.com/plantuml/png/dP51QiOW48NtdcAM2KqNpGdIhBjgUW4R1pDW5NII64hlNcsjf85_ymloVCnx7w93OEbv_J1YDZ84c3ODdmBIUeI9FLazhcGKUWYR5Z-3Xnngo3B43h8SNOd2HhYFBbQ_a-AbkWL9BzmMY5Jg5MUMLXkyq9HRtmsMVBN_OO4FWoVM2zc2UIgSeh4llh_PVVRUxVUMtp3ovVvPl6F9v6pjSSgTQlaDqqvPYpuT_aRiVlDDAxx4W5Qbl_a6)
 
 I det følgende angiver vi en løsning til hvordan man i grove træk kan implementere `Svg`-klassen og hvordan man kan bygge en hel carport. Så se de følgende video-tutorials og kod med undervejs.
 
