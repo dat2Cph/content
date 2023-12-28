@@ -115,7 +115,7 @@ public class ConnectionPool {
                 ds = createHikariConnectionPool(
                         System.getenv("JDBC_USER"),
                         System.getenv("JDBC_PASSWORD"),
-                        System.getenv("JDBC_CONNECTION_STRING_STARTCODE"),
+                        System.getenv("JDBC_CONNECTION_STRING"),
                         System.getenv("JDBC_DB"));
             } else {
                 ds = createHikariConnectionPool(user, password, url, db);
@@ -320,7 +320,7 @@ This example assumed that a list of user objects are passed from Javalin:
 </table>
 ```
 
-That how the `th:each` attribute works. It's is important that you spell the attribute names correctly. `username`, 
+That how the `th:each` attribute works. It's is important that you spell the attribute names correctly. `username`,
 `password`, and `role` should be attributes in the Java User class.
 
 ### 5. How to use conditionals (if ...)
@@ -362,16 +362,18 @@ Use a hashmap to add objects you want to transfer to a Thymeleaf template. Eithe
 
 - Application scope:
 
-```Java 
+```Java
 app.attribute("counter", count);
 ```
 
 - Session Scope
+
 ```Java
 ctx.sessionAttribute("userList", userList);
 ```
 
 - Request Scope
+
 ```Java
 ctx.attribute("totalSum", 1025);
 ```
@@ -399,16 +401,18 @@ From HTML and Thymeleaf, the hashmaps are accessible in various ways.
 
 - Application scope:
 
-```html 
+```html
 
 ```
 
 - Session Scope
+
 ```html
 <p th:text="${session.email}"></p>
 ```
 
 - Request Scope
+
 ```html
 <p th:text="${name}"></p>
 ```
@@ -466,7 +470,7 @@ In the html page:
     </form>
 ```
 
-The two form parameters `username` and `password` are sent along the http POST request to Javalin and lands at the route "/login". 
+The two form parameters `username` and `password` are sent along the http POST request to Javalin and lands at the route "/login".
 Then the values can be retrieved like this:
 
 ```Java
