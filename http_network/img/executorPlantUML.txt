@@ -1,0 +1,23 @@
+@startuml
+hide footbox
+participant Main #LightGreen
+Main -> Executors: newSingleThreadExecutor
+Executors -> Main: workingJack
+
+create MyTask
+Main -> MyTask: new
+note left: The Task/Runnable is created
+MyTask -> Main: task
+
+Main -> workingJack: submit(task)
+note right: the task is handed to workingJack
+Main -> workingJack: shutDown()
+
+==== In the working thread ====
+participant WorkerThread #LightGreen
+WorkerThread -> workingJack: getTask()
+workingJack -> WorkerThread: myTask
+WorkerThread -> MyTask: run() 
+note left: The task is executed
+
+@enduml
