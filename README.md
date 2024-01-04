@@ -5,13 +5,13 @@ Her er links til diverse materialer på GitHub:
 1. [OOP, GIT og TDD](./oop_git_tdd/README.md)
 2. [HTTP protokollen og netværk](./http_network/README.md)
 3. [Tråde og performance](./threads/README.md)
-4. Databaser
+4. [Databaser](./databases/README.md)
 5. [Frontend](./webstack/frontend/README.md)
 6. [Backend](./webstack/backend/README.md)
 7. Lifehack
 8. Cupcake
 9. [Linux og deployment](./linux_and_deployment/README.md)
-10. 3D-print / SVG tegninger
+10. 3D-print / [SVG tegninger](./svg/README.md)
 11. Forretningsforståelse
 12. Semesterprojekt
 
