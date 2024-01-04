@@ -31,7 +31,8 @@ Her er den samlede [dokumentation for Postgres](https://www.postgresql.org/docs/
 
 Her er en fin oversigt over [syntaks og semantik for SQL forespørgler hos w3schools](https://www.w3schools.com/sql/default.asp).
 
-#### Forslag til løsning
+<!-->
+## Forslag til løsning
 
 ![Solution Suggestion](https://i.imgur.com/us8SosS.png)
 
@@ -44,3 +45,4 @@ Bemærk de følgende antagelser:
 - Hver kunde kan kun være tilknyttet en afdeling
 - Kunderne er tilknyttet en eller flere medarbejdere
 - Flere kunder kan godt bo på den samme adresse
+-->
