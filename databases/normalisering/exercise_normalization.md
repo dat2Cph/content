@@ -35,7 +35,7 @@ Her er en fin oversigt over [syntaks og semantik for SQL forespørgler hos w3sch
 
 ![Solution Suggestion](https://i.imgur.com/us8SosS.png)
 
-Note the following assumptions about the data:
+Bemærk de følgende antagelser:
 
 - En medarbejder er knyttet til netop en afdeling
 - En afdelingsleder er også en medarbejder
