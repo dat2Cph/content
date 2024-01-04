@@ -2,9 +2,9 @@
 
 ## Resourcer
 
-* [Note om tråde](./NoteOnThreads.md)
+* [Note om tråde](./note_threads.md)
 * [Link til github](https://github.com/bornholm2sem2019/Modul1Threads)
-* [Slides fra mandag](./Week2Threads.pptx)
+* [Slides fra mandag](./threads.pptx)
 
 ## Opgaver til mandag/tirsdag
 

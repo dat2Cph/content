@@ -2,9 +2,9 @@
 
 ## Ressourcer
 
-- [Note om netværk](./NoteNetværkHTTP.md)
+- [Note om netværk](./note_netvaerk_http.md)
 - [Link til kode](https://github.com/bornholm2sem2019/Modul1NetworkHTTP) (skal opdateres)
-- [Slides fra mandag](./Week1Network.pptx)
+- [Slides fra mandag](./network_http.pptx)
 
 ## Opgave 1. (grøn)
 

@@ -6,10 +6,10 @@
 
 ## Opgaver
 
-- [mandag/tirsdag](./Threads01.md)
-- [onsdag/torsdag](./Threads02.md)
+- [mandag/tirsdag](./exercise_threads_01.md)
+- [onsdag/torsdag](./exercise_threads_02.md)
 
 ## Læsestof
 
-- [Note om netværk](./NoteOnThreads.md)
-- [PowerPoint om netværk](./Week2Threads.pptx)
+- [Note om tråde](./note_threads.md)
+- [PowerPoint om tråde](./threads.pptx)
