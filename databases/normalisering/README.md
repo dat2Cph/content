@@ -27,7 +27,7 @@ Og du kan se denne video om normalisering (start ved 22:54, da du ikke behøver 
 ## Plan for dagen (sådan ca.)
 
 1. Fælles introduktion til emnet
-2. Installering af [Docker](https://docs.docker.com/get-docker/) og Postgres. Hvis du kigger på det hjemmefra så bemærk, at du skal installere Docker Desktop men IKKE Postgres lokalt på din computer.  Du får brug for [denne compose-fil](https://efif.sharepoint.com/:u:/s/cph/Lyngby/EU-hpbc81wtPl-VeedlS-TcB62kq19xLFXbOJ3xPtLhPng?e=KfapWI) til at oprette containere til Postgres på din Docker.
+2. Installering af [Docker](https://docs.docker.com/get-docker/) og Postgres. Hvis du kigger på det hjemmefra så bemærk, at du skal installere Docker Desktop men IKKE Postgres lokalt på din computer.  Du får brug for [denne compose-fil](https://github.com/dat2Cph/2semDockerSetupLocal/blob/main/docker-compose.yml) til at oprette containere til Postgres på din Docker.
 3. Gennemgang af ny case "fra data til normaliseret ER diagram"
 
 - Opgave med supporthjælp fra underviserne
