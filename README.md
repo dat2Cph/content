@@ -9,7 +9,7 @@ Her er links til diverse materialer på GitHub:
 5. [Frontend](./webstack/frontend/README.md)
 6. [Backend](./webstack/backend/README.md)
 7. [Lifehack](./lifehack/README.md)
-8. Cupcake
+8. [Cupcake](./cupcake/README.md)
 9. [Linux og deployment](./linux_and_deployment/README.md)
 10. 3D-print / [SVG tegninger](./svg/README.md)
 11. [Forretningsforståelse](./business/README.md)
