@@ -12,7 +12,7 @@ Det er almindeligt at der på forsiden er følgende informationer
 
 - **Deltagere — Vigtigt**
   - **Navn, cph-email og github-navn** på alle deltagere
-  - Klasse (A eller B)
+  - Klasse (A, B eller Bornholm)
 - Tidspunkt. _Hvornår blev projektet og rapporten lavet - husk årstal_
 
 ## Indholdsfortegnelse
