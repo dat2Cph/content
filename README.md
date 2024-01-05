@@ -8,11 +8,11 @@ Her er links til diverse materialer på GitHub:
 4. [Databaser](./databases/README.md)
 5. [Frontend](./webstack/frontend/README.md)
 6. [Backend](./webstack/backend/README.md)
-7. Lifehack
+7. [Lifehack](./lifehack/README.md)
 8. Cupcake
 9. [Linux og deployment](./linux_and_deployment/README.md)
 10. 3D-print / [SVG tegninger](./svg/README.md)
-11. Forretningsforståelse
+11. [Forretningsforståelse](./business/README.md)
 12. Semesterprojekt
 
 Selve afviklingen af 2. semester foregår via Moodle. Dvs, at man på Moodle kan se tid/sted for undervisningen og hvad der arbejdes med hvornår. Det meste af indholdet ligger her på GitHub. Det har vi valgt at gøre fordi mange af materialerne indholder kodestumper, som GitHub kan gengive med fremhævning af syntaks og mulighed for at kopiere indholdet. Det sparer os alle for meget tid og besvær.
