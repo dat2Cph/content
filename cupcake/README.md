@@ -39,8 +39,6 @@ Det første kundemøde mundede ud i en række såkaldte user-stories. De beskriv
 5. Det færdige produkt skal udvikles i Java 17, Javalin, Thymeleaf template engine, Postgres Database, HTML og CSS.
 6. Websitet skal helst kunne fungere tilfredsstillende både på en almindelig skærm og på en mobiltelefon (iPhone 12 og lignende). Hvis det volder problemer, så lav kun jeres løsning til en laptop.
 
-Here's the conversion to Markdown:
-
 ## Deliveries (det som skal leveres)
 
 1. Et ERD over databasen.
