@@ -61,8 +61,8 @@ Here's the conversion to Markdown:
 
 Her kan I finde rapportskabelonen. Medtag de artefakter I finder relevante (og realistiske at medtage):
 
-- [Rapportskabelon](https://cphbusiness.mrooms.net/mod/book/view.php?id=625178&chapterid=28479)
-- [Gruppekontrakt](https://github.com/dat2Cph/content/blob/main/teamwork/gruppekontrakt.docx)
+- [Rapportskabelon](./rapportskabelon.md)
+- [Gruppekontrakt](../teamwork/gruppekontrakt.docx)
 
 #### UI stuff
 
