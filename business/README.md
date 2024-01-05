@@ -10,8 +10,6 @@ Endelig skal vi så langt frem vi kan se, have styr på de krav som skal opfylde
 
 Se [læringsmål](./laeringsmaal.md) her.
 
-- LINK TIL : [MATERIALER](https://efif.sharepoint.com/:f:/s/cph/Lyngby/Eq2TpMhTYDtFl4H7amyPsWIBZDmH3xYy0vftdF5bqzlLzA?e=N80aJF)
-
 ## Mandag
 
 Forberedelse:
