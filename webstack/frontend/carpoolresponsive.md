@@ -6,11 +6,11 @@ Hvis du selv har lavet en swag Figma-prototype, så lav en responsiv-version af 
 
 Hvis du ikke har lavet Figma-opgaven, kan du evt. bruge denne version som inspiration: Figma artboard
 
-## Desktop-udgave:
+## Desktop-udgave
 
 ![desktop](./images/carpool_figma_desktop.png)
 
-## Mobil-udgave:
+## Mobil-udgave
 
 ![mobile](./images/carpool_figma_mobile.png)
 
