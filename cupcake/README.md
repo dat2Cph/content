@@ -54,7 +54,7 @@ Here's the conversion to Markdown:
 
 1. Opgaven skal laves i grupper med 2-4 personer i hver. Gruppetilmelding foretages på Moodle. Der gives 30 study points for fuld medvirken til opgaven. Dvs, at man har taget tilstrækkeligt ansvar for gruppens arbejde, leveret en løsning og deltaget ved prøveeksamen.
 2. Husk at skrive gruppenavn på opgaven.
-3. Deadline for indlevering af kode og rapport er **torsdag den 11. april kl. 12.00** i Moodle. Der afleveres et link til GitHub, hvor kode og rapport skal forefindes. Rapporten skal afleveres i pdf-format og ligges i en separat folder ved navn "rapport". Selve rapport-filen kaldes for "rapport.pdf".
+3. Deadline for indlevering af kode og rapport kan ses på Moodle. Der afleveres et link til GitHub, hvor kode og rapport skal forefindes. Rapporten skal afleveres i pdf-format og ligges i en separat folder ved navn "rapport". Selve rapport-filen kaldes for "rapport.pdf".
 4. Info om prøveeksamen følger.
 
 ### Ressourcer
@@ -90,3 +90,5 @@ Her kan I finde rapportskabelonen. Medtag de artefakter I finder relevante (og r
 | Strawberry  | 6.00  |
 | Rum/Raisin  | 7.00  |
 | Orange      | 8.00  |
+| Lemon       | 8.00  |
+| Blue cheese | 9.00  |
