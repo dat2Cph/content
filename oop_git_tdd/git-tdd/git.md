@@ -37,7 +37,7 @@ One of the most widely used version control systems is Git, which is known for i
 4. **Merge:** is the process of combining two branches. Merging is usually done to incorporate changes made in one branch into another branch. For example, a feature branch can be merged into the main branch once the feature is complete or when pulling changes from a remote repository and those changes needs to be incorporated into the local repository.
 5. **Working Directory:** is the directory on your computer where you are currently working. It contains the files and folders that you are modifying. When you clone a repository, the working directory is the repository's local copy on your computer.
 6. **Staging Area:** or **index** is a temporary storage area where files are stored before being committed to the repository. Files in the staging area are not tracked by Git yet. They are only added to the staging area when you run the git add command.
-7. **Remote:** is a repository that is stored on a server. Remote repositories can be accessed by multiple users, allowing them to collaborate. Changes made to a remote repository can be pulled and merged into a local repository, and vice versa.
+7. **Remote:** is a repository that is stored on a server (`git remote show origin` will show upstream url for the repo). Remote repositories can be accessed by multiple users, allowing them to collaborate. Changes made to a remote repository can be pulled and merged into a local repository, and vice versa.
 
 ### Most important skills:
 ![](images/gitstages.png)
@@ -81,12 +81,26 @@ One of the most widely used version control systems is Git, which is known for i
   - A pull request is a feature that allows developers to propose changes to a repository. Other developers can review the proposed changes, discuss potential modifications, and even push follow-up commits if necessary. Once the changes are approved, the pull request can be merged into the repository.
   - Pull requests can only be opened between two branches that are different (i.e., have at least one commit that is not in the other branch) or between a repository and a fork.
   - Folow these [6 steps](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request#creating-the-pull-request) to create a pull request.
-15. Rebasing vs. merging
-16. Undoing changes with reset, revert and checkout
+15. Undoing changes with reset, revert and checkout
   - change a wrong commit message: `git commit --amend -m "New commit message"` will change the last commit message.
   - 
+16. Rebasing vs. merging vs. cherry-picking
+  - less important skill
+  - Rebasing is the process of moving or combining a sequence of commits to a new base commit. Rebasing is most useful and easily visualized in the context of a feature branching workflow. The general process can be visualized as "moving the base of a branch onto a different point".
+    - `git rebase <branchname>`: rebases the current branch onto another branch
+    - `git rebase -i <branchname>`: rebases the current branch onto another branch and allows you to interactively reword, edit, delete, and squash commits
+  - Cherry-picking is the process of applying a commit from one branch to another. It is useful for picking a single commit from a branch and applying it to another branch.
+    - `git cherry-pick <commit hash>`: applies the changes made in the specified commit to the current branch
 17. Stashing changes
-18. Viewing and comparing changes
+  - purpose: temporarily store changes that you don't want to commit immediately
+  - `git stash`: temporarily stores all modified tracked files
+  - `git stash pop`: applies the most recently stashed changes to the working directory
+  - `git stash list`: lists all stashed changesets
+18. Viewing and comparing changes with `git diff`
+  - `git diff`: shows the changes made to the files since the last commit
+  - `git diff <filename>`: shows the changes made to a specific file since the last commit
+  - `git diff <commit hash> <filename>`: shows the changes made to a specific file since a previous commit
+  - `git diff <branchname>`: shows the changes made to the files in the current branch since the specified branch 
 
 ### Dos and Don'ts
 1. **Commit often, push often**
@@ -109,49 +123,22 @@ One of the most widely used version control systems is Git, which is known for i
 Configuring Git involves setting up various parameters to personalize your Git environment. Here are the essential configuration steps:
 
 ### 1. **Setting Your Name and Email:**
-   - Open a terminal or command prompt.
-   - Set your Git username:
-     ```
-     git config --global user.name "Your Name"
-     ```
-   - Set your Git email:
-     ```
-     git config --global user.email "your.email@example.com"
-     ```
+  - Open a terminal or command prompt.
+  - Set your Git username: ` git config --global user.name "Your Name" `
+  - Set your Git email: ` git config --global user.email "your.email@example.com" `
 ### 2. **Configuring Text Editor:**
-   - Choose a text editor for Git. If you haven't set up a default text editor, Git might use the system default. To set a specific text editor (e.g., VSCode), use:
-     ```
-     git config --global core.editor "code --wait"
-     ```
+  - Choose a text editor for Git. If you haven't set up a default text editor, Git might use the system default. To set a specific text editor (e.g., VSCode), use: ` git config --global core.editor "code --wait" `
 ### 3. **Checking Configuration:**
-   - To check your current Git configuration, you can use:
-     ```
-     git config --list
-     ```
+  - To check your current Git configuration, you can use: ` git config --list `
 ### 4. **Setting Line Endings:**
-   - Configure line endings to prevent cross-platform issues. For Windows, you might want to set:
-     ```
-     git config --global core.autocrlf true
-     ```
-     For Unix-like systems:
-     ```
-     git config --global core.autocrlf input
-     ```
+   - Configure line endings to prevent cross-platform issues. For Windows, you might want to set: ` git config --global core.autocrlf true `
+     For Unix-like systems: ` git config --global core.autocrlf input `
 ### 5. **Setting Default Branch Name:**
-   - If you want to change the default branch name from "master" to something else (e.g., "main"):
-     ```
-     git config --global init.defaultBranch main
-     ```
+   - If you want to change the default branch name from "master" to something else (e.g., "main"): ` git config --global init.defaultBranch main `
 ### 6. **Credential Caching:**
-   - Configure Git to remember your credentials for a certain period:
-     ```
-     git config --global credential.helper cache
-     ```
+   - Configure Git to remember your credentials for a certain period: ` git config --global credential.helper cache `
 ### 7. **Customizing Output Format:**
-   - Customize the output format of Git commands for better readability:
-     ```
-     git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
-     ```
+   - Customize the output format of Git commands for better readability: ` git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative" `
 ### 8. **Setting Up SSH Keys:**
    - If you plan to use SSH for authentication with remote repositories, generate and add your SSH key to your SSH agent:
      ```bash
@@ -159,84 +146,3 @@ Configuring Git involves setting up various parameters to personalize your Git e
      eval "$(ssh-agent -s)"
      ssh-add ~/.ssh/id_rsa
      ```
-### 9. **Proxy Configuration (if needed):**
-   - If you're behind a proxy, configure Git to use it:
-     ```
-     git config --global http.proxy http://proxy.example.com:8080
-     ```
-### 10. **Check Configuration Again:**
-   - After making changes, verify your configuration:
-     ```
-     git config --list
-     ```
-
-### Git commands overview:
-- `git init`: initializes a new Git repository (by creating the .git folder) in the current directory. This command is used to start tracking changes in an existing project or to initialize a new, empty repository.  
-- `git add <filename>`: adds a file to the staging area (i.e., prepares it to be committed),
-- `git add .`: adds all files in the current directory to the staging area, 
-- `git commit -m "commit message"`: commits the staged changes to the local repository, 
-- `git status`: shows the current status of the repository, 
-- `git log`: shows the commit history, 
-- `git diff`: shows the changes made to the files since the last commit, 
-- `git checkout <branchname>`: checks out a branch, 
-- `git checkout <branch or commit hash> <filename> `: checks out a file from a previous commit or a branch, 
-- `git checkout -b <branchname>`: creates a new branch and checks it out, 
-- `git reset`: , 
-- `git rm`, 
-- `git mv`, 
-- `git branch`, 
-- `git merge`, 
-- `git rebase`, 
-- `git pull`, 
-- `git push`, 
-- `git remote`, 
-- `git clone`, 
-- `git fetch`, 
-- `git tag`, 
-- `git stash`, 
-- `git config`, 
-- `git help`.
-
-**Working with Branches**
-- Understanding branches in Git
-- Creating and switching branches
-- Merging branches
-- Resolving merge conflicts
-- Branching strategies (feature branches, release branches, etc.)
-- Using remote branches
-
-**Collaborating with Remote Repositories**
-- Understanding remotes
-- Cloning repositories
-- Pushing and pulling changes
-- Fetching and tracking branches
-- Forking and pull requests
-- Collaborative workflows
-
-**Advanced Git Concepts**
-- Rebasing vs. merging
-- Interactive rebasing
-- Cherry-picking
-
-**Git Best Practices and Tips**
-- Commit message conventions
-- Gitignore files
-- Undoing changes with reset and revert
-- Stashing changes
-- Viewing and comparing changes
-- Aliases and custom configurations
-
-**Git Workflow Strategies**
-- Understanding Gitflow
-- GitHub flow
-- GitLab flow
-- Release management
-- Continuous Integration and Deployment (CI/CD) with Git
-
-**Git in Real-world Scenarios**
-- Handling large repositories
-- Dealing with binary files
-- Git in a team environment
-- Git in open source projects
-- Troubleshooting common issues
-- Security best practices
