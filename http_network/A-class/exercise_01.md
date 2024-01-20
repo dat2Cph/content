@@ -23,32 +23,12 @@
 
 - Start the RequestDataServer and access it from a browser. What is the result? What makes the difference between this server and the EchoServer?
 - Find a person in the group who can make a wifi-hot-spot with his/her phone, and connect your laptop to this phone.
-- Find the IP address of your laptop (if you don't know how to find the IP address of your laptop, then that is the google exercise). It is important that everyone in the group can find their IP address, regardless of whether it is Windows, Mac, Linux or something else.
+- Find the IP address of your laptop (if you don't know how to find the IP address of your laptop, then that is a google exercise). It is important that everyone in the group can find their IP address, regardless of whether it is Windows, Mac, Linux (or something else).
 - Demonstrate that you can connect to RequestDataServer via your phone.
 
-## Opgave 4. (grøn)
+## Exercise 5.
 
-Find en person i gruppen der kan lave et wifi-hot-spot med sin telefon, og kopl jeres laptop på denne telefon.
-
-- Find IP addressen på laptoppen (hvis I ikke ved hvordan man finder IP addressen på jeres laptop, så er det altså det der er google opgaven). Det er vigtigt at alle i gruppen kan finde deres IP addresse, uanset om det er Windows, Mac, Linux eller noget andet.
-- (Grøn) Demonstrer at I kan kople på picoserver2 via jeres telefon.
-- (Gul) Kopl alle gruppens laptops på samme telefon, og demonstrer hvordan I fra jeres browser kan kople jer på forskellige servere på andres laptops.
-- (Rød) Behøver alle serverne at bruge samme port nummer? Demonstrer hvordan man fra en laptop kan have mere end en server kørende, og tilgå dem fra en anden laptop.
-
-## Opgave 5. (grøn)
-
-Er det java eller operativ systemet der har ansvaret for porte, altså er det java eller operativ systemet der brokker sig hvis man prøver at åbne den samme port to gange? Og hvorfor er det et problem med to porte med samme nummer?
-
-## Opgave 6. (rød)
-
-Som en del af den udleverede kode er der en klasse der hedder HttpRequest. Redegør for denne klasse, specielt skal I kunne forklare:
-
-- Hvad er forskellen på parametre og headers?
-- Hvad gør de første 7 linjer i konstruktøren?
-- I konstruktøren er der en linje der hedder:
-
-`if ("application/x-www-form-urlencoded".equals(getContentType())) {`
-
-Forklar hvorfor denne er smartere end:
-
-`if ( getContentType().equals("application/x-www-form-urlencoded" ) ){`
+- When looking at the testRequestDataServerAndClient test in the Demo03RequestDataServerTest class, we can see an example of how to send a POST request to the server. When sending a POST request
+- explain what the difference is between the request and the response?
+- explain what is parameters and what is headers?
+- explain what is the request body?
