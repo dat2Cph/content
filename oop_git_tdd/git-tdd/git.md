@@ -85,7 +85,6 @@ One of the most widely used version control systems is Git, which is known for i
   - change a wrong commit message: `git commit --amend -m "New commit message"` will change the last commit message.
   - 
 16. Rebasing vs. merging vs. cherry-picking
-  - less important skill
   - Rebasing is the process of moving or combining a sequence of commits to a new base commit. Rebasing is most useful and easily visualized in the context of a feature branching workflow. The general process can be visualized as "moving the base of a branch onto a different point".
     - `git rebase <branchname>`: rebases the current branch onto another branch
     - `git rebase -i <branchname>`: rebases the current branch onto another branch and allows you to interactively reword, edit, delete, and squash commits
@@ -101,6 +100,8 @@ One of the most widely used version control systems is Git, which is known for i
   - `git diff <filename>`: shows the changes made to a specific file since the last commit
   - `git diff <commit hash> <filename>`: shows the changes made to a specific file since a previous commit
   - `git diff <branchname>`: shows the changes made to the files in the current branch since the specified branch 
+19. Making a branch from a previous commit (useful when you want access to a previous version of the code)
+  - `git branch <branchname> <commit hash>`: creates a new branch from a previous commit
 
 ### Dos and Don'ts
 1. **Commit often, push often**
