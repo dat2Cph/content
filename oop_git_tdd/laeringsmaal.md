@@ -26,7 +26,7 @@ Efter denne uge er det meningen at du kan:
 - Kunne designe java programmer der overholder SOLID principperne
 
 ## GIT
--  Kunne benytte git bash kommandoer til at løse følgende opgaver:
+-  Kunne benytte git bash kommandoer og/eller github desktop til at løse følgende opgaver:
   - Oprette et nyt git repository (lokalt og på github)
   - Clone et git repository fra github
   - Tilføje filer til et git repository
