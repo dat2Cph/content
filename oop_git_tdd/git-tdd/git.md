@@ -56,7 +56,7 @@ One of the most widely used version control systems is Git, which is known for i
   - [gitignore.io](gitignore.io) is a useful tool for generating `.gitignore` files for different types of projects.
   - If you want to ignore a file that is already tracked by Git, you need to untrack it first: `git rm --cached <filename>` or you can move the file or folder outside the working tree, add and commit and then move it back in.
 6. Viewing the **commit history**
-  - `git log`: shows the commit history or `git` or `$ git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit`: shows a compact commit history. (This command is too long to remember, so it's a good idea to create an alias for it: `git config --global alias.logline "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"` and then calling it with `git logline` afterwards.)
+  - `git log`: shows the commit history or `git` or `$ git log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit`: shows a compact commit history. (This command is too long to remember, so it's a good idea to create an alias for it: `git config --global alias.logline "log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"` and then calling it with `git logline` afterwards.)
 7. Viewing and comparing changes with `git diff`
   - `git diff`: shows the changes made to the files since the last commit
   - `git diff <filename>`: shows the changes made to a specific file since the last commit
