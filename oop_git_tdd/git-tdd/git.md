@@ -138,6 +138,7 @@ Configuring Git involves setting up various parameters to personalize your Git e
 ### 5. **Setting Default Branch Name:**
    - If you want to change the default branch name from "master" to something else (e.g., "main"): ` git config --global init.defaultBranch main `
 ### 6. **Credential Caching:**
+   - Follow this [guide](https://statistics.berkeley.edu/computing/faqs/git-auth) (just the https part)
    - Configure Git to remember your credentials for a certain period: ` git config --global credential.helper cache `
 ### 7. **Customizing Output Format:**
    - Customize the output format of Git commands for better readability: ` git config --global alias.lg "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative" `
