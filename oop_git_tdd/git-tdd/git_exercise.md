@@ -12,7 +12,7 @@
   2. Commit often (when breaking the code down to small steps, you should commit after each step and push to GitHub to minimize the risk of merge conflicts)
   3. `git status` to check the status of your repository before adding and committing changes (This is a good habit to get into make commits as small as possible and precise as possible - If your commit message does not cover what has been changed in the code, you should consider rewriting the commit message or removing some files from the staging area before commiting).
 
-## Exercise 1.
+## Exercise 1 Merge conflicts
 - Each group member creates a new branch called `feature<Your Name>`.
 - Make a commit in the new branch with a class: main/java/Main.java containing code that solves the following problem:
   - Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.
@@ -32,8 +32,8 @@
 - Pull the latest changes from GitHub.
 - Add a new method to the Main class called `public static void printNumbers(int start, int end)`. The method should print the numbers from start to end.
 - Use `git stash` to stash your changes.
-- Checkout a new branch called `featurePrintNumbers` and add the stash to this branch.
+- Create and checkout a new branch called `featurePrintNumbers` and add the stash to this branch.
 - Commit the changes to the new branch and merge it into master.
 - Revert back to previous commit (the one that changed the main method to print BuzzFizz instead of FizzBuzz).
 - Make a comment in the code that says: "This is a comment that should be removed before committing". Add the file to the staging area. 
-- Revert the staging area to the previous commit.
+- Revert the staging area to the previous commit, but keep changes in working tree.

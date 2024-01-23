@@ -57,10 +57,11 @@ One of the most widely used version control systems is Git, which is known for i
   - If you want to ignore a file that is already tracked by Git, you need to untrack it first: `git rm --cached <filename>` or you can move the file or folder outside the working tree, add and commit and then move it back in.
 6. Viewing the **commit history**
   - `git log`: shows the commit history or `git` or `$ git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit`: shows a compact commit history. (This command is too long to remember, so it's a good idea to create an alias for it: `git config --global alias.logline "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"` and then calling it with `git logline` afterwards.)
-7. Checking the **differences between files***
+7. Viewing and comparing changes with `git diff`
   - `git diff`: shows the changes made to the files since the last commit
   - `git diff <filename>`: shows the changes made to a specific file since the last commit
-  - `git diff <commit hash> <filename>`: shows the changes made to a specific file since a previous commit
+  - `git diff <commit hash> <filename>`: shows the changes made to a specific file since a specified previous commit
+  - `git diff <branchname>`: shows the changes made to the files in the current branch since the specified branch 
 8. Checking out previous versions of files
   - `git checkout <branch or commit hash> <filename>`: checks out a file from a previous commit or a branch
 9. Creating and switching branches
@@ -82,26 +83,30 @@ One of the most widely used version control systems is Git, which is known for i
   - A pull request is a feature that allows developers to propose changes to a repository. Other developers can review the proposed changes, discuss potential modifications, and even push follow-up commits if necessary. Once the changes are approved, the pull request can be merged into the repository.
   - Pull requests can only be opened between two branches that are different (i.e., have at least one commit that is not in the other branch) or between a repository and a fork.
   - Folow these [6 steps](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request#creating-the-pull-request) to create a pull request.
-15. Undoing changes with reset, revert and checkout
-  - change a wrong commit message: `git commit --amend -m "New commit message"` will change the last commit message.
-  - 
-16. Rebasing vs. merging vs. cherry-picking
+15. Undoing changes with reset, revert and restore
+  - **Make a copy of entire repo before doing these operations**. Especially untill you know what you are doing!
+  - `reset`: **Changes git history**. Use with caution! and never when changes are pushed to github, `revert`: Does not change git history. It is about making a new commit, that makes changes to old commits. Use this if you have already pushed your changes to a remote repository!, `restore`: . restore a file from a previous commit!
+  - **change a wrong commit message**: `git commit --amend -m "New commit message"` will change the last commit message.
+  - **revert commits** but **keep staged changes**: `git reset --soft HEAD~3`: reverts the last 3 commits and puts the changes in the staging area.
+  - remove commits and delete changes (**Dangerous**) `git reset --hard HEAD~3` removes the last 3 commits and discards the changes. 
+  - remove commits and unstage changes `git reset --mixed HEAD~3`: reverts the last 3 commits and discards the changes from staged area but **keeps** the changes in the working directory.
+  - revert a commit: `git revert <commit hash>`: creates a new commit that undoes the changes made in the specified commit
+  - remove changes to working tree since last commit: `git stash`: temporarily stores all modified tracked files and leave working tree clean (as it were when you last committed)
+  - restore a file from a previous commit: `git restore <filename>`: restores the specified file from the last commit
+16. **Rebasing** vs. **merging** vs. **cherry-picking**
   - Rebasing is the process of moving or combining a sequence of commits to a new base commit. Rebasing is most useful and easily visualized in the context of a feature branching workflow. The general process can be visualized as "moving the base of a branch onto a different point".
     - `git rebase <branchname>`: rebases the current branch onto another branch
     - `git rebase -i <branchname>`: rebases the current branch onto another branch and allows you to interactively reword, edit, delete, and squash commits
   - Cherry-picking is the process of applying a commit from one branch to another. It is useful for picking a single commit from a branch and applying it to another branch.
     - `git cherry-pick <commit hash>`: applies the changes made in the specified commit to the current branch
+  - Merging is the process of combining two branches. Merging is usually done to incorporate changes made in one branch into another branch. For example, a feature branch can be merged into the main branch once the feature is complete.
+    - `git merge <branchname>`: merges a branch into the current branch
 17. Stashing changes
   - purpose: temporarily store changes that you don't want to commit immediately
   - `git stash`: temporarily stores all modified tracked files
   - `git stash pop`: applies the most recently stashed changes to the working directory
   - `git stash list`: lists all stashed changesets
-18. Viewing and comparing changes with `git diff`
-  - `git diff`: shows the changes made to the files since the last commit
-  - `git diff <filename>`: shows the changes made to a specific file since the last commit
-  - `git diff <commit hash> <filename>`: shows the changes made to a specific file since a previous commit
-  - `git diff <branchname>`: shows the changes made to the files in the current branch since the specified branch 
-19. Making a branch from a previous commit (useful when you want access to a previous version of the code)
+18. Making a branch from a previous commit (useful when you want access to a previous version of the code)
   - `git branch <branchname> <commit hash>`: creates a new branch from a previous commit
 
 ### Dos and Don'ts
@@ -116,9 +121,9 @@ One of the most widely used version control systems is Git, which is known for i
 3. **Use branches**
     - Use branches to work on features or bug fixes independently. This will allow you to work on multiple features simultaneously without affecting the main codebase.
 4. **Pull before you push**
-    - Always pull the latest changes from the remote repository before working on shared files and pushing your commits. This will help you avoid merge conflicts.
+    - Always pull the latest changes from the remote repository before working on shared files and pushing your commits. This will help you avoid (most) merge conflicts.
 5. **Review your changes**
-    - Review your changes before committing them (`git status`). This will help you catch mistakes, write all inclusive commit messages and avoid committing unnecessary changes.
+    - Review your changes before committing them (`git status`). This will help you catch mistakes, write all-inclusive commit messages and avoid committing unnecessary changes.
 
 ### Installing Git
 ### Configuring Git
