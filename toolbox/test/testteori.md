@@ -7,7 +7,7 @@ I et projekt er det vigtigt at sikre sig, at vi:
 1. Bygger det rigtige. Dvs, at systemet hjælper med at løse kundens problemer.
 2. Bygger det rigtigt. Dvs, at systemet er bygget ordentligt.
 
-Begge dele siger noget om kvaliteten af vores løsning, og der findes mange praksisser, der kan hjælpe os på vej i form af tests. I det følgende skal vi ses på lidt teori om emnet _Test og kvalitet_ og samtidig arbejde med nogle konkrete anvisninger på hvordan vi kan sikre en vis kvalitet i semesterprojektet.
+Begge dele siger noget om kvaliteten af vores løsning, og der findes mange praksisser, der kan hjælpe os på vej i form af tests. I det følgende skal vi ses på lidt teori om emnet _Test og kvalitet_ og samtidig arbejde med nogle konkrete anvisninger på hvordan vi kan sikre en vis kvalitet i større projekter. F.eks. i jeres semesterprojekt.
 
 Tests laves løbende gennem et projekt på flere niveauer:
 
@@ -93,6 +93,8 @@ Resultat kan ses i plugin fanebladet “Coverage” længst til højre i Intelli
 
 #### Agile testkvadranter
 
+Dette afsnit er til orientering - og noget vi kan inddrage senere på 2. semester.
+
 I agile projekter benytter man gerne de agile testkvadranter til at gruppere de forskellige typer og niveauer af tests. Der er ingen bestemt rækkefølge mellem kvadranterne, men man begynder typisk i Q2.
 
 * Q1 og Q4 relaterer til intern kvalitet - _bygger vi systemet rigtigt_
@@ -104,7 +106,6 @@ Se f.eks. denne side på [Tutorialspoint](https://www.tutorialspoint.com/agile_
 
 ### Ressourcer
 
-* [Note om integrationstest med database](https://datsoftlyngby.github.io/dat2sem2020SpringBornholm/Modul5/Week3-Test/IntegrationstestDatabase.html). Den tager udgangspunkt til Kaspers Command Pattern Skabelon.
 * Her er en god artikel om at skrive test-bar kode af [Sergey Kolodyi](https://www.toptal.com/qa/how-to-write-testable-code-and-why-it-matters)
 * Læs hvad David Bernstein skriver om kodekvalitet [Let Code Quality Guide You](https://datsoftlyngby.github.io/dat2sem2020SpringBornholm/Modul5/Week3-Test/cleancode.html)
 * Lisa Crispin om de fire [agile testkvadranter](https://lisacrispin.com/2011/11/08/using-the-agile-testing-quadrants/) og en imponerende [præsentation](https://lisacrispin.com/downloads/CoverBasesWithQuadrants.pdf) med mange gode detaljer
