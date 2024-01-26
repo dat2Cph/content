@@ -40,7 +40,7 @@
 
 | Emne | Kommentar | Semester |
 |------|-----------|----------|
-||||
+|[Git install guide](git_install.md)|How to setup git|2-5|
 
 ### UML og modellering
 
