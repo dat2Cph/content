@@ -17,13 +17,10 @@ Efter denne uge er det meningen at du kan:
   - Statisk import
   - Statisk import
   - Pakke
-- Kende principperne bag SOLID:
-  - Single Responsibility Principle
-  - Open/Closed Principle
-  - Liskov Substitution Principle
-  - Interface Segregation Principle
-  - Dependency Inversion Principle
-- Kunne designe java programmer der overholder SOLID principperne
+  - Polymorfi
+  - Nedarving
+  - Interfaces
+  - Exceptions
 
 ## GIT
 -  Kunne benytte git bash kommandoer og/eller github desktop til at løse følgende opgaver:
