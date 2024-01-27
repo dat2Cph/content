@@ -93,6 +93,7 @@ One of the most widely used version control systems is Git, which is known for i
   - revert a commit: `git revert <commit hash>`: creates a new commit that undoes the changes made in the specified commit
   - remove changes to working tree since last commit: `git stash`: temporarily stores all modified tracked files and leave working tree clean (as it were when you last committed)
   - restore a file from a previous commit: `git restore --source <commit hash> <filename>`: restores the specified file from the specified commit
+  - remove files from staging area: `git restore --staged .` or `git reset HEAD -- .` where dot is the current directory, but we can specify any path.
 16. **Rebasing** vs. **merging** vs. **cherry-picking**
   - Rebasing is the process of moving or combining a sequence of commits to a new base commit. Rebasing is most useful and easily visualized in the context of a feature branching workflow. The general process can be visualized as "moving the base of a branch onto a different point".
     - `git rebase <branchname>`: rebases the current branch onto another branch

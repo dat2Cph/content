@@ -1,4 +1,4 @@
-# Install and cnofigure git
+# Install and configure git
 - [Install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - [Configure git](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
 - [Git cheat sheet](https://education.github.com/git-cheat-sheet-education.pdf)
