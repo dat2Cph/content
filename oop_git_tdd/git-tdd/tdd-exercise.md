@@ -39,13 +39,13 @@ and these 2 dependencies:
 <dependency>
     <groupId>org.junit.jupiter</groupId>
     <artifactId>junit-jupiter-api</artifactId>
-    <version>${junit.version}</version>
+    <version>5.10.0</version>
     <scope>test</scope>
 </dependency>
 <dependency>
     <groupId>org.junit.jupiter</groupId>
     <artifactId>junit-jupiter-engine</artifactId>
-    <version>${junit.version}</version>
+    <version>5.10.0</version>
     <scope>test</scope>
 </dependency>
 ```
