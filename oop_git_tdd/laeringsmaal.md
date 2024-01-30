@@ -15,7 +15,6 @@ Efter denne uge er det meningen at du kan:
   - Statisk metode
   - Instans metode
   - Statisk import
-  - Statisk import
   - Pakke
   - Polymorfi
   - Nedarving
