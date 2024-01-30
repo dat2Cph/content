@@ -1,5 +1,9 @@
 # Udvalgte resourcer om netværk og http
 
+## Generelt
+
+- [Introduktion til netværk & http](https://github.com/dat2Cph/content/blob/main/http_network/note_netvaerk_http.md)
+
 ## HTTP
 
 - [An overview of HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
