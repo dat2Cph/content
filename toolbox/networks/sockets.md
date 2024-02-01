@@ -1,5 +1,15 @@
 # What is a socket in Java?
 
+## The brief explanation
+
+In the context of network communications, a socket exists on both the client and the server side. A socket is an endpoint for sending or receiving data across a computer network. Here's a bit more detail:
+
+1. **Server Side:** On the server side, a socket is created and listens on a specific port for incoming connections. The server socket waits for requests to come in over the network. Upon receiving a request, the server socket may accept the connection, establishing a new socket for the server to communicate with the specific client.
+
+2. **Client Side:** On the client side, a socket is used to initiate a connection to the server socket. The client specifies the address of the server (IP address) and the port number on which the server is listening. Once the connection is established, the client socket can send data to and receive data from the server socket.
+
+Once a connection is established, both the client and the server have a socket that they can use to send and receive data. The communication can be bi-directional, meaning data can flow in both directions - from client to server and from server to client. This is how data is exchanged over a network, using protocols like TCP (Transmission Control Protocol) or UDP (User Datagram Protocol), depending on the type of socket and the requirements of the application.
+
 In Java, `ServerSocket` and `Socket` are classes used for network communication, but they serve different purposes and operate in distinct roles within a client-server paradigm.
 
 1. **ServerSocket (java.net.ServerSocket):**
