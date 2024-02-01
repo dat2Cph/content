@@ -127,6 +127,7 @@ One of the most widely used version control systems is Git, which is known for i
     - Review your changes before committing them (`git status`). This will help you catch mistakes, write all-inclusive commit messages and avoid committing unnecessary changes.
 
 ### Installing Git
+
 ### Configuring Git
 Configuring Git involves setting up various parameters to personalize your Git environment. Here are the essential configuration steps:
 
@@ -136,6 +137,7 @@ Configuring Git involves setting up various parameters to personalize your Git e
   - Set your Git email: ` git config --global user.email "your.email@example.com" `
 ### 2. **Configuring Text Editor:**
   - Choose a text editor for Git. If you haven't set up a default text editor, Git might use the system default. To set a specific text editor (e.g., VSCode), use: ` git config --global core.editor "code --wait" `
+  - Check your current text editor: `git config -e` or `git config --global -e` will open the global config file in your default text editor.
 ### 3. **Checking Configuration:**
   - To check your current Git configuration, you can use: ` git config --list `
 ### 4. **Setting Line Endings:**
