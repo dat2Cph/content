@@ -73,14 +73,10 @@ In this way all responses that the server needs to make will be put out in anoth
 ### Exercise 2.
 Now look at the `RequestFileServer` from last weeks demo code. Make changes to the code so that there
 - will be a task and executor that returns files - a bit like the previous exercise.
-- There must be a task that handles `addournumbers` (handle the entire else part - including the switch.).
-- Note: You will have to move the closing of sockets into the two tasks, as they are the ones who know when they have responded to the request.
 
 ### Exercise 3.
-- When you are done with exercise 2, the main thread will still have the task of creating an HttpRequest object. Repeat the process of creating methods and tasks so that even creating the HTTPRequest is done in a separate task. If you follow the process of creating new methods and tasks, this new task will create new tasks itself.
+- Building on the previous exercise, try to make changes so that the `generateRequestObject()` method is run in a separate thread.
 
 ### Exercise 4.
-- In the code from last week there is a class called `ClientMain`. It can be used to call a web server.
-- Set it up so that on one computer you run a web server (e.g. a `picoserver06` from last week).
-- Get `ClientMain` to call this server.
-- Make the `ClientMain` program so that it uses executors to send many requests simultaneously to the server.
+- Make changes to `RequestDataClient` so that it can send multiple requests to the server. The requests should be sent in separate threads.
+- Make a Junit test that tests that the server can handle multiple requests at the same time.
