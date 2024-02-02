@@ -4,6 +4,10 @@ A server is a computer or system that provides resources, data, services, or pro
 
 Servers are designed to handle requests from clients and deliver the appropriate response or service. These services can include sharing data, resources, and applications, or performing computations for the client. Depending on the service provided, servers can be classified into various types, such as:
 
+![Server](./images/waiter.webp)
+
+## A selection of servers
+
 1. **Web Servers**: Host websites and deliver web pages to clients upon request.
 2. **Database Servers**: Provide database services and manage database queries and transactions.
 3. **File Servers**: Store and manage files, allowing clients to upload, download, or manage files stored on the server.
