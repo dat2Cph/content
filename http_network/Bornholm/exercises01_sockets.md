@@ -16,11 +16,11 @@ Disse to figurer viser begge et klient/server scenario.
 
 ### Case 1
 
-<img src="../img/clientserver1.png" alt="cs1" width="400"/>
+<img src="../img/clientserver1.png" alt="cs1" width="800"/>
 
 ### Case 2
 
-<img src="../img/clientserver2.png" alt="cs2" width="400"/>
+<img src="../img/clientserver2.png" alt="cs2" width="800"/>
 
 ## Opgave 3: Netværks-trafik (lagdeling)
 

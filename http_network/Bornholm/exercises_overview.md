@@ -10,7 +10,7 @@ Det er det fordi mange i dag arbejder med udvikling af software, der skal kunne 
 
 Netværksapplikationer spænder bredt. Webapplikationer er nok det eksempel de fleste af os kender bedst til i hverdagen. Det kunne også være online spil, mobilapplikationer, der trækker på server data, finansielle systemer osv. Listen er uendelig. Fællesnævneren er, at vores software skal kunne kommunikere på tværs af systemer og maskiner. Så **kommunikation i netværk** er nøgleordet.
 
-<img src="../img/steampunkserver.webp" alt="network" width="500"/>
+![Network](../img/steampunkserver.webp)
 
 ## Målet på 2. semester
 
