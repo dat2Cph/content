@@ -64,7 +64,7 @@ Hvordan skal denne model forstås? Prøv at forklare modellen hvis vi antager at
 
 ## Opgave 6: Kør demo 01: SimpleClient og SimpleServer
 
-6.1 Fold package ved navn `demo01_singlerequest` ud og åbne de to klasser
+6.1 Fold package ved navn `demo01_singlerequest` ud og åbn de to klasser
 
 6.2 Kør først main metoden i `SimpleServer`
 

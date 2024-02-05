@@ -38,7 +38,7 @@ Efter denne uge, er det meningen at vi kan:
    - Hvordan ser et HTTP response ud?
    - Giv kodeeksempler i Java på ovenstående
 
-<img src="../img/steampunkserver.webp" alt="network" width="500"/>
+![Network](../img/steampunkserver.webp)
 
 ## Sådan laver du en præsentation af læringsmål
 
@@ -54,4 +54,4 @@ Efter denne uge, er det meningen at vi kan:
 5. Lav evt. en slide eller to med teorien. Brug gerne illustrationer.
 6. Det er som regel bedst at vise kode direkte i IntelliJ i stedet for at klippe skærmshots ind i en Powerpoint. I IntelliJ er det meget lettere at hoppe rundt og vise hvad du har lavet. Det demonstrerer også at du er hjemme i værktøjerne.
 
-<img src="../img/presentation.jpg" alt="presentation" width="500"/>
+![Presentation](../img/presentation.jpg)
