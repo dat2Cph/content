@@ -53,5 +53,3 @@ Efter denne uge, er det meningen at vi kan:
 4. Find nogle kodestumper, der kan illustrere dine pointer. F.eks. i den kode vi har arbejdet på i øvelserne gennem ugen. Eller lav nogle små kodeeksempler til lejligheden.
 5. Lav evt. en slide eller to med teorien. Brug gerne illustrationer.
 6. Det er som regel bedst at vise kode direkte i IntelliJ i stedet for at klippe skærmshots ind i en Powerpoint. I IntelliJ er det meget lettere at hoppe rundt og vise hvad du har lavet. Det demonstrerer også at du er hjemme i værktøjerne.
-
-![Presentation](../img/presentation.jpg)
