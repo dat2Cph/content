@@ -16,7 +16,7 @@ Disse to figurer viser begge et klient/server scenario.
 
 2.1 Hvad er den primære forskel?
 
-2.2 Hvilken tror du bedst beskriver en webserver og hvilken en server til et online spil? Og hvorfor?
+2.2 Hvilken af de to nedenstående figurer tror du bedst beskriver en webserver og hvilken en server til et online spil? Og hvorfor? Forestil at begge figurer illustrer et enkelt request fra en klient.
 
 ### Case 1
 
