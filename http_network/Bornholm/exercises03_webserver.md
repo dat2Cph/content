@@ -1,5 +1,7 @@
 # Netværksøvelser del 3: webserver
 
+I disse tre opgaver skal du trække på alt du har lært fra de forrige øvelser. Ideen er at du kan pusle med opgaverne til SchoolHacks og sådan lidt på sidelinien.
+
 ## Opgave 1: Byg din egen webserver
 
 1.1 I projektet er der oprettet en package `demo06_mywebserver`. Her skal du oprette din egen webserver. Prøv at bygge den fra bunden med inspiration i de andre servere. Den skal nok mest minde om demo 05. formålet med øvelsen er, at du får lejlighed til at tage stilling til al koden på egen hånd - og bevidst kopiere stumperne over i din egen webserver.
