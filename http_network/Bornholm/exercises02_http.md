@@ -25,24 +25,19 @@ Begrebet `[parsing](https://ordnet.dk/ddo/ordbog?entry_id=11038980&query=parsing
 Forestil dig disse tekstlinier:
 
 ```text
-POST /api/data HTTP/1.1
-Host: example.com
-Content-Type: application/x-www-form-urlencoded
-User-Agent: Mozilla/5.0 (compatible; MyClient/0.1; +http://client.example.com)
-Content-Length: 59
-Connection: keep-alive
-Accept: */*
+GET /pages/index.html HTTP/1.1
+Host: www.example.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
 Accept-Encoding: gzip, deflate, br
-Accept-Language: en-US,en;q=0.9
-
-login=tobias&password=stormand&role=admin
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
 ```
 
 Se nøje på teksten. Hvordan er den bygget op? Kan du identificere nogle simple regler? Se om du kan formulere dem.
 
-2.2 Lav en klasse, der hedder `HttpRequest`. Smæk den i en package du kalder `parsers`. Du skal nu vælge nogle attributter og datastrukturer, der kan holde dine elementer fra headerteksten. Et godt bud kunne være at behandle den først linie specielt. Du skal gemme HTTP-metoden i en `String`, url'en i en `String` og HTTP versionen også i en separat `String` variabel. Resten, undtagen den sidste linie er (key: value) par. Hvad kender vi som er yderst velegnet til at rumme den slags?
-
-Den sidste linie er også en slags (key:value) men de har ikke direkte noget med headerlinierne at gøre. Keys fra headerlinierne har forudbestemte keys (standard). Det er ikke tilfældet i den sidste linie. De er brugervalgte. Så derfor skal man nok gemme dem i sin egen datastruktur. I øvrigt ser den sidste linie kun sådan ud, fordi det er et POST request. Det betyder at der sendes noget formularindhold fra en hjemmeside. I dette tilfælde formentlig en webformular, hvor man kan oprette en ny bruger.
+2.2 Lav en klasse, der hedder `HttpRequest`. Smæk den i en package du kalder `parsers`. Du skal nu vælge nogle attributter og datastrukturer, der kan holde dine elementer fra headerteksten. Et godt bud kunne være at behandle den først linie specielt. Du skal gemme HTTP-metoden i en `String`, url'en i en `String` og HTTP versionen også i en separat `String` variabel. Resten er (key: value) par. Hvad kender vi som er yderst velegnet til at rumme den slags?
 
 Med de hints, så skriv nu metoden `parse(String header)`, æd dig igennem teksten og gem indholdet i de respektive datastrukturer.
 

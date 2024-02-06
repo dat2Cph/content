@@ -17,7 +17,34 @@ navnet på en html-fil og et hashmap med form-parametre, som skal indsættes i s
 
 2.4 Refaktoriser din "addNumber" fra opgave 2.2, så den bruger den nye renderTemplate metode.
 
-2.5 Bonusopgave: lav en webside, der kan beregne dit BMI-tal. Se formel her: [BMI beregner](https://iform.dk/vaegttab/hvad-betyder-dit-bmi-tal)
+## Opgave 3: Bonusopgave: BMI beregner
+
+3.1 Lav en webside, der kan beregne dit BMI-tal. Se formel her: [BMI beregner](https://iform.dk/vaegttab/hvad-betyder-dit-bmi-tal). Lav en webformular, hvor man indtaster højde og vægt. Den skal også have en submit knap, der sender et POST request til en modtagerside.
+
+Her er lidt hjælp til HTML siden, der gemmes om en skabelon:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <h2>BMI Calculator</h2>
+    <form action="/pages/bmicalc.html" method="POST">
+        <label for="height">Height (cm):</label><br>
+        <input type="number" id="height" name="height" required><br><br>
+        
+        <label for="weight">Weight (kg):</label><br>
+        <input type="number" id="weight" name="weight" required><br><br>
+        
+        <input type="submit" value="Calculate BMI">
+    </form>
+</body>
+</html>
+```
 
 <hr/>
 
