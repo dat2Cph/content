@@ -4,6 +4,12 @@
 
 1.1 I projektet er der oprettet en package `demo06_mywebserver`. Her skal du oprette din egen webserver. Prøv at bygge den fra bunden med inspiration i de andre servere. Den skal nok mest minde om demo 05. formålet med øvelsen er, at du får lejlighed til at tage stilling til al koden på egen hånd - og bevidst kopiere stumperne over i din egen webserver.
 
+De næste to øvelser er fra den dybe del af svømmebassinet. Specielt
+fordi I ikke har fået en samlet indføring i HTML, og fordi
+de bygger på alt det, der indgår i de første to dages øvelser.
+
+Men giv dem et skud, og vær rar mod dig selv hvis det er for svært. Vi kan se på nogle forslag løsninger i næste uge.
+
 ## Opgave 2: Læg to tal sammen
 
 2.1 I folderen `pages/` ligger filen `adding.html`. Hvad kommer der
