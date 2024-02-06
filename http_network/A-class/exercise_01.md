@@ -2,7 +2,7 @@
 
 ## Preparation
 - Make sure you have watched the videos and read the articles in the [Before class](README.md#before-class) section.
-- Git clone the project: https://github.com/HartmannDemoCode/NetworkDemo and open it in IntelliJ.
+- Git fork and clone the project: https://github.com/HartmannDemoCode/NetworkDemo and open it in IntelliJ.
 
 ## Exercise 1.
 
