@@ -67,7 +67,7 @@ Altså, så når main-tråden til linje 20 og venter før `workingJack` får lav
 
 Arbejdsfordelingen mellem main og executor tråden kan ses i følgende diagram:
 
-![sekvensdiagram](img/executorPlantUML.png)
+![sekvensdiagram](../img/executorPlantUML.png)
 
 Denne type diagram kaldes et uml sekvens diagram. Vi kommet tilbage til dem senere på semesteret hvor I selv skal lave dem. Ideen i Executer er at Main tråden laver en opgave i form af en Runable (i diagrammet `MyTask`) som den indsætter i ExecutorServicen (her kaldet `workingJack`).
 
