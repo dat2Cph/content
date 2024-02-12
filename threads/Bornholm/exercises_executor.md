@@ -21,7 +21,7 @@ Lav en ny package i dit projekt og kald den `executors`. Læg de næste øvelser
 
 Lav en ny package i `executores` pakken og kald den `exercise01`.
 
-Dette program ([Demo05Thread](https://github.com/HartmannDemoCode/ThreadsDemo/blob/main/src/main/java/dk/cphbusiness/Demo05ExecutorService.java) i ugens demoprojekt) viser det basale:
+Dette program viser det basale:
 
 ```java
 import java.util.concurrent.ExecutorService;
@@ -52,7 +52,7 @@ public class Demo05ExecutorService {
 
 ## 1.2 Kopier klasserne ind i dit projekt (copy/paste)
 
-I linje 9 oprettes en `ExecutorService`. Det er et objekt som vores main kan give opgaver. Objektet `workingJack` er det objekt vi kan give opgaver. Klassen `Executors` har et par forskellige metoder til at oprette ExecutorServices med. Den der er brugt her siger at der er afsat en tråd til at udføre opgaverne. (`newSingleThreadExecutor()`).
+I linje 9 oprettes en `ExecutorService`. Det er et objekt som vores `main` kan give opgaver. Objektet `workingJack` er det objekt vi kan give opgaver. Klassen `Executors` har et par forskellige metoder til at oprette ExecutorServices med. Den der er brugt her siger at der er afsat en tråd til at udføre opgaverne. (`newSingleThreadExecutor()`).
 
 I linje 12 er der en metode der hedder `submit()`. Det er den centrale metode hvor vi giver en instans af af Runnable med metoden run som siger hvad vi gerne vil have gjort (linje 12-17). Her skriver vi bare noget ud for at se at opgaven er udført. Men det er her opgaven egentlig skal udføres.
 
@@ -72,9 +72,9 @@ Hello to us
 
 Altså, så når main-tråden til linje 20 og venter før `workingJack` får lavet noget som helst.
 
-## Øvelse 2: Refaktorer ["Øvelse 1: Tre tråde"](./exercises_threads.md)
+## Øvelse 2: Refaktorer ["Øvelse 1: Tre tråde"](./exercises_threads.md#%C3%B8velse-1-tre-tr%C3%A5de)
 
-I det første [opgavesæt](./exercises_threads.md) anvendte vi simple tråde. Omskriv koden, så du i stedet anvender Executors. Så lav en ny package i `executores` pakken og kald den `exercise02`.
+I det første [opgavesæt](./exercises_threads.md#%C3%B8velse-1-tre-tr%C3%A5de) anvendte vi simple tråde. Omskriv koden, så du i stedet anvender Executors. Så lav en ny package i `executores` pakken og kald den `exercise02`.
 
 Forklar koden til din sidemakker - og specielt hvad der er det smarte ved Executors frem for almindelige tråde.
 
