@@ -13,7 +13,7 @@ Figuren herunder viser en konceptuel udgave af det indre af ExecutorService:
 
 ## Før du går i gang
 
-Lav en ny package i dit projekt og kald den `executors". Læg de næste øvelser herunder.
+Lav en ny package i dit projekt og kald den `executors`. Læg de næste øvelser herunder.
 
 ## Øvelse 1: Brug af Executor Framework
 
@@ -21,7 +21,7 @@ Lav en ny package i dit projekt og kald den `executors". Læg de næste øvelser
 
 Lav en ny package i `executores` pakken og kald den `exercise01`.
 
-Dette program ([Demo05Thread](https://github.com/HartmannDemoCode/ThreadsDemo/blob/main/src/main/java/dk/cphbusiness/Demo05Thread.java) i ugens demoprojekt) viser det basale:
+Dette program ([Demo05Thread](https://github.com/HartmannDemoCode/ThreadsDemo/blob/main/src/main/java/dk/cphbusiness/Demo05ExecutorService.java) i ugens demoprojekt) viser det basale:
 
 ```java
 import java.util.concurrent.ExecutorService;
