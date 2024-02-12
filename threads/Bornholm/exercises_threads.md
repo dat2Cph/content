@@ -1,14 +1,18 @@
 # Øvelser - Tråde - Threads
 
-## Øvelse 1
+## Før du går i gang
+
+Lav et nyt projekt. Kald det fx. `concurrency`. Gerne et maven-projekt. Lav en package med navnet ´threads´, hvori du ligger koden til de næste øvelser.
+
+## Øvelse 1: Tre tråde
 
 Denne øvelse handler om grundliggende anvendelse af tråde i Java.
 
-- start
-- stop
-- Threads
-- Runnable
-- sleep
+- `start`
+- `stop`
+- `Thread`
+- `Runnable`
+- `Thread.sleep()`
 
 Skriv et program, der starter tre forskellige tråde:
 
@@ -18,12 +22,16 @@ Skriv et program, der starter tre forskellige tråde:
 
 Programmet skal stoppe Task-3 efter 10 sekunder.
 
-- Hint-0: Lav tre klasser som implementerer Runnable interfacet.
+- Hint-0: Lav først en package i `threads` og kald den for `exercise01`. Lav tre klasser som implementerer Runnable interfacet. Lav også en Main klasse, hvorfra du kører koden.
 - Hint-1: Brug en long til at beregne summen i Task-1.
 - Hint-2: Lad main-tråden "sove" i 10 sekunder efter Task-3 er startet.
 - Hint-3: Du kan stoppe Task-3 ved at indsætte en boolean variabel i løkken i run-metoden, som kan ændres fra main-tråden.
 
-Øvelse 2: Start/stop/afbryd en tråd
+## Øvelse 2: Start/stop/afbryd en tråd
+
+### Før du går i gang
+
+Lav en ny package: `exercise02`.
 
 ```java
 class WorkerCancelable implements Runnable{
@@ -47,7 +55,7 @@ class WorkerCancelable implements Runnable{
 ```
 
 ```java
-public class ThreadExercise3 {
+public class ThreadExercise02 {
 
     public static void main(String[] args) throws InterruptedException {
         WorkerCancelable worker = new WorkerCancelable();
@@ -58,21 +66,27 @@ public class ThreadExercise3 {
 }
 ```
 
-a) Take a look at the code above, and see whether you anticipate what it does (prints) WITHOUT actually executing the code
-Hint: If you did run the code, you will probably have to go to the Run menu to stop the program ;-)
+### 2.1 Hvad gør koden?
 
-b) Come up with the necessary changes (WITHOUT running the code)  required for the code to print this, when executed:
+Tag et kig på koden ovenfor, og se, om du kan forudse, hvad den gør (udskriver) UDEN faktisk at udføre koden.
+Tip: Hvis du kørte koden, bliver du sandsynligvis nødt til at stoppe den ved at trykke på den "røde" knap i IntelliJ ;-)
+
+### 2.2 Modificer koden (i hovedet)
+
+Find på de nødvendige ændringer (UDEN at køre koden), der skal til, for at koden udskriver dette, når den udføres:
 
 Hello (wait a second)
 Hello (wait a second)
 Hello (wait a second)
 DONE
 
-c)  If not already done, copy the code into a project in your IDE, and verify your predictions above
+### 2.3 Kør koden
 
-d) Interrupting a Thread
+Hvis det ikke allerede er gjort, skal du kopiere koden ind i et projekt i IntelliJ og verificere dine forudsigelser ovenfor.
 
-In your run method, change the sleep time from 1 second to 60 seconds
-Add the necessary changes to print out a single “Hello” followed by a “Done” after 4 seconds.
+### 2.4 Afbrydelse af en tråd (interrupt)
 
-Hint: Interrupting the thread will unblock it, figure out where to do that.
+I din run-metode skal du ændre sleep-tiden fra 1 sekund til 60 sekunder.
+Tilføj de nødvendige ændringer for at udskrive et enkelt "Hello" efterfulgt af et "Done" efter 4 sekunder.
+
+Tip: Hvis du afbryder tråden (med *interrupt`), ophæver du blokeringen, så find ud af, hvor du skal gøre det.
