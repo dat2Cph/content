@@ -48,3 +48,9 @@ Building a simple chat server in Java that can handle multiple clients and distr
 This is a high-level overview. Implementing a chat server can be an excellent project for understanding network programming, threads, and real-time communication in Java.
 
 ![switchboard](../img/switchboard.webp)
+
+<hr/>
+
+1. [Øvelser med simple tråde](./exercises_threads.md)
+2. [Øvelser med brug af Executor frameworket](./exercises_executor.md)
+3. [Oplæg til større opgave med udvikling af en chat-server](./exercises_chatserver.md)

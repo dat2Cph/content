@@ -9,6 +9,7 @@ Der skal være en måde hvor server tråden kan fortælle den anden tråd hvad d
 Figuren herunder viser en konceptuel udgave af det indre af ExecutorService:
 
 ![Executor](../img/executorservice.png)
+(Kilde: [Source](https://www.baeldung.com/java-rejectedexecutionhandler))
 
 ## Før du går i gang
 
@@ -76,3 +77,5 @@ Altså, så når main-tråden til linje 20 og venter før `workingJack` får lav
 I det første [opgavesæt]((./exercises_threads.md)) anvendte vi simple tråde. Omskriv koden, så du i stedet anvender Executors. Så lav en ny package i `executores` pakken og kald den `exercise02`.
 
 Forklar koden til din sidemakker - og specielt hvad der er det smarte ved Executors frem for almindelige tråde.
+
+Så er vi klar til at anvende Executors. Vi fortsætter de næste par dage.
