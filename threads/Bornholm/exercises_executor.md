@@ -74,8 +74,14 @@ Altså, så når main-tråden til linje 20 og venter før `workingJack` får lav
 
 ## Øvelse 2: Refaktorer ["Øvelse 1: Tre tråde"](./exercises_threads.md)
 
-I det første [opgavesæt]((./exercises_threads.md)) anvendte vi simple tråde. Omskriv koden, så du i stedet anvender Executors. Så lav en ny package i `executores` pakken og kald den `exercise02`.
+I det første [opgavesæt](./exercises_threads.md) anvendte vi simple tråde. Omskriv koden, så du i stedet anvender Executors. Så lav en ny package i `executores` pakken og kald den `exercise02`.
 
 Forklar koden til din sidemakker - og specielt hvad der er det smarte ved Executors frem for almindelige tråde.
 
 Så er vi klar til at anvende Executors. Vi fortsætter de næste par dage.
+
+<hr/>
+
+1. [Øvelser med simple tråde](./exercises_threads.md)
+2. [Øvelser med brug af Executor frameworket](./exercises_executor.md)
+3. [Oplæg til større opgave med udvikling af en chat-server](./exercises_chatserver.md)
