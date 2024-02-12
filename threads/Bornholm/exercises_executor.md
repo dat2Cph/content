@@ -50,7 +50,7 @@ public class Demo05ExecutorService {
 }
 ```
 
-## 1.2 Kopier klasserne ind i dit projekt (copy/paste)
+## 1.2 Kopier klassen ind i dit projekt (copy/paste)
 
 I linje 9 oprettes en `ExecutorService`. Det er et objekt som vores `main` kan give opgaver. Objektet `workingJack` er det objekt vi kan give opgaver. Klassen `Executors` har et par forskellige metoder til at oprette ExecutorServices med. Den der er brugt her siger at der er afsat en tråd til at udføre opgaverne. (`newSingleThreadExecutor()`).
 

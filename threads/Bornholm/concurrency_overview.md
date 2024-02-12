@@ -15,7 +15,7 @@ Vi skal i denne uge arbejde med **concurrency**. Vi begynder med at anvende den 
 
 ## Den røde tråd for ugen ;-)
 
-Vi begynder rejsen med at indentificere hvornår det kan være nyttigt at anvende tråde. Derefter tager vi fat på en række øvelser, hvor vi skal køre flere samtidige tråde i Java. Hurtigt løber vi ind i en række problemer. En del af dem er ret oplagte og andre af mere akademisk interesse. Vi vil koncentrere os om de mest oplagte.
+Vi begynder rejsen med at identificere hvornår det kan være nyttigt at anvende tråde. Derefter tager vi fat på en række øvelser, hvor vi skal køre flere samtidige tråde i Java. Hurtigt løber vi ind i en række problemer. En del af dem er ret oplagte og andre af mere akademisk interesse. Vi vil koncentrere os om de mest oplagte.
 
 1. Hvordan undgår vi at tråde konkurrerer om adgangen til de samme ressourcer (**race condition / datakapløb**)?
 2. Hvordan undgår vi at data kommer ude af synk (**visibility problem / opdatering af delt lager**)?
