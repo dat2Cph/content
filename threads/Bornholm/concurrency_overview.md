@@ -13,6 +13,17 @@ Vi skal i denne uge arbejde med **concurrency**. Vi begynder med at anvende den 
   <figcaption><small>This image represents Java threads as skilled weavers working together on a large, intricate tapestry. Each weaver (thread) contributes to the overall design, symbolizing the collaborative and interconnected nature of Java threads in executing (DALL-E)</small> </figcaption>
 </figure>
 
-## Den røde tråd for ugen
+## Den røde tråd for ugen ;-)
 
-Vi begynder rejsen med at indentificere hvornår det kan være nyttigt at anvende tråde. Derefter tager vi fat på en række øvelser, hvor vi skal køre flere samtidige tråde i Java. Hurtigt løber vi ind i en række problemer. En del af dem er ret oplagte og andre af mere akademisk interesse. Vi vil koncentrere os om de mest oplagte. Nemlig hvordan vi undgår at tråde konkurrerer om adgangen til de samme ressourcer (**race condition**), og hvordan vi undgår at data kommer ude af synk (**visibility problem**). Dvs,
+Vi begynder rejsen med at indentificere hvornår det kan være nyttigt at anvende tråde. Derefter tager vi fat på en række øvelser, hvor vi skal køre flere samtidige tråde i Java. Hurtigt løber vi ind i en række problemer. En del af dem er ret oplagte og andre af mere akademisk interesse. Vi vil koncentrere os om de mest oplagte.
+
+1. Hvordan undgår vi at tråde konkurrerer om adgangen til de samme ressourcer (**race condition / datakapløb**)?
+2. Hvordan undgår vi at data kommer ude af synk (**visibility problem / opdatering af delt lager**)?
+3. Hvordan undgår vi at processer bliver udsultede (**starvation problem / udsultning**)?
+4. Hvordan undgår vi baglås (**deadlocks**)
+
+Vi begynder forholdsvist hurtigt at benytte os af Javas bibliotekster for at gøre trådprogrammeringen mere overskuelig. Først og fremmest Executor frameworking. Det gør arbejdet med at oprette tråde lettere.
+
+1. [Øvelser med simple tråde](./exercises_threads.md)
+2. [Øvelser med brug af Executor frameworket](./exercises_executor.md)
+3. [Oplæg til større opgave med udvikling af en chat-server](./exercises_chatserver.md)
