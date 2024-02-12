@@ -1,14 +1,4 @@
-# Tråde og Executors
-
-Når I bruger jeres computer kan man have mere end et program igang på samme tid. Man kan godt skrive en email mens man hører musik. Moderne computere har mere end en "core", din har måske 2,4,6 eller flere. Men på trods af dette faste antal kan du alligevel godt køre mere 2 eller 6 programmer samtidigt.
-
-Dette sker ved at operativ systemet har flere processer. Den kører så hver process en lille smule (5-50 ms), og skifter så til en anden process. Da mennesker er utroligt langsomme i opfattelsen ser det ud som alle programmerne kører samtidigt. Men operativ systemet skifter altså mellem 20 og 200 gange i sekundet.
-
-Java tillader os at skrive programmer der benytter sig af mere end en process. I Java kaldes processer for **Threads - på dansk tråde**. Programmering med mere end en tråd kaldes **concurrent**, **tråd** eller **parallel** programmering. Der er nogle der mener der er forskel på de forskellige betegnelser - I praksis mener alle cirka det samme, og ingen har kunne definere et standard ordbrug alle er blevet enige om.
-
-Vi skal i denne uge arbejde med concurrency, men ikke med den primitive Java tråd, men med et bibliotek der tilbyder noget der kaldes **Executors** som gør det nemmere at programmere de opgaver man typisk har brug for at løse vha. tråde.
-
-## Executors
+## Øvelser - Executors
 
 Det centrale i executor biblioteket er at man har minimum to tråde. Den ene tråd venter på indput fra brugeren - i vores tilfælde på at der kommer et HTTP request. Hvis det tager lang tid at udføre dette request (f.eks fordi vi skal hente noget i en database), kan vores web server ikke tage imod request fra den næste bruger før vi har færdig behandlet første request.
 
