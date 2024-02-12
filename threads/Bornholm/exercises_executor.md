@@ -78,10 +78,11 @@ I det første [opgavesæt](./exercises_threads.md#%C3%B8velse-1-tre-tr%C3%A5de) 
 
 Forklar koden til din sidemakker - og specielt hvad der er det smarte ved Executors frem for almindelige tråde.
 
-Så er vi klar til at anvende Executors. Vi fortsætter de næste par dage.
+Så er vi klar til at anvende Executors. Dem skal vi bruge de næste par dage.
 
 <hr/>
 
 1. [Øvelser med simple tråde](./exercises_threads.md)
 2. [Øvelser med brug af Executor frameworket](./exercises_executor.md)
-3. [Oplæg til større opgave med udvikling af en chat-server](./exercises_chatserver.md)
+3. [Øvelser i samtidighedsproblematikker](./exercises_concurrency_problems.md)
+4. [Oplæg til større opgave med udvikling af en chat-server](./exercises_chatserver.md)

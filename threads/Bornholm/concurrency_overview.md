@@ -24,6 +24,9 @@ Vi begynder rejsen med at indentificere hvornår det kan være nyttigt at anvend
 
 Vi begynder forholdsvist hurtigt at benytte os af Javas bibliotekster for at gøre trådprogrammeringen mere overskuelig. Først og fremmest Executor frameworking. Det gør arbejdet med at oprette tråde lettere.
 
+<hr/>
+
 1. [Øvelser med simple tråde](./exercises_threads.md)
 2. [Øvelser med brug af Executor frameworket](./exercises_executor.md)
-3. [Oplæg til større opgave med udvikling af en chat-server](./exercises_chatserver.md)
+3. [Øvelser i samtidighedsproblematikker](./exercises_concurrency_problems.md)
+4. [Oplæg til større opgave med udvikling af en chat-server](./exercises_chatserver.md)
