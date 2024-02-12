@@ -521,3 +521,10 @@ This approach has several advantages over using low-level synchronization method
 3. **Versatility**: The Java Concurrency API provides several `BlockingQueue` implementations to choose from, each optimized for different scenarios.
 
 Using high-level concurrency utilities like `BlockingQueue` allows developers to focus more on business logic rather than the intricacies of thread synchronization, making concurrent programming in Java more accessible and reliable.
+
+<hr/>
+
+1. [Øvelser med simple tråde](./exercises_threads.md)
+2. [Øvelser med brug af Executor frameworket](./exercises_executor.md)
+3. [Øvelser i samtidighedsproblematikker](./exercises_concurrency_problems.md)
+4. [Oplæg til større opgave med udvikling af en chat-server](./exercises_chatserver.md)
