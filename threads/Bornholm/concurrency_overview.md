@@ -10,7 +10,7 @@ Vi skal i denne uge arbejde med **concurrency**. Vi begynder med at anvende den 
 
 <figure>
   <img src="../img/threads.webp" alt="Alt text for the image">
-  <figcaption>This image represents Java threads as skilled weavers working together on a large, intricate tapestry. Each weaver (thread) contributes to the overall design, symbolizing the collaborative and interconnected nature of Java threads in executing (DALL-E) </figcaption>
+  <figcaption><small>This image represents Java threads as skilled weavers working together on a large, intricate tapestry. Each weaver (thread) contributes to the overall design, symbolizing the collaborative and interconnected nature of Java threads in executing (DALL-E)</small> </figcaption>
 </figure>
 
 ## Den røde tråd for ugen
