@@ -156,9 +156,276 @@ Each of these solutions addresses the memory visibility problem by ensuring that
 
 På dansk: **udsultning**
 
+Starvation in concurrent programming occurs when one or more threads are prevented from progressing because other threads are monopolizing resources or locks, often due to priority levels or lock handling strategies. This can lead to situations where certain threads get very little CPU time or are unable to access necessary resources for an extended period, effectively "starving" them of the opportunity to execute.
+
+### Example Demonstrating Starvation
+
+Consider a scenario where multiple threads try to access a shared resource, but due to prioritization, some threads are given preference over others, leading to starvation of the lower priority threads.
+
+```java
+public class StarvationExample {
+    private static final Object lock = new Object();
+
+    private static class Worker extends Thread {
+        private int runCount = 0;
+
+        public Worker(String name) {
+            super(name);
+        }
+
+        @Override
+        public void run() {
+            for (int i = 0; i < 10; i++) {
+                synchronized (lock) {
+                    runCount++;
+                    System.out.println(this.getName() + " runCount: " + runCount);
+                    // Simulate work
+                    try {
+                        Thread.sleep(100); // Hold the lock for a bit
+                    } catch (InterruptedException e) {
+                        Thread.currentThread().interrupt();
+                    }
+                }
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        Thread highPriority = new Worker("High Priority");
+        Thread lowPriority = new Worker("Low Priority");
+
+        highPriority.setPriority(Thread.MAX_PRIORITY);
+        lowPriority.setPriority(Thread.MIN_PRIORITY);
+
+        // Start threads
+        lowPriority.start();
+        highPriority.start();
+    }
+}
+```
+
+In this example, two threads (`highPriority` and `lowPriority`) compete for a lock on the same object. Due to the difference in thread priorities, the JVM scheduler may give preferential treatment to the `highPriority` thread, leading to the `lowPriority` thread experiencing starvation, especially in environments where thread scheduling is heavily influenced by thread priority.
+
+### Solving Starvation
+
+To solve or mitigate starvation, we can employ several strategies:
+
+1. **Fair Locks**: Using locks that support fairness policies can help ensure that threads acquire locks in the order they requested them, thus preventing starvation.
+
+```java
+import java.util.concurrent.locks.ReentrantLock;
+
+private static final ReentrantLock fairLock = new ReentrantLock(true); // Enable fairness policy
+
+public void accessResource() {
+    fairLock.lock();
+    try {
+        // Access the resource
+    } finally {
+        fairLock.unlock();
+    }
+}
+```
+
+2. **Semaphore with Fairness Policy**: Similar to fair locks, a semaphore with fairness turned on can ensure that permits are granted in a fair manner, respecting the order of requests.
+
+```java
+import java.util.concurrent.Semaphore;
+
+private static final Semaphore fairSemaphore = new Semaphore(1, true); // Single permit, fairness true
+
+public void accessResource() {
+    try {
+        fairSemaphore.acquire();
+        // Access the resource
+    } catch (InterruptedException e) {
+        Thread.currentThread().interrupt();
+    } finally {
+        fairSemaphore.release();
+    }
+}
+```
+
+3. **Improving Thread Scheduling**: Adjusting the way threads are scheduled or the logic that leads to lock acquisition can help. For instance, ensuring that work is divided more evenly among threads or that threads do not hold locks for long periods can reduce the risk of starvation.
+
+4. **Using Concurrent Collections**: Employing concurrent data structures that are designed to minimize contention and support scalable concurrency can also help alleviate starvation.
+
+5. **Thread Pool Executors with Queueing Policies**: Using an `ExecutorService` to manage threads can help manage work distribution more evenly. Configuring thread pools with appropriate queueing policies for tasks can ensure that all tasks get executed in a timely manner.
+
+```java
+import java.util.concurrent.Executors;
+import java.util.concurrent.ExecutorService;
+
+ExecutorService executor = Executors.newFixedThreadPool(N); // N is the number of threads
+```
+
+Solving starvation often involves designing the system in such a way that all threads get fair access to shared resources and ensuring that the system's overall architecture does not inherently favor certain threads over others.
+
 ## 4. Deadlocks
 
 På dansk: **baglås**
+
+A deadlock in concurrent programming occurs when two or more threads are waiting on each other to release resources they need, resulting in all of them being stuck indefinitely. This situation is akin to a stand-off where no thread can proceed because each thread holds a lock that the other thread needs to continue its execution. Deadlocks are problematic because they can freeze a program's execution, requiring manual intervention or a system restart to resolve.
+
+### Example Demonstrating Deadlock
+
+Let's consider a simple Java example that provokes a deadlock situation involving two threads and two shared resources.
+
+```java
+public class DeadlockExample {
+    // Two resources
+    private static final Object resource1 = new Object();
+    private static final Object resource2 = new Object();
+
+    public static void main(String[] args) {
+        // Thread 1 tries to lock resource1 then resource2
+        Thread thread1 = new Thread(() -> {
+            synchronized (resource1) {
+                System.out.println("Thread 1: Locked resource 1");
+
+                try {
+                    Thread.sleep(50); // Simulate work
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                }
+
+                synchronized (resource2) {
+                    System.out.println("Thread 1: Locked resource 2");
+                }
+            }
+        });
+
+        // Thread 2 tries to lock resource2 then resource1
+        Thread thread2 = new Thread(() -> {
+            synchronized (resource2) {
+                System.out.println("Thread 2: Locked resource 2");
+
+                try {
+                    Thread.sleep(50); // Simulate work
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                }
+
+                synchronized (resource1) {
+                    System.out.println("Thread 2: Locked resource 1");
+                }
+            }
+        });
+
+        thread1.start();
+        thread2.start();
+    }
+}
+```
+
+In this example, `thread1` locks `resource1` and then tries to lock `resource2`, while `thread2` locks `resource2` and then tries to lock `resource1`. If `thread1` locks `resource1` at the same time `thread2` locks `resource2`, they will each wait for the other to release the lock on the other resource, resulting in a deadlock.
+
+### Solving Deadlocks
+
+To solve or prevent deadlocks, you can use several strategies:
+
+1. **Lock Ordering**: Ensure that all threads acquire locks in a consistent global order. By enforcing an ordering and ensuring that all threads lock resources in this order, you can prevent circular wait conditions.
+
+```java
+// Both threads should lock resources in the same order, e.g., resource1 then resource2.
+```
+
+2. **Lock Timeout**: Use try-lock mechanisms that allow threads to attempt to acquire a lock but give up if the lock cannot be acquired within a certain time. This can help avoid deadlock by allowing threads to back off, release any locks they hold, and retry.
+
+```java
+// Using tryLock with timeout
+if (resource1.tryLock(100, TimeUnit.MILLISECONDS)) {
+    try {
+        if (resource2.tryLock(100, TimeUnit.MILLISECONDS)) {
+            try {
+                // Access the resources
+            } finally {
+                resource2.unlock();
+            }
+        }
+    } finally {
+        resource1.unlock();
+    }
+}
+```
+
+3. **Deadlock Detection**: Implement algorithms that can detect deadlocks. Once a deadlock is detected, one or more threads can be interrupted or rolled back to release their locks. This approach is more complex and is usually implemented at a system level.
+
+4. **Single Lock**: For some applications, it might be possible to use a single lock to serialize access to all shared resources, thus avoiding deadlocks. However, this can significantly reduce concurrency and might not be feasible for all applications.
+
+5. **Using Concurrent Data Structures**: Prefer using high-level concurrent data structures provided by the Java `java.util.concurrent` package that are designed to minimize locking and deadlock risks.
+
+Deadlock prevention and resolution require careful design and consideration of how threads interact and compete for resources. By applying one or more of these strategies, you can reduce the risk of deadlocks in your applications.
+
+### Deadlock detection
+
+There are several approaches to detect deadlocks in Java, ranging from simple manual methods to more sophisticated programmatic and tool-based solutions. Here are some common ways to detect deadlocks:
+
+### 1. **Using JConsole:**
+
+JConsole is a monitoring tool that comes with the JDK. It can detect deadlocks in a running Java application with a graphical interface.
+
+- Start your Java application.
+- Open JConsole and connect to your Java application.
+- Navigate to the "Threads" tab.
+- Click on the "Detect Deadlock" button. If a deadlock is detected, JConsole will show the threads involved and the locks they are waiting on.
+
+### 2. **Using VisualVM:**
+
+VisualVM is another JDK tool that can be used for monitoring Java applications, including deadlock detection.
+
+- Launch your application.
+- Start VisualVM and connect to your application.
+- Navigate to the "Threads" tab, where you can see thread dumps.
+- Look for threads in the BLOCKED state waiting on each other, which indicates a deadlock.
+
+### 3. **Using Thread Dump:**
+
+You can generate a thread dump and manually inspect it for deadlocks. This can be done by sending a SIGQUIT signal to the JVM on Unix/Linux systems (using `kill -3 <pid>`) or by pressing `Ctrl+Break` on Windows in the console where the Java application is running. The thread dump can also be generated using tools like `jstack`:
+
+```
+jstack <pid>
+```
+
+The dump contains information about all threads, including their state, stack traces, and the locks they hold or wait on. Deadlocked threads are usually marked, and you can identify the resources they are waiting on.
+
+### 4. **Programmatically Using ThreadMXBean:**
+
+Java provides `ThreadMXBean`, an interface for the management of thread systems, which can be used to detect deadlocks programmatically.
+
+```java
+import java.lang.management.ManagementFactory;
+import java.lang.management.ThreadMXBean;
+
+public class DeadlockDetector {
+    public static void checkForDeadlocks() {
+        ThreadMXBean threadMXBean = ManagementFactory.getThreadMXBean();
+        long[] deadlockedThreads = threadMXBean.findDeadlockedThreads(); // or findMonitorDeadlockedThreads() for older versions
+
+        if (deadlockedThreads != null) {
+            System.out.println("Deadlock detected!");
+            // Additional logic can be added here, such as logging thread info or taking corrective actions
+        } else {
+            System.out.println("No deadlock detected.");
+        }
+    }
+
+    public static void main(String[] args) {
+        // Simulate application logic here
+        checkForDeadlocks();
+    }
+}
+```
+
+This method can be particularly useful for implementing custom monitoring or alerting mechanisms within your application to automatically detect and respond to deadlocks.
+
+### Choosing the Right Method
+
+- For development and debugging, tools like JConsole and VisualVM are convenient for quickly checking for deadlocks without modifying the application code.
+- In production environments, generating and analyzing thread dumps with `jstack` or similar tools can be a more suitable option since it doesn't require opening GUI tools or directly connecting to the JVM.
+- For applications that need built-in deadlock detection and response mechanisms, using the `ThreadMXBean` programmatically can be the best approach.
+
+Detecting deadlocks is an essential part of diagnosing and resolving concurrency issues in Java applications, and Java provides multiple tools and APIs to assist in this task.
 
 ## 5. Producer-Consumer problem
 
