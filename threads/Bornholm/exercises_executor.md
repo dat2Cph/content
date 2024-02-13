@@ -30,7 +30,7 @@ import java.util.concurrent.Executors;
 /**
  * Formålet med denne demo er at vise, hvordan man bruger en ExecutorService med en enkelt tråd.
  */
-public class Demo05ExecutorService {
+public class Demo01ExecutorService {
 
     public static void main( String[] args ) {
         ExecutorService workingJack = Executors.newSingleThreadExecutor();

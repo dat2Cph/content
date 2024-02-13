@@ -18,7 +18,7 @@ Vi skal i denne uge arbejde med **concurrency**. Vi begynder med at anvende den 
 Vi begynder rejsen med at identificere hvornår det kan være nyttigt at anvende tråde. Derefter tager vi fat på en række øvelser, hvor vi skal køre flere samtidige tråde i Java. Hurtigt løber vi ind i en række problemer. En del af dem er ret oplagte og andre af mere akademisk interesse. Vi vil koncentrere os om de mest oplagte.
 
 1. Hvordan undgår vi at tråde konkurrerer om adgangen til de samme ressourcer (**race condition / datakapløb**)?
-2. Hvordan undgår vi at data kommer ude af synk (**visibility problem / opdatering af delt lager**)?
+2. Hvordan undgår vi at data kommer ude af sync (**visibility problem / opdatering af delt lager**)?
 3. Hvordan undgår vi at processer bliver udsultede (**starvation problem / udsultning**)?
 4. Hvordan undgår vi baglås (**deadlocks**)
 
