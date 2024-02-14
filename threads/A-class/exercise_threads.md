@@ -16,19 +16,15 @@ All exercises should use Executors and not code with threads directly.
 private static class Counter {
         private int count = 0;
 
-        // Method to increment the count, synchronized to ensure thread safety
-        public synchronized void increment() {
+        public void increment() {
             count++;
         }
 
-        // Method to retrieve the current count value
         public int getCount() {
             return count;
         }
     }
 ```
-
-At the review we will ask questions about your solution.
 
 ### Exercise 3.
 - Look at the code in this class: https://github.com/HartmannDemoCode/ThreadsDemo/blob/main/src/main/java/dk/cphbusiness/exercises/AddingNumbers.java. It inserts a number into an ArrayList and prints out the size of the list. The list does not always contain a thousand numbers. Why is that? Propose a solution. 
