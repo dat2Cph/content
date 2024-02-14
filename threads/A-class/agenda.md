@@ -7,7 +7,25 @@
 - Demo Executor service.
 
 ## Wednesday
-- Quiz on threads with 30 min. preparation in groups. 15 min. presentation.
+- Quiz on threads with 40 min. preparation in groups. 15 min. presentation.
+  - What is a thread?
+  - What is the difference between a process and a thread?
+  - What is the purpose of the start method in a thread?
+  - What is the purpose of the run method in a thread?
+  - What is the purpose of the sleep method in a thread?
+  - What is the purpose of the join method in a thread?
+  - What is the purpose of the getName method in a thread?
+  - What is a Callable?
+  - What is the purpose of the ExecutorService?
+  - What is the purpose of the submit method in the ExecutorService?
+  - What is returned by the submit method in the ExecutorService?
+  - What is a Future?
+  - What is the purpose of the get method in the Future?
+  - What is the purpose of the isDone method in the Future?
+  - What is the purpose of the awaitTermination method in the ExecutorService?
+  - What is the purpose of the newFixedThreadPool method in the Executors class?
+  - What is the purpose of the newCachedThreadPool method in the Executors class?
+  - Why do we need 2 loops to get the result from the executor service?
 - Review the assignments from monday.
   - Look at the CharPrinter
 - Exercise with ExecutorService:
