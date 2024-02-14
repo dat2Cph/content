@@ -111,6 +111,9 @@ Hvordan skal denne model forstås? Prøv at forklare modellen hvis vi antager at
 
 10.4 Prøv at bytte roller.
 
+10.5 Bonusøvelse: Lav også en Scanner på `EchoServer`, så serveren
+kan sende beskeder tilbage til klienten. Det er nok det mest primitive chat-scenarie man kan forestille sig, men alligevel. Det er en god start.
+
 <hr/>
 
 [Tilbage til overblik](./exercises_overview.md)
