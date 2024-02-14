@@ -528,3 +528,56 @@ Using high-level concurrency utilities like `BlockingQueue` allows developers to
 2. [Øvelser med brug af Executor frameworket](./exercises_executor.md)
 3. [Øvelser i samtidighedsproblematikker](./exercises_concurrency_problems.md)
 4. [Oplæg til større opgave med udvikling af en chat-server](./exercises_chatserver.md)
+
+## Shutting down an executor
+
+In Java, when you're working with executors to manage a pool of threads, you might sometimes need to interrupt ongoing tasks, either to shut down the executor itself or to cancel specific tasks if they're no longer needed or taking too long. Here's how you can interrupt tasks in an executor:
+
+### Shutting Down the Executor
+
+1. **Immediate Shutdown**: Use `shutdownNow()` method of the ExecutorService. This attempts to stop all actively executing tasks, halts the processing of waiting tasks, and returns a list of the tasks that were awaiting execution. This method does not guarantee that actively executing tasks will be terminated immediately but will attempt to stop them by interrupting.
+
+   ```java
+   ExecutorService executor = Executors.newFixedThreadPool(10);
+   // (submit tasks to executor)
+   List<Runnable> notExecutedTasks = executor.shutdownNow();
+   ```
+
+2. **Await Termination with Timeout**: After calling `shutdown()` or `shutdownNow()`, you can use `awaitTermination(long timeout, TimeUnit unit)` to block until all tasks have completed execution after a shutdown request, or the timeout occurs, or the current thread is interrupted, whichever happens first.
+
+   ```java
+   executor.shutdown(); // Disable new tasks from being submitted
+   try {
+       if (!executor.awaitTermination(60, TimeUnit.SECONDS)) {
+           executor.shutdownNow(); // Cancel currently executing tasks
+           // Wait a bit more for tasks to respond to being cancelled
+           if (!executor.awaitTermination(60, TimeUnit.SECONDS))
+               System.err.println("Executor did not terminate");
+       }
+   } catch (InterruptedException ie) {
+       // (Re-)Cancel if current thread also interrupted
+       executor.shutdownNow();
+       // Preserve interrupt status
+       Thread.currentThread().interrupt();
+   }
+   ```
+
+### Cancelling Specific Future Tasks
+
+If you've submitted a callable or runnable task to an executor and have received a `Future<?>` in return, you can cancel the specific task using the `cancel(boolean mayInterruptIfRunning)` method on the `Future<?>` object. The argument determines whether the thread executing this task should be interrupted in an attempt to stop the task.
+
+- **`true`**: If the task is running, it will attempt to interrupt the task.
+- **`false`**: If the task is running, it will not attempt to interrupt the task.
+
+```java
+Future<?> future = executor.submit(() -> {
+    // task details
+});
+
+// Attempt to cancel the task
+boolean wasCancelled = future.cancel(true);
+```
+
+Using `cancel(true)` sends an interrupt to the task's thread, which can be handled in the task's logic (for example, by checking the thread's interrupted status with `Thread.interrupted()` or handling `InterruptedException`).
+
+Remember, for the interruption to work effectively, the tasks running inside the executor need to properly handle interrupts. This often involves periodically checking the thread's interrupted status or handling `InterruptedException`, especially in tasks that perform blocking operations.
