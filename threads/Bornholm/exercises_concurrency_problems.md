@@ -7,8 +7,8 @@ Hvis du har tid og lyst, så læs, forstå og kør eksempler herunder. De er hen
 1. [Race condition](#1-race-condition)
 2. [Memory Visibility problem](#2-memory-visibility-problem)
 3. [Starvation](#3-starvation)
-4. [Deadlocks](4-deadlocks)
-5. [Producer-Consumer problem](5-producer-consumer-problem)
+4. [Deadlocks](#4-deadlocks)
+5. [Producer-Consumer problem](#5-producer-consumer-problem)
 
 ## 1. Race condition
 
