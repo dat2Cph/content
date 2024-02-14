@@ -3,11 +3,13 @@
 - Slides 45 min.
 - 7 first Java files in the [Demo project](https://github.com/HartmannDemoCode/ThreadsDemo.git) 45 min.
 - Exercise:
-  - Create a program that can start 3 threads with reference to a Runnable objects (Tasks). 
-  - Each task should take a reference to a shared object in the constructor. 
+  1. Create a program that can start 3 threads with reference to a Runnable objects (Tasks). 
+  2. Each task should take a reference to a shared object in the constructor. 
     - The shared object has a char value starting with 'A' and a method that can increment a and return the value. 
-    - The program should print all the values in the alphabet 3 times pr. line (like this: 'AAA', 'BBB', 'CCC' etc. up to 'ZZZ'). But the threads should run concurrently and use the shared object to get the next character.
+    - The program should print all the values in the alphabet 3 times pr. line (like this: 'AAA', 'BBB', 'CCC' etc. up to 'ZZZ'). But the threads should run concurrently and use the shared object to get the next character. (The output will not be alphabetical, but that is ok). 45 min.
     - The threads should run concurrently and use the shared object to get the next character. 45 min.
+  3. Create another version of the program where you will use Callable and Future to get the result from the threads. 
+    - Store the returned value from the threads in a `List<Future<String>` collection. Now you should be able to run 3 threads and get the result in the main thread in the right alphabetical order. 45 min. 
 - Demo Executor service.
 
 ## Wednesday
