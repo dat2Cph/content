@@ -23,9 +23,9 @@
   
 2. Kan anvende simple trådemekanismer i Java med Threads (ikke Executor)
 
-    2.1 Vis et par eksempler på hvor du starter to tråde op
-    2.2 Vis hvordan man pauser en tråd
-    2.3 Vis hvordan man afbryder en tråd (interrupt)
+   2.1 Vis et par eksempler på hvor du starter to tråde op
+   2.2 Vis hvordan man pauser en tråd
+   2.3 Vis hvordan man afbryder en tråd (interrupt)
 
 3. Kan anvende simple trådemekanismer i Java med Executors
 
