@@ -9,7 +9,7 @@ Denne torsdag er sat af til følgende:
 
 Den overordnede opgavebeskrivelse lyder således:
 
-> Vi skal have konstrueret en database til et simpelt bibliotek. På mandag i næste uge skal vi tilgå databasen fra Java og i næste flow skal vi programmere en lille web-applikationen til at håndtere bøger, forfattere, lånere og udlån. Derfor begynder vi med at analysere os frem til en datamodel og fylde lidt data i. Datamodellen skal selvfølgelig være på 3. normalform.
+> Vi skal have konstrueret en database til et simpelt bibliotek. Derfor begynder vi med at analysere os frem til en datamodel og fylde lidt data i. Datamodellen skal selvfølgelig være på 3. normalform.
 >
 > Vi har en række forespørgsler, som vi gerne vil kunne trække ud af databasen. F.eks.
 >
