@@ -1,4 +1,4 @@
-# Diverse CRUD fra Java
+# Diverse DB-CRUD fra Java
 
 Disse beskrivelser er generelle anvisninger i brugen af JDBC. Først vises hvordan vi laver en forbindelse til Postgres fra Java. Senere på semestret skal vi af effektivitetshensyn anvende en såkaldt `ConnectionPool`, men først gør vi det så enkelt som muligt - og laver en enkelt forbindelse, der åbnes og lukkes hver gang vi skal have fat i databasen.
 
@@ -91,6 +91,14 @@ public class DatabaseConnector
     }
 }
 ```
+
+OBS! `Class.forName` er normalt ikke nødvendig. Den fyres af for at Postgres-driveren kan findes af vores JVM på runtime. Det kan være et problem når koden kører på f.eks. en webserver. Men efter JDBC 4.0 skulle det være løst. Den er taget med her, så det helt sikkert kører. Hvis vi fx. glemmer at tilføje Postgres driveren som dependency i `pom.xml` smides en exception når koden når til:
+
+```java
+Class.forName("org.postgresql.Driver");
+```
+
+Så på den måde er metoden nyttig uanset om den er strengt nødvendig.
 
 ## Skræddersyet DatabaseException og fejlhåndtering
 
