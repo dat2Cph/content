@@ -208,7 +208,6 @@ public class Main
             System.out.println(e.getMessage());
             System.out.println(e.getCause().getMessage());
         }
-
     }
 }
 ```
@@ -217,133 +216,137 @@ public class Main
 
 ```java
 public User getUserByName(String userName) throws DatabaseException
+{
+    String sql = "SELECT * FROM users WHERE user_name = ?";
+    try (var connection = databaseConnector.getConnection())
     {
-        String sql = "SELECT * FROM users WHERE user_name = ?";
-        try (var connection = databaseConnector.getConnection())
+        try (var prepareStatement = connection.prepareStatement(sql))
         {
-            try (var prepareStatement = connection.prepareStatement(sql))
-            {
-                prepareStatement.setString(1, userName);
-                var resultSet = prepareStatement.executeQuery();
+            prepareStatement.setString(1, userName);
+            ResultSet resultSet = prepareStatement.executeQuery();
 
-                if (resultSet.next())
-                {
-                    int userId = resultSet.getInt("user_id");
-                    String password = resultSet.getString("password");
-                    String role = resultSet.getString("role");
-                    return new User(userId, userName, password, role);
-                } else
-                {
-                    return null;
-                }
+            if (resultSet.next())
+            {
+                int userId = resultSet.getInt("user_id");
+                String password = resultSet.getString("password");
+                String role = resultSet.getString("role");
+                return new User(userId, userName, password, role);
+            } else
+            {
+                return null;
             }
         }
-        catch (SQLException e)
-        {
-            throw new DatabaseException("Could not get users from the database", e);
-        }
     }
+    catch (SQLException e)
+    {
+        throw new DatabaseException("Could not get users from the database", e);
+    }
+}
 ```
 
 ## getAllUsers
 
 ```java
 public List<User> getAllUsers() throws DatabaseException
+{
+    List<User> users = new ArrayList<>();
+    String sql = "SELECT * FROM users";
+    try (
+            var connection = databaseConnector.getConnection();
+            var prepareStatement = connection.prepareStatement(sql);
+            var resultSet = prepareStatement.executeQuery()
+    )
     {
-        List<User> users = new ArrayList<>();
-        String sql = "SELECT * FROM users";
-        try (
-                var connection = databaseConnector.getConnection();
-                var prepareStatement = connection.prepareStatement(sql);
-                var resultSet = prepareStatement.executeQuery()
-        )
+        while (resultSet.next())
         {
-            while (resultSet.next())
-            {
-                int userId = resultSet.getInt("user_id");
-                String userName = resultSet.getString("user_name");
-                String password = resultSet.getString("password");
-                String role = resultSet.getString("role");
-                users.add(new User(userId, userName, password, role));
-            }
+            int userId = resultSet.getInt("user_id");
+            String userName = resultSet.getString("user_name");
+            String password = resultSet.getString("password");
+            String role = resultSet.getString("role");
+            users.add(new User(userId, userName, password, role));
         }
-        catch (SQLException e)
-        {
-            throw new DatabaseException("Could not get users from the database", e);
-        }
-        return users;
     }
+    catch (SQLException e)
+    {
+        throw new DatabaseException("Could not get users from the database", e);
+    }
+    return users;
+}
 ```
 
 ## createUser
 
 ```java
 public int createUser(User user) throws DatabaseException
+{
+    String sql = "INSERT INTO users (user_name, password, role) VALUES (?, ?, ?)";
+    try (var connection = databaseConnector.getConnection())
     {
-        String sql = "INSERT INTO users (user_name, password, role) VALUES (?, ?, ?)";
-        try (var connection = databaseConnector.getConnection())
+        try (var prepareStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS))
         {
-            try (var prepareStatement = connection.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS))
+            prepareStatement.setString(1, user.getUserName());
+            prepareStatement.setString(2, user.getPassword());
+            prepareStatement.setString(3, user.getRole());
+            prepareStatement.executeUpdate();
+            var keySet = prepareStatement.getGeneratedKeys();
+            if (keySet.next())
             {
-                prepareStatement.setString(1, user.getUserName());
-                prepareStatement.setString(2, user.getPassword());
-                prepareStatement.setString(3, user.getRole());
-                prepareStatement.executeUpdate();
-                var resultSetWithKeys = prepareStatement.getGeneratedKeys();
-                if (resultSetWithKeys.next())
-                {
-                    return resultSetWithKeys.getInt(1);
-                } else return -1;
-            }
-        }
-        catch (SQLException e)
-        {
-            throw new DatabaseException("Could not create user in the database", e);
+                return keySet.getInt(1);
+            } else return -1;
         }
     }
+    catch (SQLException e)
+    {
+        throw new DatabaseException("Could not create user in the database", e);
+    }
+}
 ```
 
 ## updateUser
 
 ```java
 public void updateUser(User user) throws DatabaseException
+{
+    String sql = "UPDATE users SET user_name = ?, password = ?, role = ? WHERE user_id = ?";
+    try (var connection = databaseConnector.getConnection())
     {
-        String sql = "UPDATE users SET user_name = ?, password = ?, role = ? WHERE user_id = ?";
-        try (var connection = databaseConnector.getConnection())
+        try (var prepareStatement = connection.prepareStatement(sql))
         {
-            try (var prepareStatement = connection.prepareStatement(sql))
-            {
-                prepareStatement.setString(1, user.getUserName());
-                prepareStatement.setString(2, user.getPassword());
-                prepareStatement.setString(3, user.getRole());
-                prepareStatement.setInt(4, user.getUserId());
-                prepareStatement.executeUpdate();
-            }
-        }
-        catch (SQLException e)
-        {
-            throw new DatabaseException("Could not update user in the database", e);
+            prepareStatement.setString(1, user.getUserName());
+            prepareStatement.setString(2, user.getPassword());
+            prepareStatement.setString(3, user.getRole());
+            prepareStatement.setInt(4, user.getUserId());
+            prepareStatement.executeUpdate();
         }
     }
+    catch (SQLException e)
+    {
+        throw new DatabaseException("Could not update user in the database", e);
+    }
+}
 ```
+
+Her kunne man evt. overveje at returnere en integer med antallet af ændrede rækker (dvs, 1 hvis det går godt, ellers 0)
 
 ## deleteUser
 
 ```java
 public void deleteUser(int userId) throws DatabaseException
+{
+    String sql = "DELETE FROM users WHERE user_id = ?";
+    try (var connection = databaseConnector.getConnection())
     {
-        String sql = "DELETE FROM users WHERE user_id = ?";
-        try (var connection = databaseConnector.getConnection())
+        try (var prepareStatement = connection.prepareStatement(sql))
         {
-            try (var prepareStatement = connection.prepareStatement(sql))
-            {
-                prepareStatement.setInt(1, userId);
-                prepareStatement.executeUpdate();
-            }
-        }
-        catch (SQLException e)
-        {
-            throw new DatabaseException("Could not delete user from the database", e);
+            prepareStatement.setInt(1, userId);
+            prepareStatement.executeUpdate();
         }
     }
+    catch (SQLException e)
+    {
+        throw new DatabaseException("Could not delete user from the database", e);
+    }
+}
 ```
+
+Her kunne man evt. overveje at returnere en integer med antallet af ændrede rækker (dvs, 1 hvis det går godt, ellers 0)
