@@ -4,7 +4,7 @@ Disse beskrivelser er generelle anvisninger i brugen af JDBC. Først vises hvord
 
 <!-- TOC tocDepth:2..3 chapterDepth:2..6 -->
 
-- [Indhold på denne side](#indhold-på-denne-side)
+- [JDBC driver dependency](#jdbc-driver-dependency)
 - [Create script](#create-script)
 - [JDBC Connection](#jdbc-connection)
 - [Skræddersyet DatabaseException og fejlhåndtering](#skræddersyet-databaseexception-og-fejlhåndtering)
@@ -17,6 +17,22 @@ Disse beskrivelser er generelle anvisninger i brugen af JDBC. Først vises hvord
 - [deleteUser](#deleteuser)
 
 <!-- /TOC -->
+
+## JDBC driver dependency
+
+Tilføj denne til din pom.xml fil:
+
+```xml
+ <dependencies>
+    <dependency>
+        <groupId>org.postgresql</groupId>
+        <artifactId>postgresql</artifactId>
+        <version>42.6.0</version>
+    </dependency>
+</dependencies>
+```
+
+Og opdater dine Maven dependencies. Så er den rigtige postgres driver klar til brug.
 
 ## Create script
 
