@@ -2,15 +2,15 @@
 
 Learn how to get started building websites with Javalin and Thymeleaf.
 
-## Tech-stack:
+## Tech-stack
 
-| Technology  | Version  | 
+| Technology  | Version  |
 |---|---|
-| JDK | 17   | 
-| Javalin  | 5.6.1  | 
-| Thymeleaf  | 3.1.1  | 
+| JDK | 17   |
+| Javalin  | 6.1.3  |
+| Thymeleaf  | 3.1.2  |
 | Maven  | 3.9.2  |  
-| IntelliJ  | 2023.2.1 (Ultimate)  |
+| IntelliJ  | 2023.3.4 (Ultimate)  |
 
 ## 1. New project in IntelliJ
 
@@ -30,7 +30,7 @@ We need a load of dependencies and plugins. So override your default pom.xml fil
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>app</groupId>
-    <artifactId>app-demo</artifactId>
+    <artifactId>fourthingsplusdb</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
@@ -39,7 +39,17 @@ We need a load of dependencies and plugins. So override your default pom.xml fil
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <junit.version>5.8.2</junit.version>
+        <javalin.version>6.1.3</javalin.version>
+        <javalin-rendering.version>6.1.3</javalin-rendering.version>
+        <thymeleaf.version>3.1.2.RELEASE</thymeleaf.version>
+        <thymeleaf-extras.version>3.0.4.RELEASE</thymeleaf-extras.version>
+        <slf4j.version>2.0.12</slf4j.version>
+        <jackson.version>2.17.0-rc1</jackson.version>
+        <hikariCP.version>5.1.0</hikariCP.version>
+        <junit.version>5.10.2</junit.version>
+        <hamcrest.version>2.2</hamcrest.version>
+        <postgresql.version>42.7.2</postgresql.version>
+
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -47,42 +57,42 @@ We need a load of dependencies and plugins. So override your default pom.xml fil
         <dependency>
             <groupId>io.javalin</groupId>
             <artifactId>javalin</artifactId>
-            <version>5.6.1</version>
+            <version>${javalin.version}</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-simple</artifactId>
-            <version>2.0.7</version>
+            <version>${slf4j.version}</version>
         </dependency>
         <dependency>
             <groupId>io.javalin</groupId>
             <artifactId>javalin-rendering</artifactId>
-            <version>5.6.1</version>
+            <version>${javalin-rendering.version}</version>
         </dependency>
         <dependency>
             <groupId>org.thymeleaf</groupId>
             <artifactId>thymeleaf</artifactId>
-            <version>3.1.1.RELEASE</version>
+            <version>${thymeleaf.version}</version>
         </dependency>
         <dependency>
             <groupId>org.thymeleaf.extras</groupId>
             <artifactId>thymeleaf-extras-java8time</artifactId>
-            <version>3.0.4.RELEASE</version>
+            <version>${thymeleaf-extras.version}</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.14.0-rc1</version>
+            <version>${jackson.version}</version>
         </dependency>
         <dependency>
             <groupId>com.zaxxer</groupId>
             <artifactId>HikariCP</artifactId>
-            <version>4.0.3</version>
+            <version>${hikariCP.version}</version>
         </dependency>
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
-            <version>42.6.0</version>
+            <version>${postgresql.version}</version>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
@@ -99,7 +109,7 @@ We need a load of dependencies and plugins. So override your default pom.xml fil
         <dependency>
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest</artifactId>
-            <version>2.2</version>
+            <version>${hamcrest.version}</version>
             <scope>test</scope>
         </dependency>
 
@@ -127,7 +137,7 @@ We need a load of dependencies and plugins. So override your default pom.xml fil
                     <transformers>
                         <transformer
                                 implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                            <mainClass>app.Main</mainClass>
+                            <mainClass>app.App</mainClass>
                         </transformer>
                     </transformers>
                     <filters>
@@ -154,7 +164,7 @@ We need a load of dependencies and plugins. So override your default pom.xml fil
     </build>
 
 </project>
-``````
+```
 
 Yup - it's a long one, but it will make us able to later add database connection, tests, logging, and a possibility for deployment build.
 
@@ -187,19 +197,19 @@ package app.config;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.templateresolver.ClassLoaderTemplateResolver;
 
-public class ThymeleafConfig {
-
-    public static TemplateEngine templateEngine() {
+public class ThymeleafConfig
+{
+    public static TemplateEngine templateEngine()
+    {
         TemplateEngine templateEngine = new TemplateEngine();
         ClassLoaderTemplateResolver templateResolver = new ClassLoaderTemplateResolver();
         templateResolver.setPrefix("templates/"); // assuming templates are in resources/templates/
         templateResolver.setSuffix(".html");
-        templateResolver.setTemplateMode("HTML");
         templateEngine.setTemplateResolver(templateResolver);
         return templateEngine;
     }
 }
-``````
+```
 
 Second, overwrite the main method in Main.class with this version:
 
@@ -210,7 +220,7 @@ public static void main(String[] args)
 
         Javalin app = Javalin.create(config -> {
             config.staticFiles.add("/public");
-            JavalinThymeleaf.init(ThymeleafConfig.templateEngine());
+             config.fileRenderer(new JavalinThymeleaf(ThymeleafConfig.templateEngine()));
         }).start(7070);
 
         // Routing
@@ -219,7 +229,7 @@ public static void main(String[] args)
     }
 ```
 
-Third, we need to add an index.html file in the `resources/templates` folder:
+Third, we need to add an `index.html` file in the `resources/templates` folder:
 
 ```html
 <!DOCTYPE html>
@@ -256,6 +266,6 @@ h1 {
 
 ## 5. Build the project and fire up the Jetty server
 
-Run the main method and watch the running local demo-website on http://localhost:7070/
+Run the main method and watch the running local demo-website on <http://localhost:7070/>
 
 Nice!
