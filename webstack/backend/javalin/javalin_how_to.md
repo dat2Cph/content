@@ -287,8 +287,7 @@ To insert an image do like this:
 ```
 
 Note: place the image file in the `/public/images` folder. The `th:src="@{/images/fourthingsplus.png}"` attribute
-is used by Thymeleaf. The other attribute: `src="../public/images/fourthingsplus.png"` will be applied in case
-you open the file directly in a browser instead of through the Thymeleaf template engine.
+is used by Thymeleaf. The other attribute: `src="../public/images/fourthingsplus.png"` will be applied in case you open the file directly in a browser instead of through the Thymeleaf template engine.
 
 ### 4. How to iterate through a list (each ....)
 
