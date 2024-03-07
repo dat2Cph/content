@@ -72,12 +72,8 @@ import java.util.logging.Logger;
 /***
  * Singleton pattern applied to handling a Hikari ConnectionPool
  */
-public class ConnectionPool {
-    // TODO: Change default access credentials for MySql server as needed below:
-    private static final String DEFAULT_USER = "postgres";
-    private static final String DEFAULT_PASSWORD = "postgres";
-    private static final String DEFAULT_URL = "jdbc:postgresql://localhost:5432/%s?currentSchema=public";
-    private static final String DEFAULT_DB = "startcode";
+public class ConnectionPool
+{
 
     public static ConnectionPool instance = null;
     public static HikariDataSource ds = null;
@@ -86,17 +82,8 @@ public class ConnectionPool {
      * Empty and private constructor due to single pattern. Use getInstance methods to
      * instantiate and get a connection pool.
      */
-    private ConnectionPool() {
-    }
-
-    /***
-     * Getting a singleton instance of a Hikari Connection Pool with default credentials and
-     * connection string hardcoded in class
-     * @return ConnectionPool object
-     */
-    public static ConnectionPool getInstance()
+    private ConnectionPool()
     {
-        return getInstance(DEFAULT_USER, DEFAULT_PASSWORD, DEFAULT_URL, DEFAULT_DB);
     }
 
     /***
@@ -109,15 +96,19 @@ public class ConnectionPool {
      * @param db database name for connection
      * @return A ConnectionPool object
      */
-    public static ConnectionPool getInstance(String user, String password, String url, String db) {
-        if (instance == null) {
-            if (System.getenv("DEPLOYED") != null) {
+    public static ConnectionPool getInstance(String user, String password, String url, String db)
+    {
+        if (instance == null)
+        {
+            if (System.getenv("DEPLOYED") != null)
+            {
                 ds = createHikariConnectionPool(
                         System.getenv("JDBC_USER"),
                         System.getenv("JDBC_PASSWORD"),
-                        System.getenv("JDBC_CONNECTION_STRING"),
+                        System.getenv("JDBC_CONNECTION_STRING_STARTCODE"),
                         System.getenv("JDBC_DB"));
-            } else {
+            } else
+            {
                 ds = createHikariConnectionPool(user, password, url, db);
             }
             instance = new ConnectionPool();
@@ -130,15 +121,16 @@ public class ConnectionPool {
      * @return a database connection to be used in sql requests
      * @throws SQLException
      */
-    public synchronized Connection getConnection() throws SQLException {
-        Logger.getLogger("web").log(Level.INFO, ": get data connection");
+    public synchronized Connection getConnection() throws SQLException
+    {
         return ds.getConnection();
     }
 
     /***
      * Closing a Hikari Connection Pool after use.
      */
-    public synchronized void close() {
+    public synchronized void close()
+    {
         Logger.getLogger("web").log(Level.INFO, "Shutting down connection pool");
         ds.close();
     }
@@ -151,7 +143,8 @@ public class ConnectionPool {
      * @param db database name for connection
      * @return a Hikari DataSource
      */
-    private static HikariDataSource createHikariConnectionPool(String user, String password, String url, String db) {
+    private static HikariDataSource createHikariConnectionPool(String user, String password, String url, String db)
+    {
         Logger.getLogger("web").log(Level.INFO,
                 String.format("Connection Pool created for: (%s, %s, %s, %s)", user, password, url, db));
         HikariConfig config = new HikariConfig();
@@ -166,7 +159,6 @@ public class ConnectionPool {
         config.addDataSourceProperty("prepStmtCacheSqlLimit", "2048");
         return new HikariDataSource(config);
     }
-
 }
 ```
 
@@ -188,7 +180,7 @@ Then the database can be accessed like this:
 public static List<User> getAllUsers(ConnectionPool connectionPool) throws DatabaseException
     {
         List<User> userList = new ArrayList<>();
-        String sql = "select * from \"user\"";
+        String sql = "select * from users";
         try (Connection connection = connectionPool.getConnection())
         {
             try (PreparedStatement ps = connection.prepareStatement(sql))
@@ -360,12 +352,6 @@ Use a hashmap to add objects you want to transfer to a Thymeleaf template. Eithe
 
 `ctx` maps:
 
-- Application scope:
-
-```Java
-app.attribute("counter", count);
-```
-
 - Session Scope
 
 ```Java
@@ -398,12 +384,6 @@ ctx.render("index.html");
 ```
 
 From HTML and Thymeleaf, the hashmaps are accessible in various ways.
-
-- Application scope:
-
-```html
-
-```
 
 - Session Scope
 
@@ -464,10 +444,10 @@ In the html page:
 
 ```html
 <form method="post">
-        <input type="text" name="username" placeholder="username">
-        <input type="password" name="password" placeholder="password">
-        <button formaction="/login" type="submit" value="login">Login</button>
-    </form>
+    <input type="text" name="username" placeholder="username">
+    <input type="password" name="password" placeholder="password">
+    <button formaction="/login" type="submit" value="login">Login</button>
+</form>
 ```
 
 The two form parameters `username` and `password` are sent along the http POST request to Javalin and lands at the route "/login".
