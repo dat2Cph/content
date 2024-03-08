@@ -351,7 +351,7 @@ To make the website dynamic means to adapt the html pages to user-input.
 
 #### 1.a From backend to frontend
 
-Use a hashmap to add objects you want to transfer to a Thymeleaf template. Either add to the built-in maps in the `ctx` object:
+Use a hashmap to add objects you want to transfer to a Thymeleaf template. Add to the built-in maps in the `ctx` object:
 
 `ctx` maps:
 
@@ -367,20 +367,7 @@ ctx.sessionAttribute("userList", userList);
 ctx.attribute("totalSum", 1025);
 ```
 
-Or use your own hashmap (model):
-
-```Java
-Map<String, Object> model = new HashMap<>();
-model.put("totalSum", 1025);
-```
-
-and add it to the render method:
-
-```Java
-ctx.render("index.html", model)
-```
-
-If you don't use your own model object, then there is no need for adding to the render method. It will all be contained in `ctx`:
+And then render the template including your attributes:
 
 ```Java
 ctx.render("index.html");
@@ -398,12 +385,6 @@ From HTML and Thymeleaf, the hashmaps are accessible in various ways.
 
 ```html
 <p th:text="${name}"></p>
-```
-
-Or use your own hashmap (model):
-
-```html
-<div th:text="${hello}"></div>
 ```
 
 Note: unfortunately, IntelliJ is not able to provide autocompletion and name resolution for scope and model variables.
