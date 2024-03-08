@@ -1,3 +1,5 @@
+<img alt="javalin" src="images/javalinlogo.svg" width="100" align="right" />
+
 # Javalin Cookbook
 
 Begin creating a new project from scratch using this [tutorial](./setup.md). Then you might need to know how to ...
