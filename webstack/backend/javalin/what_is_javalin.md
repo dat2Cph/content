@@ -17,3 +17,13 @@ If you are curious, then this analysis from 2020 on Java micro framworks is very
 The Java world has given rise to numerous micro frameworks over the past years. This time line (also from Jaap Coomans) shows the rich ecosystem:
 
 ![micro frameworks](./images/microframeworks_timeline.png)
+
+## Why are we working with Javalin?
+
+The Javalin documentation states very good [reasons for using Javalin in education](https://javalin.io/for-educators). At Cphbusiness we prefer teaching general skills software development, and we also prefer not to be locked into proprietary technologies.
+
+Javalin is a lively open source community, sourced under the Apache 2 license. The micro framework is openly architected. We can easily choose to slowly build on top of the basic functionality. That's very helpful when dealing with young and inexperienced students. We can start out with simplicity and build more advanced patterns and solutions on top of that as we go along.
+
+It's also very efficient to work with Javalin. It takes less than 500ms from compiling to a fully running website in Jetty. Prior to Javalin, we worked with Java Servlets, JSP, and Tomcat. It sometimes took 10-15 seconds for the students to get a web application up'n running.
+
+So we can definitely recommend Javalin.
