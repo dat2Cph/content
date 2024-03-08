@@ -20,7 +20,7 @@ The Java world has given rise to numerous micro frameworks over the past years. 
 
 ## Why are we working with Javalin?
 
-The Javalin documentation states very good [reasons for using Javalin in education](https://javalin.io/for-educators). At Cphbusiness we prefer teaching general skills software development, and we also prefer not to be locked into proprietary technologies.
+The Javalin documentation states very good [reasons for using Javalin in education](https://javalin.io/for-educators). At Cphbusiness we prefer teaching general skills in software development, and we also prefer not to be locked into proprietary technologies.
 
 Javalin is a lively open source community, sourced under the Apache 2 license. The micro framework is openly architected. We can easily choose to slowly build on top of the basic functionality. That's very helpful when dealing with young and inexperienced students. We can start out with simplicity and build more advanced patterns and solutions on top of that as we go along.
 
