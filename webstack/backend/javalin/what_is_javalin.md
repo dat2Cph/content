@@ -10,7 +10,7 @@ Micro frameworks in Java often emphasize simplicity and a "bare-bones" approach 
 
 Popular Java micro frameworks include Spark, Javalin, and Micronaut, each offering a different set of features and levels of abstraction, but all adhering to the principle of keeping things simple and modular. These frameworks are suitable for developers who want to have more control over their application's architecture and dependencies, enabling them to create lightweight, efficient, and tailored web applications.
 
-If you are curious, then this analysis from 2020 on Java micro framworks is very interesting: [The ultimate micro framework smackdown](A simple web framework for Java and Kotlin) by Jaap Coomans.
+If you are curious, then this analysis from 2020 on Java micro framworks is very interesting: [The ultimate micro framework smackdown - A simple web framework for Java and Kotlin](https://www.jfokus.se/jfokus20-preso/The-ultimate-microframework-smackdown.pdf) by Jaap Coomans.
 
 ## Timeline
 
