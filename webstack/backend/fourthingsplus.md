@@ -1,29 +1,30 @@
 # Four Things Plus
 
-Vi skal bygge en huskeseddel applikation. Det er som bekendt svært at holde mere end tre ting i hovedet, så derfor skal vi bygge en lille webapplikation, som  vi kalder for "fourthingsplus".
+Denne tutorial er tænkt om et "selvstudium", hvor du sideløbende med undervisningen på skolen, kan sidde i ro og mag og arbejde dig igennem en længere sammenhængende case. F.eks. på de dage, hvor vi ikke har undervisning.
+
+Sørg for at kode med i IntelliJ hele vejen, og tag lidt noter undervejs.
+Fx. med de spørgsmål du evt. måtte have.
+
+- Her er et [link til en mappe med alle videoer](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx?folderID=ad84da6d-abc5-4098-8cde-b12d01493556)
+
+## Nå men nu til opgaven
+
+Vi skal bygge en huskeseddel applikation. Det er som bekendt svært at holde mere end tre ting i hovedet, så derfor skal vi bygge en lille webapplikation, som  vi kalder for **"fourthingsplus"**.
 
 - Her er en lille [mockup lavet i Figma](https://www.figma.com/proto/EAJhgUIiODZop8WOQHplUl/Todoist?page-id=0%3A1&node-id=1%3A3&viewport=593%2C479%2C1.26&scaling=scale-down&starting-point-node-id=1%3A3). Alternativt se mockups nederst på siden.
 
-Mandag skal vi først have udviklet noget "startkode" vi kan implementere websitet i. Derefter begynder vi at implementere løs.
+## Plan
 
- Vi gør det sammen klassen og begynder selvfølgelig med en lille foranalyse og sådan. Så sid på hænderne og vent med at kode til mandag.
+1. Først udarbejder vi et use-case diagram
+2. Dernæst beskrives hver use-case som en user story
+3. På baggrund af det laver vi en simpel domænemodel og på baggrund af den et ER-diagram (ERD) over databasen.
+4. Så går vi i gang med at kode. Først oprettes et Java / Maven projekt i IntelliJ ([instruktioner](./javalin/setup.md))
+5. Dernæst oprettes en database i Postgres og der lægges lidt fake data ind i tabellerne.
+6. Når alt dette er på plads begynder vi at implementere de enkelte user stories en ad gangen.
+7. Lidt efter lidt begynder vi også at style siderne, så udseende begynde at ligne de udleverede mockups.
+8. Vi vil også refaktorere koden løbende når det er mest oplagt. Dvs, at I ikke får den færdige løsning fra starten, men det er noget vi arbejder hen imod.
 
-Stikord:
-
-1. Lav et use-case diagram
-2. Beskriv hver use-case som en user story
-3. Lav et navigationsdiagram (tilstandsdiagram) over systemet
-4. Opret et Java / Maven projekt i IntelliJ ([instruktioner](./javalin/setup.md))
-5. Byg en skabelon til websiderne med html og css.
-6. Lav en htmlside til hver underside
-7. Opret en database i Postgres (mock evt. databasen med Java datastrukturer i stedet til en start)
-8. Skitser et EER diagram til applikationen
-7. Begynd med at kode login funktionaliteten
-8. Kom nogle opgaver i databasen
-9. Lav en side, der viser opgaverne
-10. Implementer diverse CRUD funktioner
-
-## Her er et logo vi kan sakse:
+## Her er et logo vi kan sakse
 
 ![FourThingsPlusLogo](./images/fourthingsplus.png)
 
