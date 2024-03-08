@@ -45,8 +45,8 @@ Det første kundemøde mundede ud i en række såkaldte user-stories. De beskriv
 2. Et kørende website, som løser Olsker Cupcakes behov. Vi har ikke lavet en virtuel maskine i skyen til at hoste vores website på nettet, så det er fint nok at I kan vise løsningen frem på jeres egen laptop.
 3. Hver user story implementeres en ad gangen. Kunden vil som minimum se en løsning på de første seks. I skal selv prioritere rækkefølgen af user stories og gerne komme med et gæt på hvor lang tid det tager at lave dem.
 4. Når de første 6 user-stories er implementeret, tager I resten en ad gangen og ser hvor langt I når.
-5. Der løber flere krav på senere på måneden i form af en lille rapport og anden teknisk dokumentation. Det optimale ville være hvis I er færdige med at kode webshoppen i løbet af mandag den 30/10, og så bruger et par dage på dokumentationen. Der indkaldes til briefing på rapporten mandag den 30. oktober.
-6. I skal også indsætte et link i rapporten til en kort video-demo af jeres færdige løsning. Brug et screencast værktøj og sørg for at videoen ikke varer længere end 2-3 minutter. I kan fx bruge [screenpal](https://screenpal.com/screen-recorder) eller optagefunktionen i Zoom. Videoen kan I uploade til YouTube på et skjult link eller lignende.
+5. Der løber flere krav på senere på måneden i form af en lille rapport og anden teknisk dokumentation. Det optimale ville være hvis I er færdige med at kode webshoppen i løbet af mandag i projektets uge-2, og så bruger et par dage på dokumentationen. Der indkaldes til briefing på rapporten.
+6. I skal også indsætte et link i rapporten til en kort video-demo af jeres færdige løsning. Brug et screencast værktøj og sørg for at videoen ikke varer længere end 2-3 minutter. I kan fx bruge [screenpal](https://screenpal.com/screen-recorder) eller optagefunktionen i Zoom eller Panopto. Videoen kan I uploade til YouTube på et skjult link eller lignende.
 
 ## Aflevering af opgaven (deadline og links)
 
