@@ -30,4 +30,4 @@ This is an overview of often used Design Patterns and principles on the Computer
 - [SOLID](./solid.md)
 - [High Cohesion](./highcohesion.md)
 - [Low Coupling](./lowcoupling.md)
-- [Composition over inheritance]()
+- [Composition over inheritance](./composition_over_inheritance.md)

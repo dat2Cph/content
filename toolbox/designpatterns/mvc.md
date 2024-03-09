@@ -42,3 +42,5 @@ In summary, within an MVC context:
 - **Controller**: Javalin (routing and handling HTTP requests)
 
 ![MVC](./images/mvc.jpg)
+
+[Back to Design Pattern overview](./README.md)

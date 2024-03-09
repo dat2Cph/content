@@ -41,3 +41,5 @@ Benefits of the Singleton pattern include:
 - **Global State**: It offers a way to store and access a global state.
 
 However, it's important to use the Singleton pattern judiciously. Overuse can lead to issues such as making your code more difficult to test, leading to hidden dependencies between classes, and making it harder to manage the application's state.
+
+[Back to Design Pattern overview](./README.md)
