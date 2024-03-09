@@ -31,3 +31,23 @@ Vi skal bygge en huskeseddel applikation. Det er som bekendt svært at holde mer
 ## Mockups (i stedet for Figma)
 
 ![Mockup](./images/fourthingsplus_mockup.png)
+
+## Foranalyse: usecase diagram og user stories (dokumentation)
+
+![Foranalyse](./images/fourthingsplus_analysis.jpg)
+
+## Foranalyse: datamodel (dokumentation)
+
+![Datamodel](./images/fourthingsplus_datamodel.jpg)
+
+## State diagram: login
+
+![Login](./images/fourthingsplus_statediagram_login.jpg)
+
+## State diagram: create user
+
+![Opret bruger](./images/fourthingsplus_statediagram_createuser.jpg)
+
+## State diagram: edit and update task
+
+![Rediger task](./images/fourthingsplus_statediagram_edit_task.jpg)
