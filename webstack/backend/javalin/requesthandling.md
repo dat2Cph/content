@@ -6,7 +6,7 @@ This is a rough description of a request/response cycle. The focus is on where t
 
 ## The request
 
-A http request is sent from the browser. A header and maybe also some data is sent. The data is carried in the request body - which is sometimes also called the `payload`.
+An http request is sent from the browser. A header and maybe also some data is sent. The data is carried in the request body - which is sometimes also called the `payload`.
 
 An http request is usually either:
 
