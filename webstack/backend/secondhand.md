@@ -1,4 +1,4 @@
-# Second hand website
+# Cphbusiness Second Hand Website
 
 Så skal vi give den blå avis baghjul ;-)
 
