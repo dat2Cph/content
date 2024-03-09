@@ -1,0 +1,33 @@
+# Design Patterns and Princples
+
+This is an overview of often used Design Patterns and principles on the Computer Science Education in Cphbusiness:
+
+## Architectural Patterns
+
+- [Datamapper](./datamapper.md)
+- [Pagecontroller](./pagecontroller.md)
+- [MVC](./mvc.md)
+- [Facade](./facade.md)
+
+## Creational Patterns
+
+- [Singleton](./singleton.md)
+- [Factory](./factory.md)
+
+## Behavioral Patterns
+
+- [Command](./command.md)
+- [Strategy](./strategy.md)
+- [Observer](./observer.md)
+
+## Inversion of Control (IOC) Patterns
+
+- [IOC overview](./ioc.md)
+- [Dependency Injection](./dependencyinjection.md)
+
+## Other principles
+
+- [SOLID](./solid.md)
+- [High Cohesion](./highcohesion.md)
+- [Low Coupling](./lowcoupling.md)
+- [Composition over inheritance]()
