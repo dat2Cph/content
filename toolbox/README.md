@@ -58,7 +58,7 @@
 
 | Emne | Kommentar | Semester |
 |------|-----------|----------|
-| Design Patterns | The most important ones | All |
+| [Design Patterns](./designpatterns/README.md/) | The most important ones | All |
 
 ### 3D Print
 
