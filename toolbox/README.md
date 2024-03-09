@@ -26,8 +26,8 @@
 
 | Emne | Kommentar | Semester |
 |------|-----------|----------|
-|Opsætning af Postgres||2|
-|[SQL 101](https://www.w3schools.com/Sql/)|SQL oversigt|2|
+|[Postgres setup](https://github.com/dat2Cph/2semDockerSetupLocal)|Using Docker|2|
+|[SQL 101](https://www.w3schools.com/Sql/)|SQL overview|2|
 |Dato og tid|Håndtering af tidsmæssige typer |2 + 3|
 
 ### Kvalitetssikring (test)
@@ -58,7 +58,7 @@
 
 | Emne | Kommentar | Semester |
 |------|-----------|----------|
-||||
+| Design Patterns | The most important ones | All |
 
 ### 3D Print
 
