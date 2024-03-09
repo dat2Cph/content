@@ -12,6 +12,7 @@
 ## Java backend (Javalin)
 
 - [What is Javalin?](./javalin/what_is_javalin.md)
+- [The request/response cycle](./javalin/requesthandling.md)
 - [javalin.io](https://javalin.io/)
 - [Javalin setup instructions](./javalin/setup.md)
 - [Javalin and Thymeleaf How-To cookbook tutorial](./javalin/javalin_how_to.md)
