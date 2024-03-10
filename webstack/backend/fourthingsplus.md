@@ -99,6 +99,14 @@ ALTER TABLE ONLY public.task
     ADD CONSTRAINT fk_user_task FOREIGN KEY (user_id) REFERENCES public.users(user_id) NOT VALID;
 ```
 
+## Datamappers and custom exceptions gists
+
+- [DatabaseException](https://gist.github.com/jonbertelsen/ee38f3acf9263724c59d9a832629ad0c)
+
+- [UserMapper.java](https://gist.github.com/jonbertelsen/8914972cdf5677039152be26b5676125)
+
+- [TaskMapper.java](https://gist.github.com/jonbertelsen/30736832172437ea12bfc7715cf1f462)
+
 ## State diagram: login
 
 ![Login](./images/fourthingsplus_statediagram_login.jpg)
