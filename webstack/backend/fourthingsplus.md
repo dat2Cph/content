@@ -5,7 +5,7 @@ Denne tutorial er tænkt om et "selvstudium", hvor du sideløbende med undervisn
 Sørg for at kode med i IntelliJ hele vejen, og tag lidt noter undervejs.
 Fx. med de spørgsmål du evt. måtte have.
 
-- Her er et [link til en mappe med alle videoer](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx?folderID=ad84da6d-abc5-4098-8cde-b12d01493556)
+- Her er et [link til en mappe med alle videoer](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx?folderID=ad84da6d-abc5-4098-8cde-b12d01493556) (de kommer dumpende i løbet af ugen)
 
 ## Nå men nu til opgaven
 
