@@ -88,8 +88,6 @@ Dette afsnit bruges til at beskrive særlige forhold der benyttes i programmet. 
 - Hvilke brugertyper, der er valgt i databasen, og hvordan de er brugt i jdbc
 - ... andre elementer
 
-Here's the conversion to Markdown:
-
 Husk: det er bedre med 2 linjers dokumentation end ingen.
 
 ## Status på implementation
