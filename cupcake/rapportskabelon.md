@@ -74,7 +74,6 @@ Det som brugeren oplever er en række websider, hvor man kan indtaste oplysninge
 - Oversigtsdiagrammet. Hvis det bliver for stort må man dele det op. Men det er vigtigt at der er et overordnet diagram.
 - Hvis man har benyttet sig af en “fælles navigations bar” i toppen af alle sider, skal man forklare det.
 - Hvis nogle sider kun kan nåes af nogle brugere (dem der har konto, dem der er logget ind, dem der arbejder i butikken,…), så skal det fremgå.
-- Navne på jsp sider skal fremgå, og hvilke servlets der bringer en fra den ene side til den næste.
 
 Navigationsdiagrammer laves som UML Tilstandsmaskiner [state machine diagram](https://cphbusiness.mrooms.net/mod/book/view.php?id=625178&chapterid=28472). Bemærk specielt at det, der hedder “composite state”, er meget velegnet til at indkapsle at man er logget ind.
 
