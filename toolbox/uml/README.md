@@ -21,3 +21,7 @@ Først og fremmest tegnes diagrammerne typisk på en tavle eller på et stykke p
 ## Slides
 
 * [Aktivitetsdiagrammer](./docs/Larman-28-Activity-diagrams.pdf)
+
+* * *
+
+[UML forside](README.md) | [PlantUML](./plantuml.md) | [Tutorials](./tutorials.md)

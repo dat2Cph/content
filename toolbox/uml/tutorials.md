@@ -31,3 +31,7 @@ Generelt præsenteres diagrammer som regel i denne rækkefølge:
 ## Læs mere om UML
 
 Dette er en god kilde, hvor du kan læse mere om de enkelte diagrammer: UML på [TutorialsPoint](https://www.tutorialspoint.com/uml/)
+
+* * *
+
+[UML forside](README.md) | [PlantUML](./plantuml.md) | [Tutorials](./tutorials.md)
