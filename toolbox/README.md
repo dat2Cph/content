@@ -22,6 +22,12 @@
 |[Frontend ressourcer](../webstack/frontend/resources.md)|html, css, Thymeleaf|2|
 |[Backend ressourcer](../webstack/backend/resources.md)|Javalin|2|
 
+### Linux og deployment
+
+| Emne | Kommentar | Semester |
+|------|-----------|----------|
+|[Tutorial](../linux_and_deployment/)|How to set up a VM on Digital Ocean| 2 |
+
 ### Databaser
 
 | Emne | Kommentar | Semester |
@@ -34,7 +40,7 @@
 
 | Emne | Kommentar | Semester |
 |------|-----------|----------|
-||||
+|[Test](./test/testteori.md)|Teori om test og kvalitetssikring| 2 + 3|
 
 ### GIT og GitHub
 
