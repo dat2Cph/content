@@ -62,6 +62,13 @@
 |------|-----------|----------|
 |[User stories](./sys/requirements/userstories.md)|User Stories og Accept-kriterier|2|
 
+### Projektstyring
+
+| Emne | Kommentar | Semester |
+|------|-----------|----------|
+|[Kanban](./sys/projectmanagement/kanban.md)|Kanban teori|2|
+|[Belbin](./sys/projectmanagement/belbin.md)|Introduktion|1 + 2|
+
 ### Design patterns
 
 | Emne | Kommentar | Semester |
