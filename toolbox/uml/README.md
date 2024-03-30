@@ -16,8 +16,8 @@ Dette er en god kilde, hvor du kan læse mere om de enkelte diagrammer: UML på�
 
 ## Tegning af diagrammer
 
-Først og fremmest tegnes diagrammerne typisk på en tavle eller på et stykke papir. Hvis man skal lave en digital udgave, så findes der mange værktøjer. De har alle deres fordele og ulemper. Som hovedregel skal man vælge et værktøj, som er hurtigt at anvende, og som gør det let løbende at ændre på sine diagrammer. Vi anbefaler at anvende Open Source produktet PlantUML på Datamatikerstudiet. [Her er en vejledning til hvordan du kommer i gang](https://cphbusiness.mrooms.net/mod/book/view.php?id=275874&chapterid=3792).
+Først og fremmest tegnes diagrammerne typisk på en tavle eller på et stykke papir. Hvis man skal lave en digital udgave, så findes der mange værktøjer. De har alle deres fordele og ulemper. Som hovedregel skal man vælge et værktøj, som er hurtigt at anvende, og som gør det let løbende at ændre på sine diagrammer. Vi anbefaler at anvende Open Source produktet PlantUML på Datamatikerstudiet. [Her er en vejledning til hvordan du kommer i gang](./plantuml.md).
 
 ## Slides
 
-* [Aktivitetsdiagrammer](https://efif.sharepoint.com/:b:/s/cph/Lyngby/EUonstBrTuFMmLpHggE5LvQBlUMYWE42dB3sDaP__g2lNg?e=arBfbe)
+* [Aktivitetsdiagrammer](./docs/Larman-28-Activity-diagrams.pdf)

@@ -27,4 +27,4 @@ Hvis man virkelig vil kaste sig over at bruge PlantUML så kan man bruge et plug
 
 Nu bør du så være istand til at arbejde med plant UML is IntelliJ direkte ved at højreklikke på en folder, vælg New og UML-diagramtype. Se billede nedenfor:
 
-![](https://datsoftlyngby.github.io/dat2sem2020SpringBornholm/Modul2/Week5-Report/img/PlantUmlScreenShot.png)
+![](./images/PlantUmlScreenShot.png)
