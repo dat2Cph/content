@@ -46,7 +46,7 @@
 
 | Emne | Kommentar | Semester |
 |------|-----------|----------|
-||||
+|[UML](./uml/)|Oversigt|1 + 2 + 3|
 
 ### Krav og user stories
 
