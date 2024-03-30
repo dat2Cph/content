@@ -52,15 +52,15 @@
 
 | Emne | Kommentar | Semester |
 |------|-----------|----------|
-|[UML](./uml/)|Oversigt|1 + 2 + 3|
-|[PlantUML](./uml/plantuml.md)|Intro to PlantUML|1 + 2 + 3|
-|[How to](./uml/tutorials.md)|Video tutorials|1 + 2 + 3|
+|[UML](./sys/uml/)|Oversigt|1 + 2 + 3|
+|[PlantUML](./sys/uml/plantuml.md)|Intro to PlantUML|1 + 2 + 3|
+|[How to](./sys/uml/tutorials.md)|Video tutorials|1 + 2 + 3|
 
 ### Krav og user stories
 
 | Emne | Kommentar | Semester |
 |------|-----------|----------|
-||||
+|[User stories](./sys/requirements/userstories.md)|User Stories og Accept-kriterier|2|
 
 ### Design patterns
 
