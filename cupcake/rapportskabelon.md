@@ -32,7 +32,7 @@ Det typiske der skal med for at forklare projektet er:
 
 ### Teknologi valg
 
-En kort beskrivelse af hvilke teknologier der er brugt (jdbc, mysql, Java …). Her er det _ikke_ meningen at I skal beskrive disse teknologier, men man skal sige hvilke der er brugt sådan at den der skal overtage projektet ved hvilken software der skal bruges. Der skal versions numre på (IntelliJ 2023.2.3, ikke blot “IntelliJ”).
+En kort beskrivelse af hvilke teknologier der er brugt (jdbc, Postgresql, Java …). Her er det _ikke_ meningen at I skal beskrive disse teknologier, men man skal sige hvilke der er brugt sådan at den der skal overtage projektet ved hvilken software der skal bruges. Der skal versions numre på (IntelliJ 2023.3.5, ikke blot “IntelliJ”).
 
 ## Krav
 
