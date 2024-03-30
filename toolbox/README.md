@@ -47,8 +47,8 @@
 | Emne | Kommentar | Semester |
 |------|-----------|----------|
 |[UML](./uml/)|Oversigt|1 + 2 + 3|
-|[UML](./uml/plantuml.md)|PlantUML|1 + 2 + 3|
-|[UML](./uml/tutorials.md)|Video tutorials|1 + 2 + 3|
+|[PlantUML](./uml/plantuml.md)|Intro to PlantUML|1 + 2 + 3|
+|[How to](./uml/tutorials.md)|Video tutorials|1 + 2 + 3|
 
 ### Krav og user stories
 
