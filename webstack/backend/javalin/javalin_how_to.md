@@ -107,7 +107,7 @@ public class ConnectionPool
                 ds = createHikariConnectionPool(
                         System.getenv("JDBC_USER"),
                         System.getenv("JDBC_PASSWORD"),
-                        System.getenv("JDBC_CONNECTION_STRING_STARTCODE"),
+                        System.getenv("JDBC_CONNECTION_STRING"),
                         System.getenv("JDBC_DB"));
             } else
             {
