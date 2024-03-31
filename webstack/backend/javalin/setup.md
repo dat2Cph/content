@@ -137,7 +137,7 @@ We need a load of dependencies and plugins. So override your default pom.xml fil
                     <transformers>
                         <transformer
                                 implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                            <mainClass>app.App</mainClass>
+                            <mainClass>app.Main</mainClass>
                         </transformer>
                     </transformers>
                     <filters>
