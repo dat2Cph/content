@@ -14,16 +14,20 @@ ssh root@ip
 
 ```bash
 adduser jetty (tast et sikkert password og gem det godt)
-usermod -aG sudo jetty
-su jetty (tast kodeord for at logge ind som jetty med root rettigheder)
+usermod -aG sudo jetty (add user to the sudo group to get all access rights)
+id jetty (to see user info for the jetty user)
+sudo su jetty (tast kodeord for at logge ind som jetty med root rettigheder)
 cd ~jetty (skift til hjemmefolderen for jetty brugeren) 
 ```
 
 ### 3. Fix ssh key
 
 ```bash
-mkdir .ssh
+cd
+mkdir .ssh (to create the ssh folder)
+ls -la (to see the new folder and its access rights)
 chmod 700 .ssh
+ls -la (to see changes)
 cd .ssh
 nano authorized_keys
 ```
@@ -34,7 +38,7 @@ Kopier din public key (fra lokal .ssh folder). Den ser nogenlunde således ud:
 
 Vær omhyggelig med KUN at kopiere nøglen - og undgå at få blanktegn med.
 
-Gem filen (`ctrl + X  Y`)
+Gem filen i nano editor (`ctrl + X -> Y -> enter`)
 
 ### 4. Sæt access level til nøglefilen
 
