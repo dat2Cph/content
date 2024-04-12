@@ -58,7 +58,7 @@ Brug nu `cd` og `ls` kommandoerne til at kigge dig lidt omkring på din maskine.
 Når du har kigger dig lidt omkring kan du altid komme tilbage til udgangspunkt ved at taste
 
 ```bash
-cd ~
+cd
 ```
 
 Nu er du klar til næste lektion, hvor vi skal installere Java
