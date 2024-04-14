@@ -43,6 +43,8 @@
 | Emne | Kommentar | Semester |
 |------|-----------|----------|
 |[Tutorial](../linux_and_deployment/)|How to set up a VM on Digital Ocean| 2 |
+|[Commands](linux/linuxcommands.md) | Most used Linux commands | 2 + 3 |
+|[Cheat Sheet](linux/linuxcommands.pdf)|Linux cheat sheet| 2 + 3 |
 
 ## Databaser
 
