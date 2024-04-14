@@ -45,6 +45,7 @@
 |[Tutorial](../linux_and_deployment/)|How to set up a VM on Digital Ocean| 2 |
 |[Commands](linux/linuxcommands.md) | Most used Linux commands | 2 + 3 |
 |[Cheat Sheet](linux/linuxcommands.pdf)|Linux cheat sheet| 2 + 3 |
+|[Add Swap disk on Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-22-04)|Make your Droplet more robust| 2 + 3 |
 
 ## Databaser
 
