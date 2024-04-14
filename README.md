@@ -15,4 +15,10 @@ Her er links til diverse materialer på GitHub:
 11. [Forretningsforståelse](./business/README.md)
 12. Semesterprojekt
 
+## Værktøjskasse / Toolbox
+
+Vi har samlet en række nyttige links i en [Toolbox](toolbox/README.md)
+
+## Om 2. semester
+
 Selve afviklingen af 2. semester foregår via Moodle. Dvs, at man på Moodle kan se tid/sted for undervisningen og hvad der arbejdes med hvornår. Det meste af indholdet ligger her på GitHub. Det har vi valgt at gøre fordi mange af materialerne indholder kodestumper, som GitHub kan gengive med fremhævning af syntaks og mulighed for at kopiere indholdet. Det sparer os alle for meget tid og besvær.
