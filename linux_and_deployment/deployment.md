@@ -1,5 +1,16 @@
 # Deploy din web applikation på en Droplet
 
+Når man skal deploye et Javalin projekt kan de gøres på flere måder. Lad din undervise guide dig. Så derfor:
+
+![Red or Blue](./images/redblue.webp)
+
+Vælger du den blå pille, skal du følge vejledningen på denne side. Det er den letteste udgave,
+men du kan desværre ikke bruge dit eget domænenavn, men derimod ip-nummer + portnummer.
+
+Hvis du vælger den røde pille, skal du følge [denne vejledning](https://github.com/dat2Cph/caddy_deployment). Den er noget mere kringlet at forstå, men giver nogle ekstra muligheder på hånden. Blandt andet for https og brug af domænenavne og subdomæner.
+
+## Den blå pille: IP + port og service-fil
+
 Første gang du skal deploye din web applikation skal der lidt opsætning til. Når det er gjort, er det forholdsvis enkelt at gen-deploye en ny udgave af websitet. For at kunne overføre en web applikation til Dropletten skal vi igennem følgende trin (oversigt):
 
 1. Lav en folder på din Droplet ( kald den `webs`), hvor java jar-filen skal lægge i.
@@ -151,11 +162,11 @@ Du vil nok bemærke at applikationen ikke kører endnu. Det skyldes at vi mangle
 
 ## 6. Vis dit website
 
-Nu kan du tilgå dit website på http://ip:7070
+Nu kan du tilgå dit website på <http://ip:7070>
 
 ## Videre herfra
 
-Du er sådan set færdig med oprettelse og konfiguration af din Droplet - og har fået deployet din web applikation. 
+Du er sådan set færdig med oprettelse og konfiguration af din Droplet - og har fået deployet din web applikation.
 Måske er det tid til en kop kaffe?
 
 - [Hop tilbage til oversigten](./README.md)
