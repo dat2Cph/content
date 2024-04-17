@@ -60,7 +60,7 @@ Når du har kigget dig lidt omkring kan du altid komme tilbage til udgangspunkte
 cd ~
 ```
 
-Nu er du klar til næste lektion, hvor vi skal installere Java
+Nu er du klar til næste lektion, hvor vi skal oprette en ny bruger.
 
 ## Videre herfra
 
