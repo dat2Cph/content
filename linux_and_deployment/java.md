@@ -20,6 +20,8 @@ OpenJDK Runtime Environment (build 17.0.7+7-Ubuntu-0ubuntu122.10.2)
 OpenJDK 64-Bit Server VM (build 17.0.7+7-Ubuntu-0ubuntu122.10.2, mixed mode, sharing)
 ```
 
+Mulighed beder installtionen dig om at genstarte en række services. Sig bare OK og tryk retur.
+
 Når det er fikset, kan du gå videre til næste lektion.
 
 ## Videre herfra
