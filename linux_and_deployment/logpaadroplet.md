@@ -15,16 +15,16 @@ Når der er skabt forbindelse til din Droplet bliver du første gang spurgt om d
 Nu skulle du gerne være logget på. Beviset er at din kommando-prompt fx hedder:
 
 ```bash
-root @ ditdropnavn ~#
+root@ditdropnavn ~#
 ```
 
 ## Opdater din Ubuntu
 
-Vi begynder med at opdatere Ubuntu:
+Vi begynder med at opdatere Ubuntu. Upgrade kan godt tage lidt tid at køre:
 
 ```bash
 apt update
-apt upgrade (den her tager lidt tid)
+apt upgrade
 ```
 
 - Du skal muligvis svare `Y` for at køre upgrade og tillade at de nye opdateringer bruger lidt diskplads.
@@ -36,7 +36,6 @@ apt upgrade (den her tager lidt tid)
 - Hvis du får en `Pending kernel upgrade` besked, så trykker du bare [Return] og OK til at genstarte diverse services.
 
 I det hele taget skal du bare tage Ja-hatten på og godkende diverse spørgsmål. Vi har jo ikke noget installeret i forvejen udover default, så der er ikke noget at miste ;-)
-
 
 ## Genstart din Droplet og log ind igen
 
@@ -55,10 +54,10 @@ ssh root@ip
 
 Brug nu `cd` og `ls` kommandoerne til at kigge dig lidt omkring på din maskine. Du kan også prøve `pwd` for at se hvor i fil-systemet du er landet.
 
-Når du har kigger dig lidt omkring kan du altid komme tilbage til udgangspunkt ved at taste
+Når du har kigget dig lidt omkring kan du altid komme tilbage til udgangspunktet (din hjemmefolder) ved at taste
 
 ```bash
-cd
+cd ~
 ```
 
 Nu er du klar til næste lektion, hvor vi skal installere Java

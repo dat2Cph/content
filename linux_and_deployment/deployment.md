@@ -80,7 +80,7 @@ For at kunne bygge en `fat jar` skal dette være til stede sidst i `pom.xml`:
 ```
 
 - Byg projektet med maven package (i IntelliJ)
-- hop ned i `target` mappen
+- Hop ned i `target` mappen og åbn en terminal
 
 ## 3. Kopier applikationen med secure copy
 
@@ -90,7 +90,17 @@ scp app.jar jetty@IP:~/webs/
 
 Check på din Droplet at filen blev kopieret det rigtige sted hen.
 
-## 4. Gør din applikation til en service på Dropletten
+### 4. Åbn for port 7070 i ufw
+
+Dit Javalin website er konfigureret til at lytte på en bestemt port. Typisk
+i Main.class. Vi bruger normalt 7070, men hvis du vil hoste flere Javalin applikationer på Dropletten, så skal du køre på andre porte. F.eks. 7071, 7072 osv. Og de porte skal du også åbne for. Men i første omgang åbner vi bare for 7070:
+
+```bash
+sudo ufw allow 7070/tcp
+sudo ufw status
+```
+
+## 5. Gør din applikation til en service på Dropletten
 
 Log på remote igen. Du skal nu oprette en såkaldt `service-fil` ved navnet `jettyapp` eller hvad du ønsker at kalde den (`cupcake`, `carport` etc)
 
@@ -156,11 +166,11 @@ sudo service jettyapp status
 
 Du vil nok bemærke at applikationen ikke kører endnu. Det skyldes at vi mangler at migrere databasen.
 
-## 5. Overfør din database til Dropletten - hvis den ikke allerede er der
+## 6. Overfør din database til Dropletten - hvis den ikke allerede er der
 
 - [How to export and import a Postgres database](../webstack/backend/javalin/javalin_how_to.md#4-how-to-export-and-import-a-database)
 
-## 6. Vis dit website
+## 7. Vis dit website
 
 Nu kan du tilgå dit website på <http://ip:7070>
 

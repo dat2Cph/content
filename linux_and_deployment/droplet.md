@@ -20,7 +20,7 @@ Frankfurt for low latency
 
 ## Choose an image
 
-From OS Marketplace: `Docker 23.0.6 on Ubuntu 22.04`
+From OS Marketplace: `Docker 25.0.3 on Ubuntu 22.04`
 
 ## Choose size
 
