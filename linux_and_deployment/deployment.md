@@ -135,6 +135,12 @@ sudo service jettyapp stop
 sudo service jettyapp status
 ```
 
+Hvis servicen fejler kan du se loggen med:
+
+```bash
+sudo journalctl -u jettyapp
+```
+
 Du skal selvfølgelig ændre `jettyapp` med det du har kaldt din service.
 
 Hvis du har brug for at se log fra jetty, så brug:
