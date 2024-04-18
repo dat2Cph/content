@@ -209,7 +209,9 @@ public class ThymeleafConfig
         return templateEngine;
     }
 }
+```
 
+```java
 package app.config;
 
 import jakarta.servlet.SessionTrackingMode;
