@@ -189,7 +189,7 @@ It should look like this:
 
 This is how to set up the parts to get started:
 
-First, add a package called `config` and add this class into it:
+First, add a package called `config` and add these two classes into it:
 
 ```Java
 package app.config;
@@ -209,6 +209,25 @@ public class ThymeleafConfig
         return templateEngine;
     }
 }
+
+package app.config;
+
+import jakarta.servlet.SessionTrackingMode;
+import org.eclipse.jetty.server.session.SessionHandler;
+
+import java.util.EnumSet;
+
+public class SessionConfig
+{
+    public static SessionHandler sessionConfig()
+    {
+        SessionHandler sessionHandler = new SessionHandler();
+        sessionHandler.setUsingCookies(true);
+        sessionHandler.setSessionTrackingModes(EnumSet.of(SessionTrackingMode.COOKIE));
+        sessionHandler.setHttpOnly(true);
+        return sessionHandler;
+    }
+}
 ```
 
 Second, overwrite the main method in Main.class with this version:
@@ -220,6 +239,7 @@ public static void main(String[] args)
 
         Javalin app = Javalin.create(config -> {
             config.staticFiles.add("/public");
+             config.jetty.modifyServletContextHandler(handler ->  handler.setSessionHandler(SessionConfig.sessionConfig()));
              config.fileRenderer(new JavalinThymeleaf(ThymeleafConfig.templateEngine()));
         }).start(7070);
 
