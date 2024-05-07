@@ -1,46 +1,62 @@
 # Strategy Design Pattern
 
-The Strategy pattern is a behavioral design pattern that enables an algorithm's behavior to be selected at runtime. The main idea behind the Strategy pattern is to define a family of algorithms, encapsulate each one of them into a separate class, and make them interchangeable. This pattern lets the algorithm vary independently from the clients that use it, meaning you can change the algorithm being used without modifying the clients or when new algorithms are needed.
+The Strategy Pattern is a behavioral design pattern that allows algorithms to be defined independently of the clients that use them. It encapsulates a family of algorithms into separate classes and makes them interchangeable. This pattern is useful in situations where a client has multiple algorithms that could be used interchangeably, depending on the context. By using the Strategy Pattern, changing algorithms becomes as easy as changing an object.
 
-## Core Components
+### Structure of the Strategy Pattern
 
-The Strategy pattern involves three key roles:
+1. **Strategy Interface**: This defines a common interface for all supported algorithms. This is typically an abstract class or an interface with a method that all concrete strategies will implement.
 
-1. **Context**: The context class contains a reference to one of the strategy objects. The context is responsible for maintaining a reference to one of the concrete strategies and communicating with this strategy. The context may define an interface that lets the strategy access its data.
+2. **Concrete Strategies**: These are classes that implement the Strategy interface. Each concrete strategy contains the implementation of a specific algorithm.
 
-2. **Strategy Interface**: This interface declares operations common to all supported versions of some algorithm. The context uses this interface to call the algorithm defined by the concrete strategies.
+3. **Context**: This is the main class that maintains a reference to a Strategy object. It will use the strategy to execute a specific algorithm. The context is not aware of the concrete implementation of the strategy, so it remains independent of the specific algorithms.
 
-3. **Concrete Strategies**: These classes implement different variations of an algorithm the interface defines. Each class encapsulates a specific algorithm or behavior and can be chosen and utilized interchangeably by the context object.
+### Advantages
 
-### Implementation Steps
+- **Flexibility**: New algorithms can be introduced without modifying existing code.
+- **Decoupling**: Clients are decoupled from the algorithms, reducing dependencies.
+- **Maintainability**: Algorithms are encapsulated within individual classes, making them easier to maintain and test.
 
-1. **Define the Strategy Interface**: This interface should declare methods common to all supported algorithms.
+### Example Structure in UML
 
-2. **Implement Concrete Strategies**: Create classes that implement the strategy interface, each offering a different implementation of the algorithm or behavior.
+```
++---------------------+           +------------------+
+|      Context        |           |   <<interface>>  |
+|---------------------|           |     Strategy     |
+| - strategy: Strategy|           |------------------|
+|---------------------|           | + execute(): void|
+| + setStrategy(Strategy)         +------------------+
+| + performTask()                 /        ^
++---------------------+          /         |
+                                /          |
+                    +------------------+  +------------------+
+                    |ConcreteStrategyA|  |ConcreteStrategyB|
+                    +------------------+  +------------------+
+                    | + execute(): void|  | + execute(): void|
+                    +------------------+  +------------------+
+```
 
-3. **Configure the Context Class**: The context class should have a method for setting the strategy and a method to execute the strategy. It delegates work to the strategy object instead of implementing multiple versions of the algorithm on its own.
+### Explanation of UML Diagram
 
-## Example Scenario
+- **Context**: Contains a reference to a Strategy object that will execute a specific algorithm.
+- **Strategy**: An interface that defines a contract for all strategies.
+- **ConcreteStrategyA** and **ConcreteStrategyB**: Specific implementations of the Strategy interface.
 
-Consider a payment processing system where you can choose different payment methods (e.g., PayPal, credit card, or Bitcoin). Each payment method can be implemented as a concrete strategy:
+### Applying the Strategy Pattern
 
-- **PaymentStrategy**: An interface with a method `pay(amount)`.
-- **PayPalPayment**, **CreditCardPayment**, **BitcoinPayment**: Concrete strategies that implement `PaymentStrategy`, each providing a different way to pay.
+**1. Define the Strategy Interface**: Start by creating an interface or abstract class that declares a method representing the algorithm.
 
-- **PaymentContext**: Contains a reference to a `PaymentStrategy` and a method to process payments. It might also include data specific to the payment processing, like amount and order details.
+**2. Implement Concrete Strategies**: Implement this interface or abstract class with different algorithmic logic in each concrete strategy.
 
-The client decides which payment strategy to use and sets it on the PaymentContext at runtime. The PaymentContext then uses the selected strategy to process the payment without knowing the details of the payment method.
+**3. Create a Context Class**: The context class will hold a reference to the strategy object and delegate the work to the currently selected strategy.
 
-## Benefits
+**4. Assign Strategy Dynamically**: In the client code, dynamically assign a particular strategy to the context based on the specific requirements.
 
-- **Flexibility**: The Strategy pattern allows for easy swapping of algorithms or behaviors in and out as needed without affecting the clients.
+### Example Usage
 
-- **Decoupling**: It decouples the implementation details of an algorithm from the code that uses it.
+In a payment processing application, different payment methods like credit card, PayPal, and bank transfer can be used interchangeably. The payment system can switch between these methods by using the Strategy Pattern.
 
-- **Scalability**: New strategies can be added without changing the context or other strategies, adhering to the Open/Closed Principle.
+### Summary
 
-- **Choice of Algorithms**: Clients can choose the most appropriate algorithm for their needs at runtime.
-
-The Strategy pattern is particularly useful when you have multiple algorithms for a specific task and want to decide the best one to use at runtime. It provides a structure that facilitates the growth and interchangeability of algorithms without requiring changes to the client code.
+The Strategy Pattern provides a way to separate the logic of different algorithms from the client code that uses them. It makes adding new algorithms easy and keeps the code flexible and maintainable by adhering to the Open-Closed Principle.
 
 [Back to Design Pattern overview](./README.md)
