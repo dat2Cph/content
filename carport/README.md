@@ -16,7 +16,13 @@ I videoen om [stylisteberegneren](https://cphbusiness.cloud.panopto.eu/Panopto/P
 
 ## Integrationstest (af database funktionalitet)
 
-Den skal lave nu
+Når vi skal sikre at vores database-metoder (datamappers) fungerer, foregår det ved hjælp af en såkaldt integrationstest.
+
+I behøver ikke at lave tests til alle mapper-metoder, men det vil være flot hvis I kan lave tests til et sæt CRUD metoder på en enkelt mapper. F.eks. `OrderMapper` etc.
+
+Det vil give jer en fin fornemmelse af hvad der skal til for at kode en integrationstest.
+
+Her er en udførlig vejledning I kan følge til [opsætning af integrationstest](./integrationtest.md).
 
 ## Deling af database hos Digital Ocean
 
