@@ -52,9 +52,9 @@ I det følgende koder vi en integrationstest på en del af et system.
 
 - Den del af databasen vi tester på ser således ud:
 
-<center>
-<img src="./images/erd.png" width="60%"/>
-</center>
+<div align="center">
+    <img src="./images/erd.png" width="60%"/>
+</div>
 
 Den er sikkert lidt forsimplet, men det er for at gøre eksemplet lettere at arbejde med.
 
