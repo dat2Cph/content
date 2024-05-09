@@ -50,11 +50,17 @@ I det følgende koder vi en integrationstest på en del af et system.
 
 - Selve databasen hedder `carport` og den har skemaerne `public`, som alle kender, men også et ekstra skema vi selv opretter, som hedder `test`.
 
-- Den del af databasen vi tester på ser således ud: ![ERD](./images/erd.png) Den er sikkert lidt forsimplet, men det er for at gøre eksemplet lettere at arbejde med.
+- Den del af databasen vi tester på ser således ud:
+
+<center>
+<img src="./images/erd.png" width="60%"/>
+</center>
+
+Den er sikkert lidt forsimplet, men det er for at gøre eksemplet lettere at arbejde med.
 
 - Vi antager at, gruppen har en fælles database, som ligger på IP = aaa.bbb.ccc.ddd og port nummer 5432.
 
-- Vi antager, at der er opsat en firewall på den Droplet databasen kører på, og at der er lavet huller til de IP numre, som gruppen medlemmer arbejder fra.
+- Vi antager, at der er opsat en firewall på den Droplet databasen kører på, og at der er lavet huller til de IP numre, som gruppens medlemmer arbejder fra.
 
 ### Instruktioner
 
