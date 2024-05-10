@@ -58,7 +58,7 @@ I det følgende koder vi en integrationstest på en del af et system.
 
 Den er sikkert lidt forsimplet, men det er for at gøre eksemplet lettere at arbejde med.
 
-- Vi antager at, gruppen har en fælles database, som ligger på IP = aaa.bbb.ccc.ddd og port nummer 5432.
+- Vi antager at, gruppen har en fælles database, som ligger på IP = `aaa.bbb.ccc.ddd` og port nummer `5432`.
 
 - Vi antager, at der er opsat en firewall på den Droplet databasen kører på, og at der er lavet huller til de IP numre, som gruppens medlemmer arbejder fra.
 
