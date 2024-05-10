@@ -64,7 +64,11 @@ Den er sikkert lidt forsimplet, men det er for at gøre eksemplet lettere at arb
 
 ### Instruktioner
 
-- Følg denne video-tutorial, hvor I bliver ledt gennem opsætning af integrationstesten. Undervejs vil det være en fordel at kopiere fra den nedenstående GIST:
+- [Se først denne generelle video om test](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=0e082e5d-69ee-4b9c-b1cc-b16c00c6d745). Den forklarer lidt om formålet med integrationstest set i sammenhæng med en række andre test-former.
+
+- [Følg denne kode-video-tutorial](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=ec99d446-f586-4e42-9e2a-b16c00cebce5), hvor I bliver ledt gennem opsætning af integrationstesten fra A-Z.
+
+Undervejs vil det være en fordel at kopiere fra den nedenstående GIST:
 
 - [Eksempel på Integrationstest (GIST)](https://gist.github.com/jonbertelsen/7439bbfb0d943db8ebbe36d344bbf161)
 
