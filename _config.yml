@@ -1,8 +1,11 @@
 title: 2. semester på Cphbusiness
 description: Diverse undervisningsmaterialer på 2. semester datamatiker uddannelsen på Cphbusiness
 theme: just-the-docs
-
 url: https://dat2Cph.github.io
-
 aux_links:
   Template Repository: https://github.com/dat2Cph/content
+# Enable Just the Docs navigation
+just_the_docs:
+  # Specify the navigation structure
+  nav_order: 1
+  nav_exclude: false
