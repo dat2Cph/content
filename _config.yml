@@ -3,9 +3,10 @@ description: Diverse undervisningsmaterialer på 2. semester datamatiker uddanne
 theme: just-the-docs
 url: https://dat2Cph.github.io
 aux_links:
-  Template Repository: https://github.com/dat2Cph/content
+  Repository: https://github.com/dat2Cph/content
+heading_anchors: true
 # Enable Just the Docs navigation
 just_the_docs:
   # Specify the navigation structure
-  nav_order: 1
+  nav_order: 3
   nav_exclude: false
