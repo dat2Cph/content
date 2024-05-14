@@ -1,4 +1,8 @@
-# Forretningsforståelse
+---
+title: Forretningsforståelse
+description: Optakt til semesterprojekt
+layout: default
+---
 
 Som optakt til Semesterprojektet beskæftiger vi os denne uge med hvad en virksomhed er og især hvad der gemmer sig bag facaden.
 

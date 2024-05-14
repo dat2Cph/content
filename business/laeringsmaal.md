@@ -1,4 +1,7 @@
-# Læringsmål for forretningsforståelse
+---
+title: Læringsmål for forretningsforståelse
+layout: default
+---
 
 Den studerende kan:
 

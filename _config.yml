@@ -4,9 +4,5 @@ theme: just-the-docs
 url: https://dat2Cph.github.io
 aux_links:
   Repository: https://github.com/dat2Cph/content
+nav_enabled: true
 heading_anchors: true
-# Enable Just the Docs navigation
-just_the_docs:
-  # Specify the navigation structure
-  nav_order: 3
-  nav_exclude: false
