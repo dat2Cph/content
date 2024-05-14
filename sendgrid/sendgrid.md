@@ -1,8 +1,10 @@
 ---
-title: Afsendelse af emails via SendGrid
+title: SendGrid
 description: Tutorial, hvor du lærer at sende mails fra Java
 layout: page
 ---
+
+# Afsendelse af emails via SendGrid
 
 Denne vejledning er inspireret af dette [blogindlæg](https://www.twilio.com/blog/send-dynamic-personalized-party-emails-sendgrid-java)
 
