@@ -1,4 +1,7 @@
-# Værktøjskasse for datamatikeruddannelsen i Lyngby og på Bornholm
+---
+title: Værktøjskasse for datamatikeruddannelsen i Lyngby og på Bornholm
+layout: default
+---
 
 ## Indhold
 <!-- TOC tocDepth:2..3 chapterDepth:2..6 -->

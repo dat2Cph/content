@@ -1,9 +1,7 @@
 ---
-title: Home
+title: Kursusindhold 2. semester på Cphbusiness
 layout: home
 ---
-
-# Kursusindhold 2. semester på Cphbusiness
 
 Her er links til diverse materialer på GitHub:
 
