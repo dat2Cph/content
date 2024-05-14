@@ -1,4 +1,4 @@
-# Afsendelse af emails via SendGrid
+# Afsendelse af mails via SendGrid
 
 Denne vejledning er inspireret af dette [blogindlæg](https://www.twilio.com/blog/send-dynamic-personalized-party-emails-sendgrid-java)
 
