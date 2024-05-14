@@ -22,7 +22,7 @@ Her er links til diverse materialer på GitHub:
 
 ## Bonus materiale og selvstudier
 
-1. [Integrationtest](./carport/integrationstest.md)
+1. [Integrationtest](./carport/integrationstest)
 2. [SendGrid tutorial](./sendgrid/sendgrid.md)
 3. [Toolbox](toolbox/README.md)
 4. [Teamwork og gruppekontrakt](./teamwork/gruppekontrakt.docx)
