@@ -1,3 +1,10 @@
+---
+title: Deployment
+description: Blå og rød pille
+layout: default
+parent: Linux & Deployment
+---
+
 # Deploy din web applikation på en Droplet
 
 Når man skal deploye et Javalin projekt kan de gøres på flere måder. Lad din undervise guide dig. Så derfor:
@@ -185,4 +192,4 @@ Nu kan du tilgå dit website på <http://ip:7070>
 Du er sådan set færdig med oprettelse og konfiguration af din Droplet - og har fået deployet din web applikation.
 Måske er det tid til en kop kaffe?
 
-- [Hop tilbage til oversigten](./README.md)
+- [Hop tilbage til oversigten](./README)
