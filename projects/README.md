@@ -11,12 +11,12 @@ permalink: /projekter/
 
 ## LifeHack
 
-Her kan du læse om [Lifehack](lifehack)
+Her kan du læse om [Lifehack](lifehack/README.md)
 
 ## Cupcake
 
-Her kan du læse om [Cupcake](cupcake)
+Her kan du læse om [Cupcake](cupcake/README.md)
 
 ## Semesterprojekt
 
-Her kan du læse om semesterprojektet [Fog carport](carport)
+Her kan du læse om semesterprojektet [Fog carport](carport/README.md)

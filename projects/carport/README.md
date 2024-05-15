@@ -19,7 +19,7 @@ Når I skal beregne de enkelte rækker i styklisten, er det en god idé, at I be
 
 Når I skal teste om jeres beregninger fungerer, vil det være oplagt at lave unit-tests på metoderne. Det kræver at metoderne er skrevet, så de returnerer noget enkelt. F.eks. en integer (antal stolper etc).
 
-- Her er [den teori vi bruger på 2. semester](https://github.com/dat2Cph/content/blob/main/toolbox/test/testteori.md) angående unit-tests og tests i det hele taget. Godt at have styr på til eksamen.
+- Her er [den teori vi bruger på 2. semester](../../toolbox/test/testteori.md) angående unit-tests og tests i det hele taget. Godt at have styr på til eksamen.
 
 - I videoen om [stylisteberegneren](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx?folderID=5687833b-ab7c-4768-a7cb-b1680130b164) ses også hvordan I evt. kan sætte jeres tests op.
 
@@ -45,7 +45,7 @@ Hvis din gruppe anvender en delt database på en af jeres Droplets, så kan I se
 
 Vi har tidligere på semestret sat en virtuel maskine op hos Digital Ocean.
 
-- Her ligger vejledningerne til [opsætning og deployment](https://github.com/dat2Cph/content/blob/main/linux_and_deployment/README.md). Og specielt delen om [deployment](https://github.com/dat2Cph/content/blob/main/linux_and_deployment/deployment.md) er relevant når I skal lægge jeres carport-projekt på internettet.
+- Her ligger vejledningerne til [opsætning og deployment](../../linux_and_deployment/README.md). Og specielt delen om [deployment](../../linux_and_deployment/deployment.md) er relevant når I skal lægge jeres carport-projekt på internettet.
 
 - I kan også følge disse deployment videoer, hvis I tager den ["røde pille"](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Sessions/List.aspx?folderID=322ab819-f0ca-4fc4-8e76-b15600a65ecd).
 
@@ -53,12 +53,11 @@ Vi har tidligere på semestret sat en virtuel maskine op hos Digital Ocean.
 
 Hvis I skulle have brug for at afsende emails fra jeres system, så har I brug for en SMTP-server. Det kan håndteres på mange måder, men vi har lavet en guide, som får jer i gang med at sende professionelle mails i en ruf.
 
-- [Mail kursus med SendGrid](../sendgrid/sendgrid.md)
+- [Mail kursus med SendGrid](./sendgrid/README.md)
 
 ## 2D SVG-tegninger af carporten
 
 Når / hvis I skal tegne carporten får I brug for at arbejde med SVG. Vi har lavet et "selvstudie" hvor I kan lære at tegne løs fra start til slut. Det kan anbefales at gennemgå "selvstudiet" sammen. Evt. hele gruppen i fællesskab - eller 2 og 2. I skal nok regne med at det tager 3-4 timer før I er udlært og klar til at implementere jeres egen version i projektet.
 
-- [SVG kursus](../svg/README.md)
-
+- [SVG kursus](./svg/README.md
 ![carport](./images/carport_drawing.png)

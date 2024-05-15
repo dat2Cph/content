@@ -3,8 +3,9 @@ title: Læringsmål
 description: Det du forventes at lære i løbet af ugen
 layout: default
 parent: Lifehack projekt
-grand-parent: Projekter
+grand_parent: Projekter
 nav_order: 1
+permalink: /projekter/lifehack/learningobjectives/
 ---
 
 # Læringsmål for Lifehack ugen
