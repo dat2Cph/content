@@ -5,7 +5,7 @@ layout: default
 nav_order: 4
 permalink: /network/exercise-01/
 parent: HTTP og netværk
-nav-exclude: true
+nav_exclude: true
 ---
 
 
