@@ -1,6 +1,7 @@
 ---
-title: Kursusindhold 2. semester på Cphbusiness
+title: Kursusindhold
 layout: home
+nav_order: 1
 ---
 
 # Velkommen til kursusmaterialer på 2. semester

@@ -1,3 +1,11 @@
+---
+title: HTTP protokol og netværk
+description: Oversigt over hele ugen
+layout: default
+nav_order: 3
+---
+
+
 # HTTP protokol og netværk
 
 ## Læringsmål

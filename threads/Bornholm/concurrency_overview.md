@@ -1,3 +1,10 @@
+---
+title: Trådprogrammering
+description: Samtidighed, tråde og executors
+layout: default
+nav_order: 4
+---
+
 # Samtidighed, tråde og executors
 
 Når I bruger jeres computer kan man have mere end et program igang på samme tid. Man kan godt skrive en email mens man hører musik. Moderne computere har mere end en "core", din har måske 2,4,6 eller flere. Men på trods af dette faste antal kan du alligevel godt køre mere 2 eller 6 programmer samtidigt.
