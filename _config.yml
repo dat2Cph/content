@@ -10,6 +10,7 @@ search_enabled: true
 plugins:
   - jekyll-relative-links
   - jekyll-readme-index
+  - jekyll-default-layout
 readme_index:
   enabled: true
   remove_originals: true
