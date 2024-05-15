@@ -9,24 +9,23 @@ permalink: /
 
 ## Kursusmateriale til semester flows
 
-1. [OOP, GIT og TDD](./oop_git_tdd)
-2. [HTTP protokollen og netværk](./http_network)
-3. [Tråde og performance](./threads)
-4. [Databaser](./databases/)
-5. [Frontend](./webstack/frontend)
-6. [Backend](./webstack/backend)
-7. [Lifehack](./lifehack)
-8. [Cupcake](./cupcake)
-9. [Linux og deployment](./linux_and_deployment)
-10. 3D-print / [SVG tegninger](./svg)
-11. [Forretningsforståelse](./business)
-12. Semesterprojekt
+1. [OOP, GIT og TDD](./oop_git_tdd/README.md)
+2. [HTTP protokollen og netværk](./http_network/README.md)
+3. [Tråde og performance](./threads/Other/README.md)
+4. [Databaser](./databases/README.md)
+5. [Frontend](./webstack/frontend/README.md)
+6. [Backend](./webstack/backend/README.md)
+7. [Lifehack](./projects/lifehack/README.md)
+8. [Cupcake](./projects/cupcake/README.md)
+9. [Linux og deployment](./linux_and_deployment/README.md)
+10. 3D-print / [SVG tegninger](./projects/carport/svg/README.md)
+11. [Forretningsforståelse](./business/README.md)
 
 ## Bonus materiale og selvstudier
 
 1. [Integrationtest](./projects/carport/integrationstest/README.md)
-2. [SendGrid tutorial](./sendgrid/sendgrid)
-3. [Toolbox](toolbox/)
+2. [SendGrid tutorial](./projects/carport/sendgrid/README.md)
+3. [Toolbox](./toolbox/README.md)
 4. [Teamwork og gruppekontrakt](./teamwork/gruppekontrakt.docx)
 
 ## Værktøjskasse / Toolbox

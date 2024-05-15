@@ -2,6 +2,7 @@
 title: Opgave i integrationstest (bibliotek)
 description: Indledende opgave i integrationstest på localhost
 layout: default
+nav_exclude: true
 ---
 
 # JDBC og Test for bibliotek DB
