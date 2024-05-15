@@ -1,5 +1,5 @@
 ---
-title: Java, Databaser og Integrationstest
+title: Integrationstest
 description: Introduktion til integrationstest på localhost
 layout: default
 parent: Databaser

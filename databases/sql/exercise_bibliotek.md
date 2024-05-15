@@ -1,3 +1,10 @@
+---
+title: Opgave i SQL
+description: Indledende opgave i SQL
+layout: default
+nav_exclude: true
+---
+
 # Databaser og SQL: torsdagsopgave
 
 Denne torsdag er sat af til følgende:

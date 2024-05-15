@@ -1,3 +1,10 @@
+---
+title: Opgave i normalisering og modellering
+description: Indledende opgave i normalisering og modellering
+layout: default
+nav_exclude: true
+---
+
 # Opgave i normalisering og modellering
 
 Tabellen nedenfor indeholder oplysninger fra revisionsfirmaet "Tørre Tal" omkring deres virksomhedskunder og en masse fake data om kunderne til brug for regnskabet. Data mangler en ordentlig struktur, så nu skal det lægges ned i en relationel database med en række tabeller.
