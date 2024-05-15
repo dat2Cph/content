@@ -3,6 +3,8 @@ title: Integrationstest
 description: Sådan tester du dine datamappere i Java
 layout: default
 parent: Carport projekt
+grand-parent: Projekter
+nav_order: 1
 ---
 
 Når man bygger større systemer, vil man gerne sikre sig at ens datamappere virker. Så vi introducerer en metode til automatiseret test af vores database metoder - og som tjekker at der overhovedet er hul igennem til databasen. Det er en slags unit-test, men da den involverer flere delsystemer (Java og Postgres) kaldes det ofte for "Integrationstest".
