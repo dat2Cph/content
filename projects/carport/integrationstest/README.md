@@ -8,6 +8,8 @@ nav_order: 1
 permalink: /projekter/carport/integrationstest/
 ---
 
+# Integrationstest
+
 Når man bygger større systemer, vil man gerne sikre sig at ens datamappere virker. Så vi introducerer en metode til automatiseret test af vores database metoder - og som tjekker at der overhovedet er hul igennem til databasen. Det er en slags unit-test, men da den involverer flere delsystemer (Java og Postgres) kaldes det ofte for "Integrationstest".
 
 ## Hvad er en integrationstest?
@@ -82,7 +84,7 @@ Undervejs vil det være en fordel at kopiere fra den nedenstående GIST:
 
 - I får også brug for at tilpasse disse miljø-variabler:
 
-   ```csv
+   ```bash
    DEPLOYED=PROD;JDBC_CONNECTION_STRING=jdbc:postgresql://aaa.bbb.ccc.ddd:5432/%s?currentSchema=test;JDBC_DB=carport;JDBC_PASSWORD=indsæt_dit_eget;JDBC_USER=postgres
    ```
 
