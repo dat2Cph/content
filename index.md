@@ -1,6 +1,6 @@
 ---
 title: Kursusindhold 2. semester på Cphbusiness
-layout: default
+layout: home
 ---
 
 # Velkommen til kursusmaterialer på 2. semester
