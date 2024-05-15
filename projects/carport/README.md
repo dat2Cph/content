@@ -31,7 +31,7 @@ I behøver ikke at lave tests til alle mapper-metoder, men det vil være flot hv
 
 Det vil give jer en fin fornemmelse af hvad der skal til for at kode en integrationstest.
 
-- Her er en udførlig vejledning I kan følge til [opsætning af integrationstest](./integrationtest.md).
+- Her er en udførlig vejledning I kan følge til [opsætning af integrationstest](./integrationstest/README.md).
 
 ## Deling af database hos Digital Ocean
 
@@ -59,5 +59,6 @@ Hvis I skulle have brug for at afsende emails fra jeres system, så har I brug f
 
 Når / hvis I skal tegne carporten får I brug for at arbejde med SVG. Vi har lavet et "selvstudie" hvor I kan lære at tegne løs fra start til slut. Det kan anbefales at gennemgå "selvstudiet" sammen. Evt. hele gruppen i fællesskab - eller 2 og 2. I skal nok regne med at det tager 3-4 timer før I er udlært og klar til at implementere jeres egen version i projektet.
 
-- [SVG kursus](./svg/README.md
+- [SVG kursus](./svg/README.md)
+
 ![carport](./images/carport_drawing.png)
