@@ -1,3 +1,10 @@
+---
+title: SVG tutorial
+description: Tutorial, hvor du lærer at kode SVG
+layout: page
+parent: Carport projekt
+---
+
 # SVG tutorial / øvelser
 
 Her kan du lære at tegne SVG tegninger, der kan indsættes i HTML sider.

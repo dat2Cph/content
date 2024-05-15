@@ -1,5 +1,5 @@
 ---
-title: Læringsmål for forretningsforståelse
+title: Læringsmål
 layout: default
 parent: Forretningsforståelse
 ---
