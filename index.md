@@ -1,7 +1,8 @@
 ---
 title: Kursusindhold
-layout: home
+layout: default
 nav_order: 1
+permalink: '/'
 ---
 
 # Velkommen til kursusmaterialer på 2. semester
