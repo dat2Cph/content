@@ -1,3 +1,11 @@
+---
+title: Databaser
+description: Undervisningsmaterialer til database flow
+layout: default
+has_children: true
+---
+
+
 # Databaser på 2. semester
 
 ## Uge 1: Normalisering og sql

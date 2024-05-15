@@ -1,3 +1,10 @@
+---
+title: Cupcake rapportskabelon
+description: Forslag til hvordan en rapport kan udarbejdes
+layout: default
+parent: Cupcake projekt
+---
+
 # Cupcake rapportskabelon
 
 **Dokumentation af software kan tage mange former og varierer fra den ene udvikler virksomhed til den anden.**

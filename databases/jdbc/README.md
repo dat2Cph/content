@@ -1,3 +1,10 @@
+---
+title: JDBC
+description: Introduktion til JDBC i Java
+layout: default
+parent: Databaser
+---
+
 # JDBC
 
 ## Java og Databaser

@@ -3,22 +3,6 @@ title: Kursusindhold 2. semester på Cphbusiness
 layout: default
 ---
 
-<button class="btn js-toggle-dark-mode">Dark color scheme</button>
-
-<script>
-const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
-
-jtd.addEvent(toggleDarkMode, 'click', function(){
-  if (jtd.getTheme() === 'dark') {
-    jtd.setTheme('light');
-    toggleDarkMode.textContent = 'Dark skin';
-  } else {
-    jtd.setTheme('dark');
-    toggleDarkMode.textContent = 'Light skin';
-  }
-});
-</script>
-
 # Velkommen til kursusmaterialer på 2. semester
 
 ## Kursusmateriale til semester flows

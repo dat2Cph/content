@@ -1,3 +1,9 @@
+---
+title: SQL Classic
+layout: default
+parent: Databaser
+---
+
 # SQL Classic
 
 Denne dag handler om SQL.

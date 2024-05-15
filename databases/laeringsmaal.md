@@ -1,3 +1,9 @@
+---
+title: Læringsmål for databaser
+layout: default
+parent: Databaser
+---
+
 # Læringsmål for databaser
 
 ## Uge 1: Normalisering og SQL

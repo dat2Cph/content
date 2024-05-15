@@ -1,4 +1,11 @@
-# Database teori: normalisering
+---
+title: Database teori og normalisering
+description: Introduktion til databaseteori
+layout: default
+parent: Databaser
+---
+
+# Database teori og normalisering
 
 Denne dag handler om database teori og modellering.
 

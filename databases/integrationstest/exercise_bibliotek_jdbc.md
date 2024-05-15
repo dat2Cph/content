@@ -1,3 +1,11 @@
+---
+title: Opgave i integrationstest (bibliotek)
+description: Indledende opgave i integrationstest på localhost
+layout: default
+parent: Databaser
+---
+
+
 # JDBC og Test for bibliotek DB
 
 Denne torsdag er sat af til følgende:
