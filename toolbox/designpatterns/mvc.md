@@ -1,3 +1,10 @@
+---
+title: MVC
+layout: default
+parent: Design patterns
+nav_order: 10
+---
+
 # MVC Design Pattern
 
 The MVC (Model-View-Controller) design pattern is a software architectural pattern commonly used in web development to organize code in a way that separates its internal representations of information from the ways that information is presented to and accepted from the user. This separation facilitates a modular approach to application development, making it easier to manage, scale, and maintain. The three components of the MVC pattern are:

@@ -1,3 +1,10 @@
+---
+title: Strategy
+layout: default
+parent: Design patterns
+nav_order: 15
+---
+
 # Strategy Design Pattern
 
 The Strategy Pattern is a behavioral design pattern that allows algorithms to be defined independently of the clients that use them. It encapsulates a family of algorithms into separate classes and makes them interchangeable. This pattern is useful in situations where a client has multiple algorithms that could be used interchangeably, depending on the context. By using the Strategy Pattern, changing algorithms becomes as easy as changing an object.

@@ -1,5 +1,5 @@
 ---
-title: Command Design Pattern
+title: Command
 layout: default
 parent: Design patterns
 nav_order: 1

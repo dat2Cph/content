@@ -1,3 +1,10 @@
+---
+title: IOC
+layout: default
+parent: Design patterns
+nav_order: 8
+---
+
 # Inversion of Control Patterns
 
 Inversion of Control (IoC) is a principle in software engineering where the control over the flow of execution is inverted, meaning that the custom-written portions of a program receive the flow of control from a generic, reusable framework. This is a shift from traditional programming, where the main sequence of a program explicitly controls the flow of execution and makes direct calls to specific modules or functionalities.

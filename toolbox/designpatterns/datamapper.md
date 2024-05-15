@@ -1,5 +1,5 @@
 ---
-title: Data Mapper Design Pattern
+title: Data Mapper
 layout: default
 parent: Design patterns
 nav_order: 3

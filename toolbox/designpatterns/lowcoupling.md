@@ -1,3 +1,10 @@
+---
+title: Low Coupling
+layout: default
+parent: Design patterns
+nav_order: 9
+---
+
 # Low Coupling Design Principle
 
 Low Coupling is another fundamental principle in software design and architecture, closely related to High Cohesion, and it focuses on reducing the dependencies between modules, classes, or components in a system. It is part of the GRASP (General Responsibility Assignment Software Patterns) principles, which are guidelines for object-oriented design and responsibility assignment. Low Coupling aims to make each component or module as independent as possible from the others, thereby promoting easier maintenance, greater reusability, and higher flexibility in the system.

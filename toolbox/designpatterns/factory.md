@@ -1,5 +1,5 @@
 ---
-title: Factory Design Pattern
+title: Factory
 layout: default
 parent: Design patterns
 nav_order: 6

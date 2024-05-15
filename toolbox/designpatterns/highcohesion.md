@@ -1,3 +1,10 @@
+---
+title: High Cohesion
+layout: default
+parent: Design patterns
+nav_order: 7
+---
+
 # The High Cohesion Principle
 
 High Cohesion is a fundamental principle in software design and architecture, emphasizing the importance of keeping objects, modules, or components focused on a single responsibility or closely related functionalities. It is one of the GRASP (General Responsibility Assignment Software Patterns) principles, which provide guidelines for assigning responsibilities in object-oriented design.

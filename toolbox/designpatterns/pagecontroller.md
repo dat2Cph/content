@@ -1,3 +1,10 @@
+---
+title: Page Controller
+layout: default
+parent: Design patterns
+nav_order: 12
+---
+
 # Page Controller Design Pattern
 
 The Page Controller design pattern is a web development architectural pattern that assigns the responsibility for managing the actions and responses of a single page or request to a single controller class. This pattern is commonly used in web applications to simplify design and promote reusability of code. The essence of the Page Controller pattern is to have a separate controller for each page or request, where each controller handles all the actions associated with that page.

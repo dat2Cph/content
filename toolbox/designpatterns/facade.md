@@ -1,5 +1,5 @@
 ---
-title: Facade Design Pattern
+title: Facade
 layout: default
 parent: Design patterns
 nav_order: 5

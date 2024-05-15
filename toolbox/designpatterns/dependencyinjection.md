@@ -1,5 +1,5 @@
 ---
-title: Dependency Injection Design Pattern
+title: Dependency Injection
 layout: default
 parent: Design patterns
 nav_order: 4

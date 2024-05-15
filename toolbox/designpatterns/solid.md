@@ -1,3 +1,10 @@
+---
+title: SOLID
+layout: default
+parent: Design patterns
+nav_order: 14
+---
+
 # The SOLID Design Principles
 
 The SOLID design principles are a set of guidelines for object-oriented software design intended to make software systems more understandable, flexible, and maintainable. Coined by Robert C. Martin (also known as Uncle Bob) and popularized in the early 2000s, SOLID stands for:

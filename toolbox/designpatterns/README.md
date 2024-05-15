@@ -8,7 +8,7 @@ nav_order: 3
 
 # Design Patterns and Princples
 
-This is an overview of often used Design Patterns and principles on the Computer Science Education in Cphbusiness:
+This is an overview of often used Design Patterns and principles on the Computer Science Education at Cphbusiness:
 
 ## Architectural Patterns
 
