@@ -1,9 +1,9 @@
 ---
 title: SendGrid
 description: Tutorial, hvor du lærer at sende mails fra Java
-layout: page
+layout: default
 parent: Carport projekt
-grand-parent: Projekter
+grand_parent: Projekter
 nav_order: 2
 ---
 

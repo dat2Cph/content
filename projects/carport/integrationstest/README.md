@@ -3,7 +3,7 @@ title: Integrationstest
 description: Sådan tester du dine datamappere i Java
 layout: default
 parent: Carport projekt
-grand-parent: Projekter
+grand_parent: Projekter
 nav_order: 1
 ---
 
