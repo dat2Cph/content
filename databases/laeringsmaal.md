@@ -1,5 +1,6 @@
 ---
-title: Læringsmål for databaser
+title: Læringsmål
+description: Læringsmål for databaser
 layout: default
 parent: Databaser
 ---

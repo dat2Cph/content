@@ -2,7 +2,7 @@
 title: Kursusindhold
 layout: default
 nav_order: 1
-permalink: '/'
+permalink: /
 ---
 
 # Velkommen til kursusmaterialer på 2. semester
