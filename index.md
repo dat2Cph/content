@@ -24,7 +24,7 @@ permalink: /
 
 ## Bonus materiale og selvstudier
 
-1. [Integrationtest](carport/integrationtest.md)
+1. [Integrationtest](./projects/carport/integrationstest/README.md)
 2. [SendGrid tutorial](./sendgrid/sendgrid)
 3. [Toolbox](toolbox/)
 4. [Teamwork og gruppekontrakt](./teamwork/gruppekontrakt.docx)
