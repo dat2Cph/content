@@ -1,3 +1,12 @@
+---
+title: Læringsmål
+description: Det du forventes at lære i løbet af ugen
+layout: default
+parent: Lifehack projekt
+grand-parent: Projekter
+nav_order: 1
+---
+
 # Læringsmål for Lifehack ugen
 
 Efter denne uge er det målet at du:
