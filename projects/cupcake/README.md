@@ -5,6 +5,7 @@ layout: default
 has_children: true
 parent: Projekter
 nav_order: 2
+permalink: /projekter/cupcake
 ---
 
 # Cupcake projekt

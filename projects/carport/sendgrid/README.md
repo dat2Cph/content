@@ -5,6 +5,7 @@ layout: default
 parent: Carport projekt
 grand_parent: Projekter
 nav_order: 2
+permalink: /projekter/carport/sendgrid/
 ---
 
 # Afsendelse af emails via SendGrid

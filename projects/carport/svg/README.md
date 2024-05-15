@@ -5,6 +5,7 @@ layout: default
 parent: Carport projekt
 grand_parent: Projekter
 nav_order: 1
+permalink: /projekter/carport/svg/
 ---
 
 # SVG tutorial / øvelser

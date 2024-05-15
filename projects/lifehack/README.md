@@ -4,6 +4,7 @@ description: Oplæg til Lifehack projekt
 layout: default
 parent: Projekter
 nav_order: 1
+permalink: /projekter/lifehack/
 ---
 
 # Lifehack
