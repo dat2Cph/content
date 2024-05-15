@@ -1,6 +1,7 @@
 ---
 title: Læringsmål for forretningsforståelse
 layout: default
+parent: Forretningsforståelse
 ---
 
 Den studerende kan:

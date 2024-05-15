@@ -1,3 +1,10 @@
+---
+title: Factory Design Pattern
+layout: default
+parent: Design patterns
+nav_order: 6
+---
+
 # Factory Design Pattern
 
 The Factory pattern is a creational design pattern that provides an interface for creating objects in a superclass but allows subclasses to alter the type of objects that will be created. The pattern is used to encapsulate the creation process of a product, meaning the actual instantiation of a class is separated from the client that needs the object. By doing so, the system becomes more flexible and scalable, as the client doesn't need to know the specific class to instantiate.

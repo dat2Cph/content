@@ -1,3 +1,11 @@
+---
+title: Design patterns
+description: Gennemgang af diverse design patterns
+layout: default
+has_children: true
+nav_order:3
+---
+
 # Design Patterns and Princples
 
 This is an overview of often used Design Patterns and principles on the Computer Science Education in Cphbusiness:

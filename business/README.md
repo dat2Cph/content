@@ -2,6 +2,8 @@
 title: Forretningsforståelse
 description: Optakt til semesterprojekt
 layout: default
+has_children: true
+nav_order: 7
 ---
 
 Som optakt til Semesterprojektet beskæftiger vi os denne uge med hvad en virksomhed er og især hvad der gemmer sig bag facaden.

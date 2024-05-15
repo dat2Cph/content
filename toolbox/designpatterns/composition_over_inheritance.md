@@ -1,3 +1,11 @@
+---
+title: Composition over inheritance
+layout: default
+parent: Design patterns
+nav_order: 2
+---
+
+
 # Composition over inheritance
 
 The principle of composition over inheritance is a fundamental design guideline in object-oriented programming that recommends using composition to achieve code reuse over the traditional inheritance hierarchy. This principle is often encapsulated by the phrase "favor composition over inheritance."

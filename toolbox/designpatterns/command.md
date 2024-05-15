@@ -1,3 +1,10 @@
+---
+title: Command Design Pattern
+layout: default
+parent: Design patterns
+nav_order: 1
+---
+
 # Command Pattern
 
 The Command pattern is a behavioral design pattern that turns a request into a stand-alone object that contains all the information about the request. This transformation allows you to parameterize methods with different requests, delay or queue a request's execution, and support undoable operations. Essentially, the Command pattern encapsulates a request as an object, thereby allowing developers to treat method calls as objects, manipulate and extend them like any other object, and simplify complex command structures such as transactions and queues.

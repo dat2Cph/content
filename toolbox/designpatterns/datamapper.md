@@ -1,3 +1,10 @@
+---
+title: Data Mapper Design Pattern
+layout: default
+parent: Design patterns
+nav_order: 3
+---
+
 # Data Mapper Design Pattern
 
 The Data Mapper design pattern is an architectural pattern used to manage data persistence and transfer between objects in your application and a relational database, while keeping them independent of each other and the mapper itself. The key idea is to have a layer of mappers that moves data between objects and a database while keeping them separate. This means the objects and the database do not need to know about each other, or how they are stored or retrieved, allowing for more flexible code that's easier to maintain.

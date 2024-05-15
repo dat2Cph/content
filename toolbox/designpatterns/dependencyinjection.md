@@ -1,3 +1,10 @@
+---
+title: Dependency Injection Design Pattern
+layout: default
+parent: Design patterns
+nav_order: 4
+---
+
 # Dependency Injection Design Pattern
 
 The Dependency Injection (DI) design pattern is a technique used in software development to achieve Inversion of Control (IoC) between classes and their dependencies. Instead of allowing a class to instantiate its dependencies directly, these dependencies are provided to the class (injected into it), typically through a constructor, a property, or a method. This approach greatly facilitates the decoupling of components, making the system more modular, easier to test, and more configurable.
