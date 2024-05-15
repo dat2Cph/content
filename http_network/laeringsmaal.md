@@ -2,7 +2,7 @@
 title: Læringsmål
 description: Læringsmål for netværk og http
 layout: default
-nav_order: 2
+nav_order: 1
 permalink: /network/learningobjectives/
 parent: HTTP og netværk
 ---

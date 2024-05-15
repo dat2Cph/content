@@ -2,7 +2,7 @@
 title: Git agenda
 description: Agenda for Git undervisning
 layout: default
-nav_order: 2
+nav_order: 1
 permalink: /oop-git-tdd/git/
 nav_exclude: true
 ---

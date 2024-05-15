@@ -2,7 +2,7 @@
 title: Øvelser del 2
 description: Øvelser om netværk og http del 2
 layout: default
-nav_order: 2
+nav_order: 5
 permalink: /network/exercise-02/
 parent: HTTP og netværk
 nav-exclude: true

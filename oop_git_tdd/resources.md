@@ -2,7 +2,7 @@
 title: Ressources
 description: Diverse kilder til OOP, GIT og TDD
 layout: default
-nav_order: 2
+nav_order: 3
 permalink: /oop-git-tdd/ressources/
 nav_exclude: true
 ---
