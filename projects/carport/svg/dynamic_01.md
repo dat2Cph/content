@@ -1,3 +1,13 @@
+---
+title: Dynamiske tegninger
+description: Tutorial, hvor du lærer at kode SVG
+layout: default
+parent: Carport projekt
+grand_parent: SVG tutorial
+nav_order: 8
+permalink: /projekter/carport/svg/dynamic/
+---
+
 # Dynamiske SVG tegninger
 
 ## 0. Introduktion (specs)

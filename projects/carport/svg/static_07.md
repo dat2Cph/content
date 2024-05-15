@@ -1,3 +1,13 @@
+---
+title: Statiske tegninger del 7
+description: Tutorial, hvor du lærer at kode SVG
+layout: default
+parent: Carport projekt
+grand_parent: SVG tutorial
+nav_order: 7
+permalink: /projekter/carport/svg/static-07/
+---
+
 # 7. Statiske SVG tegningner - del-tegninger
 
 ## Indsæt en tegning i en tegning

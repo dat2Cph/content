@@ -1,5 +1,5 @@
 ---
-title: Kursusindhold
+title: Oversigt
 layout: default
 nav_order: 1
 permalink: /

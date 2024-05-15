@@ -1,3 +1,13 @@
+---
+title: Statiske tegninger del 3
+description: Tutorial, hvor du lærer at kode SVG
+layout: default
+parent: Carport projekt
+grand_parent: SVG tutorial
+nav_order: 3
+permalink: /projekter/carport/svg/static-03/
+---
+
 # 3. Statiske SVG tegningner
 
 ## Tegning af en simpel carport

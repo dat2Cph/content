@@ -1,3 +1,13 @@
+---
+title: Statiske tegninger del 6
+description: Tutorial, hvor du lærer at kode SVG
+layout: default
+parent: Carport projekt
+grand_parent: SVG tutorial
+nav_order: 6
+permalink: /projekter/carport/svg/static-06/
+---
+
 # 6. Statiske SVG tegningner - tekst
 
 ## Indsæt og placer tekst i SVG

@@ -1,3 +1,13 @@
+---
+title: Statiske tegninger del 5
+description: Tutorial, hvor du lærer at kode SVG
+layout: default
+parent: Carport projekt
+grand_parent: SVG tutorial
+nav_order: 5
+permalink: /projekter/carport/svg/static-05/
+---
+
 # 5. Statiske SVG tegningner
 
 ## Pile

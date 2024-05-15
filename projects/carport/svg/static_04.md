@@ -1,3 +1,12 @@
+---
+title: Statiske tegninger del 4
+description: Tutorial, hvor du lærer at kode SVG
+layout: default
+parent: Carport projekt
+grand_parent: SVG tutorial
+nav_order: 4
+permalink: /projekter/carport/svg/static-04/
+---
 # 4. Statiske SVG tegningner - overblik
 
 ## Carport med pile og cm-mål
