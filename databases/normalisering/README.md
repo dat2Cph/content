@@ -4,6 +4,7 @@ description: Introduktion til databaseteori og normalisering
 layout: default
 parent: Databaser
 nav_order: 2
+permalink: /databases/theory/
 ---
 
 # Database teori og normalisering

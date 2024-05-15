@@ -2,6 +2,7 @@
 title: Læringsmål
 layout: default
 parent: Forretningsforståelse
+permalink: /business/learningobjectives/
 ---
 
 Den studerende kan:

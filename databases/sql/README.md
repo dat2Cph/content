@@ -3,6 +3,7 @@ title: SQL Classic
 layout: default
 parent: Databaser
 nav_order: 3
+permalink: /databases/sql/
 ---
 
 # SQL Classic

@@ -4,6 +4,7 @@ description: Undervisningsmaterialer til database flow
 layout: default
 has_children: true
 nav_order: 5
+permalink: /databases/
 ---
 
 
