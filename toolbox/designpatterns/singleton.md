@@ -1,4 +1,4 @@
-## Sigleton Design Pattern
+## Singleton Design Pattern
 
 The Singleton design pattern is a software design pattern that ensures a class has only one instance and provides a global point of access to that instance. It's commonly used when exactly one object is needed to coordinate actions across the system, such as in the case of a database connection pool or a configuration manager. The Singleton pattern is part of the creational pattern category, which deals with object creation mechanisms, aiming to create objects in a manner suitable to the situation.
 

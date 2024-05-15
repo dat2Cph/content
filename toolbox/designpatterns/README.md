@@ -3,7 +3,7 @@ title: Design patterns
 description: Gennemgang af diverse design patterns
 layout: default
 has_children: true
-nav_order:3
+nav_order: 3
 ---
 
 # Design Patterns and Princples
