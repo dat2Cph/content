@@ -1,3 +1,11 @@
+---
+title: Lifehack projekt
+description: Oplæg til Lifehack projekt
+layout: default
+parent: Projekter
+nav_order: 1
+---
+
 # Lifehack
 
 ## Teamwork - fullstack webdev og how to KanBan

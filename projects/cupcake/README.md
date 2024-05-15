@@ -1,3 +1,12 @@
+---
+title: Cupcake projekt
+description: Oplæg til Cupcake projekt
+layout: default
+has_children: true
+parent: Projekter
+nav_order: 2
+---
+
 # Cupcake projekt
 
 ![Image](https://i.imgur.com/iGlmYeK.png)
