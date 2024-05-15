@@ -2,8 +2,7 @@
 title: Toolbox
 description: Samling af diverse vejledninger til datamatikeruddannelsen i Lyngby og på Bornholm
 layout: default
-has_children: true
-nav_order:13
+nav_order:12
 ---
 
 ## Indhold
