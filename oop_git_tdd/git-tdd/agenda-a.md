@@ -4,9 +4,8 @@ description: Agenda for Git undervisning
 layout: default
 nav_order: 2
 permalink: /oop-git-tdd/git/
+nav_exclude: true
 ---
-
-
 # Agenda
 
 ## Setup

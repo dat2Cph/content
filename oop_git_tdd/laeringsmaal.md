@@ -4,6 +4,7 @@ description: Læringsmål for introduktionsuge med OOP, GIT og TDD
 layout: default
 nav_order: 2
 permalink: /oop-git-tdd/learningobjectives/
+nav_exclude: true
 ---
 
 
