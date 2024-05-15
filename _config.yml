@@ -6,3 +6,5 @@ aux_links:
   Repository: https://github.com/dat2Cph/content
 nav_enabled: true
 heading_anchors: true
+search_enabled: true
+permalink: /:path/:basename.html
