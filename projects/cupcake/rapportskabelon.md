@@ -3,6 +3,7 @@ title: Cupcake rapportskabelon
 description: Forslag til hvordan en rapport kan udarbejdes
 layout: default
 parent: Cupcake projekt
+grand-parent: Projekter
 ---
 
 # Cupcake rapportskabelon

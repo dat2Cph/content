@@ -3,6 +3,7 @@ title: SendGrid
 description: Tutorial, hvor du lærer at sende mails fra Java
 layout: page
 parent: Carport projekt
+grand-parent: Projekter
 ---
 
 # Afsendelse af emails via SendGrid
