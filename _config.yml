@@ -7,6 +7,5 @@ aux_links:
 nav_enabled: true
 heading_anchors: true
 search_enabled: true
-permalink: /:path/:basename.html
 plugins:
   - jekyll-relative-links
