@@ -3,7 +3,7 @@ title: Kursusindhold 2. semester på Cphbusiness
 layout: default
 ---
 
-Her er links til diverse materialer på GitHub:
+# Velkommen til kursusmaterialer på 2. semester
 
 ## Kursusmateriale til semester flows
 
@@ -22,7 +22,7 @@ Her er links til diverse materialer på GitHub:
 
 ## Bonus materiale og selvstudier
 
-1. [Integrationtest](./carport/integrationtest)
+1. [Integrationtest](carport/integrationtest.md)
 2. [SendGrid tutorial](./sendgrid/sendgrid)
 3. [Toolbox](toolbox/)
 4. [Teamwork og gruppekontrakt](./teamwork/gruppekontrakt.docx)
