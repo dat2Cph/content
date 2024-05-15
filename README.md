@@ -21,14 +21,14 @@ permalink: /
 
 ## Bonus materiale og selvstudier
 
-1. [Integrationtest](./projects/carport/integrationstest/README.md)
+1. [Integrationstest](./projects/carport/integrationstest/README.md)
 2. [SendGrid tutorial](./projects/carport/sendgrid/README.md)
 3. [Toolbox](./toolbox/README.md)
 4. [Teamwork og gruppekontrakt](./teamwork/gruppekontrakt.docx)
 
 ## Værktøjskasse / Toolbox
 
-Vi har samlet en række nyttige links i en
+Vi har samlet en række generelle vejledninger i en [Toolbox](./toolbox/README.md)
 
 ## Om 2. semester
 
