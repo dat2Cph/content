@@ -1,3 +1,14 @@
+---
+title: Øvelser del 2
+description: Øvelser om netværk og http del 2
+layout: default
+nav_order: 2
+permalink: /network/exercise-02/
+parent: HTTP og netværk
+nav-exclude: true
+---
+
+
 # HTTP protokollen og netværk: opgaver onsdag/torsdag
 
 ## Ressourcer

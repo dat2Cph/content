@@ -3,6 +3,7 @@ title: OOP, GIT og TDD
 description: Introduction to the semester
 layout: default
 nav_order: 2
+permalink: /oop-git-tdd/
 ---
 
 # OOP, GIT og TDD

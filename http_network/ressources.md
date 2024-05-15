@@ -1,3 +1,12 @@
+---
+title: Ressourcer
+description: Diverse kilder om netværk og http
+layout: default
+nav_order: 2
+permalink: /network/resources/
+parent: HTTP og netværk
+---
+
 # Udvalgte resourcer om netværk og http
 
 ## Generelt

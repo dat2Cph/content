@@ -1,8 +1,10 @@
 ---
-title: HTTP protokol og netværk
+title: HTTP og netværk
 description: Oversigt over hele ugen
 layout: default
 nav_order: 3
+has_children: true;
+permalink: /network/
 ---
 
 

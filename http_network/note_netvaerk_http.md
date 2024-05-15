@@ -1,3 +1,14 @@
+---
+title: Teori
+description: Netværksteori
+layout: default
+nav_order: 2
+permalink: /network/theory/
+parent: HTTP og netværk
+---
+
+
+
 # Netværk & http (note uge 1)
 
 Denne note indeholder tre dele, en del om netværk, en del om http, og endelig en del om java resourcer (fordi vi har brug for dem til at få eksemplerne til at virke).
@@ -73,9 +84,10 @@ Java programmet nedenfor er en simpel webserver der lytter på port 8080.
 2. I linje 6 kaldes metoden `server.accept`. Denne metode sætter programmet til at vente på at et klient program henvender sig på port 8080 på den maskine som programmet kører på.
 3. Når klienten så henvender sig, oprettes der et Java `Socket` objekt som holder forbindelsen mellem serveren (dette program) og klienten (f.eks. browseren).
 4. Ud fra et socket objekt kan man få fat i andre objekter og informationer. F.eks.
- * I linje 9 henter man info om hvilken klient der er i den anden ende af forbindelsen.
- * I linje 11 og 12 oprettes en `BufferedReader` der kan læse hvad klienten sender (Vi får denne forbindelse gennem `socket.getInputStream()` i linje 12). Et HTTP request følger et helt specielt format. I linje 13-16 læser vi indtil første blanke linje (det kaldes headeren - se mere om HTTP protokollen nedenfor).
- * I line 18 bruger vi socket til at få fat på en output stream så vi kan sende et svar tilbage til klienten (`socket.getOutputStream()`).
+
+* I linje 9 henter man info om hvilken klient der er i den anden ende af forbindelsen.
+* I linje 11 og 12 oprettes en `BufferedReader` der kan læse hvad klienten sender (Vi får denne forbindelse gennem `socket.getInputStream()` i linje 12). Et HTTP request følger et helt specielt format. I linje 13-16 læser vi indtil første blanke linje (det kaldes headeren - se mere om HTTP protokollen nedenfor).
+* I line 18 bruger vi socket til at få fat på en output stream så vi kan sende et svar tilbage til klienten (`socket.getOutputStream()`).
 
 ### http
 

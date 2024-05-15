@@ -1,3 +1,13 @@
+---
+title: Læringsmål
+description: Læringsmål for netværk og http
+layout: default
+nav_order: 2
+permalink: /network/learningobjectives/
+parent: HTTP og netværk
+---
+
+
 # Læringsmål for http protokollen og netværk
 
 Efter denne uge er det meningen at du kan:
