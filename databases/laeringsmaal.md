@@ -3,6 +3,7 @@ title: Læringsmål
 description: Læringsmål for databaser
 layout: default
 parent: Databaser
+nav_order: 1
 ---
 
 # Læringsmål for databaser

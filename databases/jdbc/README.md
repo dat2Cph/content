@@ -3,6 +3,7 @@ title: JDBC
 description: Introduktion til JDBC i Java
 layout: default
 parent: Databaser
+nav_order: 4
 ---
 
 # JDBC

@@ -3,6 +3,7 @@ title: Database teori og normalisering
 description: Introduktion til databaseteori
 layout: default
 parent: Databaser
+nav_order: 2
 ---
 
 # Database teori og normalisering
