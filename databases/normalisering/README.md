@@ -1,6 +1,6 @@
 ---
-title: Database teori og normalisering
-description: Introduktion til databaseteori
+title: Teori og normalisering
+description: Introduktion til databaseteori og normalisering
 layout: default
 parent: Databaser
 nav_order: 2
