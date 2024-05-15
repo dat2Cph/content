@@ -1,9 +1,9 @@
 ---
 title: SVG tutorial
 description: Tutorial, hvor du lærer at kode SVG
-layout: page
+layout: default
 parent: Carport projekt
-grandparent: Projekter
+grand_parent: Projekter
 ---
 
 # SVG tutorial / øvelser
