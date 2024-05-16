@@ -5,6 +5,7 @@ layout: default
 has_children: true
 parent: Toolbox
 nav_order: 3
+permalink: /toolbox/designpatterns/
 ---
 
 # Design Patterns and Princples
