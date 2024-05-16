@@ -193,4 +193,4 @@ Nu kan du tilgå dit website på <http://ip:7070>
 Du er sådan set færdig med oprettelse og konfiguration af din Droplet - og har fået deployet din web applikation.
 Måske er det tid til en kop kaffe?
 
-- [Hop tilbage til oversigten](./README)
+- [Hop tilbage til oversigten](../)

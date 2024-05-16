@@ -1,4 +1,16 @@
+---
+title: Sockets
+description: Øvelser i brug af sockets
+layout: default
+nav_order: 1
+permalink: /network/exercises/exercise-01/
+parent: Øvelser
+grand_parent: HTTP og netværk
+---
+
 # Netværksøvelser del 1: netværk, sockets og TCP/IP
+
+[Tilbage til overblik](README.md)
 
 ## Opgave 1: Hvad er en socket i Java?
 
@@ -20,17 +32,17 @@ Disse to figurer viser begge et klient/server scenario.
 
 ### Case 1
 
-<img src="../img/clientserver1.png" alt="cs1" width="800"/>
+![Client/server 1](../img/clientserver1.png)
 
 ### Case 2
 
-<img src="../img/clientserver2.png" alt="cs2" width="800"/>
+![Client/server 2](../img/clientserver2.png)
 
 ## Opgave 3: Netværks-trafik (lagdeling)
 
 Hvordan skal denne model forstås? Prøv at forklare modellen hvis vi antager at der sendes et http request afsted. Modellen kaldes ofte for "The Internet Protocol Suite" eller for "TCP/IP modellen".
 
-<img src="../img/osi.png" alt="osi" width="800"/>
+![OSI](../img/osi.png)
 
 ## Opgave 4: IP adresser, DNS og porte
 
@@ -114,6 +126,4 @@ Hvordan skal denne model forstås? Prøv at forklare modellen hvis vi antager at
 10.5 Bonusøvelse: Lav også en Scanner på `EchoServer`, så serveren
 kan sende beskeder tilbage til klienten. Det er nok det mest primitive chat-scenarie man kan forestille sig, men alligevel. Det er en god start.
 
-<hr/>
-
-[Tilbage til overblik](./exercises_overview.md)
+[Tilbage til overblik](README.md)

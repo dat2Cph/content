@@ -1,3 +1,13 @@
+---
+title: Øvelser
+description: Øvelser om netværk og http
+layout: default
+nav_order: 4
+parent: HTTP og netværk
+has_children: true
+permalink: /network/exercises/
+---
+
 # Introduktion til ugens emne og øvelser
 
 Før vi går i gang, er det vigtigt, at du har et overordnet billede af hvor vi er på vej hen og hvad vi forsøger at lære i hver øvelse. Derfor denne oversigt.

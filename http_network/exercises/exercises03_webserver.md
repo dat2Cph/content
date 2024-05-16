@@ -1,3 +1,13 @@
+---
+title: Webserver
+description: Øvelse i udvikling af lille webserver
+layout: default
+nav_order: 3
+permalink: /network/exercises/exercise-03/
+parent: Øvelser
+grand_parent: HTTP og netværk
+---
+
 # Netværksøvelser del 3: webserver
 
 I disse tre opgaver skal du trække på alt du har lært fra de forrige øvelser. Ideen er at du kan pusle med opgaverne til SchoolHacks og sådan lidt på sidelinien.

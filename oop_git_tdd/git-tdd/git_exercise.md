@@ -7,8 +7,6 @@ permalink: /oop-git-tdd/git/exercise
 nav_exclude: true
 ---
 
-
-
 # Git exercises
 
 ## Preparation

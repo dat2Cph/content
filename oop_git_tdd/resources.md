@@ -1,10 +1,10 @@
 ---
-title: Ressources
+title: Git Ressourcer
 description: Diverse kilder til OOP, GIT og TDD
 layout: default
-nav_order: 3
-permalink: /oop-git-tdd/ressources/
-nav_exclude: true
+parent: OOP, GIT og TDD
+nav_order: 2
+permalink: /oop-git-tdd/resources/
 ---
 
 # Ressources for Object Oriented Programming, Git, TDD

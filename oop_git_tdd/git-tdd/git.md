@@ -2,9 +2,9 @@
 title: Git Kursus
 description: Git kursus
 layout: default
+parent: OOP, GIT og TDD
 nav_order: 2
 permalink: /oop-git-tdd/git/course
-nav_exclude: true
 ---
 
 # Git Course

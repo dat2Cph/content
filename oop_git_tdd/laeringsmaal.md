@@ -2,9 +2,9 @@
 title: Læringsmål
 description: Læringsmål for introduktionsuge med OOP, GIT og TDD
 layout: default
+parent: OOP, GIT og TDD
 nav_order: 1
 permalink: /oop-git-tdd/learningobjectives/
-nav_exclude: true
 ---
 
 

@@ -1,3 +1,12 @@
+---
+title: HTTP
+description: Øvelser i brug af http
+layout: default
+nav_order: 2
+permalink: /network/exercises/exercise-02/
+parent: Øvelser
+grand_parent: HTTP og netværk
+---
 # Netværksøvelser del 2: HTTP
 
 ## Opgave 1: Demo 03
@@ -103,4 +112,4 @@ Altså demo 05 `RequestFileServer`. Se om ikke du kan lade den stå
 
 <hr/>
 
-[Tilbage til overblik](./exercises_overview.md)
+[Tilbage til overblik](exercises_overview.md)

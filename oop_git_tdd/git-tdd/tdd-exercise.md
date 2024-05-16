@@ -2,14 +2,14 @@
 title: TDD
 description: Test Driven Development with Unit test
 layout: default
+parent: OOP, GIT og TDD
 nav_order: 2
 permalink: /oop-git-tdd/tdd
-nav_exclude: true
 ---
 
 # Test Driven Development (TDD)
 
-<img src="images/tdd.png" width=300>
+![TDD](./images/tdd.png){: width="300px"}
 
 Purpose of TDD is to write tests before writing code. This is a good way to ensure that the code is testable and that the code is written in small increments and that the code is written to solve the problem and not more.
 

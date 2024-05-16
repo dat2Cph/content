@@ -7,7 +7,7 @@ permalink: /
 
 # DAT 2. semester
 
-## Kursusmaterialerne
+## Kursusmaterialer
 
 1. [OOP, GIT og TDD](./oop_git_tdd/README.md)
 2. [HTTP protokollen og netværk](./http_network/README.md)

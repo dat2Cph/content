@@ -11,7 +11,7 @@ parent: HTTP og netværk
 
 ## Generelt
 
-- [Introduktion til netværk & http](https://github.com/dat2Cph/content/blob/main/http_network/note_netvaerk_http.md)
+- [Introduktion til netværk & http](./note_netvaerk_http.md)
 
 ## HTTP
 
