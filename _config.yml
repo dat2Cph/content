@@ -25,14 +25,6 @@ color_scheme: dark
 back_to_top: true
 back_to_top_text: 'Top'
 
-markdown: kramdown
-kramdown:
-  input: GFM
-  hard_wrap: false
-  syntax_highlighter_opts:
-    block:
-      line_numbers: true
-
 # For copy button on code
 enable_copy_code_button: true
 
