@@ -25,7 +25,7 @@ back_to_top_text: 'Top'
 kramdown:
   syntax_highlighter_opts:
     block:
-      line_numbers: false
+      line_numbers: true
 
 # For copy button on code
 enable_copy_code_button: true

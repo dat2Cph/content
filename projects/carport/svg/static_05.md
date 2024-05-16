@@ -81,7 +81,7 @@ Lav et koordinatsystem som dette i SVG:
 
 ### Vejledende løsning
 
-<details>
+<details markdown="block">
 <summary>
 Hvis du er kørt fast - så lur her
 </summary>

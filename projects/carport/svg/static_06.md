@@ -42,7 +42,7 @@ Svar: Translation, (af lat. translatio 'overføring, flytning', af trans- og afl
 
 ### Vejledende løsning
 
-<details>
+<details markdown="block">
 <summary>
 Hvis du er kørt fast - så lur her
 </summary>
