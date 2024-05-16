@@ -44,7 +44,7 @@ Hvordan ser de to `line`- elementer du har brugt til at tegne de stiplede linier
 
 ### Vejledende løsning (hvis du er kørt fast)
 
-<details>
+<details markdown="block">
 <summary>
 Du må gerne kigge her - men prøv først selv. Du kan altid tjekke din løsning op i mod denne.
 </summary>
