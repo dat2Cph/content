@@ -66,4 +66,4 @@ Her er lidt hjælp til HTML siden, der gemmes om en skabelon:
 
 <hr/>
 
-[Tilbage til overblik](./exercises_overview.md)
+[Tilbage til overblik](./README.md)
