@@ -1,3 +1,13 @@
+---
+title: Executors
+description: Samtidighed, tråde og executors
+layout: default
+nav_order: 2
+parent: Øvelser
+grand_parent: Trådprogrammering
+permalink: /threads/exercises/executors/
+---
+
 # Øvelser - Executors
 
 Det centrale i executor biblioteket er at man har minimum to tråde. Den ene tråd venter på input fra brugeren - i vores tilfælde på at der kommer et HTTP request. Hvis det tager lang tid at udføre dette request (f.eks fordi vi skal hente noget i en database), kan vores web server ikke tage imod request fra den næste bruger før vi har færdig behandlet første request.

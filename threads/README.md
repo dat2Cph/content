@@ -3,6 +3,8 @@ title: Trådprogrammering
 description: Samtidighed, tråde og executors
 layout: default
 nav_order: 4
+has_children: true
+permalink: /threads/
 ---
 
 # Samtidighed, tråde og executors
@@ -33,7 +35,7 @@ Vi begynder forholdsvist hurtigt at benytte os af Javas bibliotekster for at gø
 
 <hr/>
 
-1. [Øvelser med simple tråde](./exercises_threads.md)
-2. [Øvelser med brug af Executor frameworket](./exercises_executor.md)
-3. [Øvelser i samtidighedsproblematikker](./exercises_concurrency_problems.md)
-4. [Oplæg til større opgave med udvikling af en chat-server](./exercises_chatserver.md)
+1. [Øvelser med simple tråde](./exercises/exercises_threads.md)
+2. [Øvelser med brug af Executor frameworket](./exercises/exercises_executor.md)
+3. [Øvelser i samtidighedsproblematikker](./exercises/exercises_concurrency_problems.md)
+4. [Oplæg til større opgave med udvikling af en chat-server](./exercises/exercises_chatserver.md)

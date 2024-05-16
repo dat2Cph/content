@@ -1,3 +1,13 @@
+---
+title: Chatserver
+description: Byg en chatserver fra bunden
+layout: default
+nav_order: 4
+parent: Øvelser
+grand_parent: Trådprogrammering
+permalink: /threads/exercises/chatserver/
+---
+
 # Øvelse: Chat-server
 
 Formålet med denne øvelse, er at prøve kræfter med både tråd- og netværksprogrammering.

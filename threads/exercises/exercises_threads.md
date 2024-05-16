@@ -1,3 +1,13 @@
+---
+title: Simple tråde
+description: Samtidighed, tråde og executors
+layout: default
+nav_order: 1
+parent: Øvelser
+grand_parent: Trådprogrammering
+permalink: /threads/exercises/simple-threads/
+---
+
 # Øvelser - Tråde - Threads
 
 ## Før du går i gang
@@ -93,7 +103,7 @@ Tip: Hvis du afbryder tråden (med *interrupt`), ophæver du blokeringen, så fi
 
 <hr/>
 
-1. [Øvelser med simple tråde](./exercises_threads.md)
+1. [Øvelser med simple tråde](exercises_threads.md)
 2. [Øvelser med brug af Executor frameworket](./exercises_executor.md)
 3. [Øvelser i samtidighedsproblematikker](./exercises_concurrency_problems.md)
 4. [Oplæg til større opgave med udvikling af en chat-server](./exercises_chatserver.md)

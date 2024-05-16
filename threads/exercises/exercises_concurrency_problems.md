@@ -1,3 +1,13 @@
+---
+title: Samtidighedsproblemer
+description: Samtidighed, tråde og executors
+layout: default
+nav_order: 3
+parent: Øvelser
+grand_parent: Trådprogrammering
+permalink: /threads/exercises/concurrency/
+---
+
 # Øvelser - samtidighedsproblematikker
 
 Det lyder næsten som et socialrealistisk drama fra 70'erne. Men det handler om nogle af de problemer vi kan komme ud for i forbindelse med trådprogrammering. Og der er mange. Vi tager blot de mest oplagte. Vi anvender de engelske termer, da det er lettest at finde hjælp og kodeeksempler på nettet til dem. De tilsvarende dansker termer nævnes, hvor det er relevant.

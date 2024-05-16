@@ -1,8 +1,15 @@
-# Tråde
+---
+title: Læringsmål
+description: Læringsmål for tråde
+layout: default
+nav_order: 1
+permalink: /threads/learningobjectives/
+parent: Trådprogrammering
+---
 
-## Læringsmål
+# Læringsmål for Tråde
 
-### Hold A: Efter denne uge er det målet at du
+## Hold A: Efter denne uge er det målet at du
 
 1. Kan starte, stoppe, pause og afbryde tråde i Java ved hjælp.
 
@@ -12,7 +19,7 @@
 
 4. Kan bruge en worker thread til at håndtere http forespørgsler.
 
-### Hold B og Bornholm
+## Hold B og Bornholm
 
 1. Kan forklare generelt hvad tråde er og hvad formålet er med dem?
    - Hvorfor vi har brug for dem?
