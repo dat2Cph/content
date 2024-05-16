@@ -18,6 +18,9 @@ readme_index:
   remove_originals: true
   with_frontmatter: false
 
+# Color scheme supports "light" (default) and "dark"
+color_scheme: dark
+
 # Back to top link
 back_to_top: true
 back_to_top_text: 'Top'
