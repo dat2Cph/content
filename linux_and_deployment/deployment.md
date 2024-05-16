@@ -3,6 +3,7 @@ title: Deployment
 description: Blå og rød pille
 layout: default
 parent: Linux & Deployment
+permalink: /linux/deployment/
 ---
 
 # Deploy din web applikation på en Droplet
