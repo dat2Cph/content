@@ -47,7 +47,7 @@ Efter denne uge, er det meningen at vi kan:
    - Hvordan ser et HTTP response ud?
    - Giv kodeeksempler i Java på ovenstående
 
-![Network](../img/steampunkserver.webp)
+![Network](./img/steampunkserver.webp)
 
 ## Sådan laver du en præsentation af læringsmål
 
