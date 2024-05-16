@@ -45,12 +45,12 @@ Hvordan ser de to `line`- elementer du har brugt til at tegne de stiplede linier
 ### Vejledende løsning (hvis du er kørt fast)
 
 <details markdown="block">
+
 <summary>
 Du må gerne kigge her - men prøv først selv. Du kan altid tjekke din løsning op i mod denne.
 </summary>
 
 ```xml
-
 <?xml version="1.0" ?>
 
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"

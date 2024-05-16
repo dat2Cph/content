@@ -57,7 +57,6 @@ I eksemplerne ovenfor er det en browser, der snakker med en webserver. Serveren 
 Java programmet nedenfor er en simpel webserver der lytter på port 8080.
 
 ```java
-
     private static void main(String args...) throws Exception {
         final int port = 8080;
         final ServerSocket server = new ServerSocket( port );
