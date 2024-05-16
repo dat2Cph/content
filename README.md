@@ -5,7 +5,9 @@ nav_order: 1
 permalink: /
 ---
 
-# Velkommen til kursusmaterialer på 2. semester
+# DAT 2. semester
+
+## Kursusmaterialerne
 
 1. [OOP, GIT og TDD](./oop_git_tdd/README.md)
 2. [HTTP protokollen og netværk](./http_network/README.md)

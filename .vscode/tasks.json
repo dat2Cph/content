@@ -1,0 +1,31 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "echo",
+            "type": "shell",
+            "command": "echo Hello"
+        },
+        {
+            "label": "Docker Compose Up",
+            "type": "shell",
+            "command": "docker-compose up",
+            "group": {
+              "kind": "build",
+              "isDefault": true
+            },
+            "problemMatcher": [],
+            "detail": "Runs Docker Compose to start the Jekyll server"
+          },
+          {
+            "label": "Docker Compose Down",
+            "type": "shell",
+            "command": "docker-compose down",
+            "group": "none",
+            "problemMatcher": [],
+            "detail": "Stops Docker Compose"
+          }
+    ]
+}
