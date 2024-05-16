@@ -18,13 +18,6 @@ readme_index:
   remove_originals: true
   with_frontmatter: false
 
-kramdown:
-  input: GFM
-  hard_wrap: false
-  syntax_highlighter_opts:
-    block:
-      line_numbers: true
-
 # Color scheme supports "light" (default) and "dark"
 color_scheme: dark
 
