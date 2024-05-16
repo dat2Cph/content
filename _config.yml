@@ -21,6 +21,12 @@ readme_index:
 # Color scheme supports "light" (default) and "dark"
 color_scheme: dark
 
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
 # Back to top link
 back_to_top: true
 back_to_top_text: 'Top'
