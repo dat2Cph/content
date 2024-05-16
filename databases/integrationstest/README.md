@@ -44,7 +44,7 @@ Dette involverer disse trin:
 
 - [GitHub Repo](https://github.com/dat2Cph/dat2-sportsclub/tree/integrationtest). Det er det samme repo, som vi brugte i går, men den nye kode vi skal bruge i dag har fået tilføjet exeception handling og integrationstest. Den nye kode ligger i sin egen branch "integrationtest" og skal derfor clones med kommandoen:
 
-```terminal
+```bash
 git clone -b integrationtest git@github.com: git@github.com:dat2Cph/dat2-sportsclub.git
 ```
 
