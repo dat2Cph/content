@@ -2,8 +2,8 @@
 title: Design patterns
 description: Gennemgang af diverse design patterns
 layout: default
-has_children: true
 parent: Toolbox
+has_children: true
 nav_order: 1
 permalink: /toolbox/designpatterns/
 ---
