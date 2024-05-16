@@ -1,5 +1,5 @@
 ---
-title: title: Statiske tegninger del 1
+title: Statiske tegninger del 1
 description: Tutorial, hvor du lærer at kode SVG
 layout: default
 parent: Carport projekt
