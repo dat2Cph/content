@@ -1,3 +1,12 @@
+---
+title: Second hand case
+description: Small backend project for class
+layout: default
+permalink: /webstack/backend/second-hand/
+nav_exclude: true
+---
+
+
 # Cphbusiness Second Hand Website
 
 Så skal vi give den blå avis baghjul ;-)

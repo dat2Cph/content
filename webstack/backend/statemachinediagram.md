@@ -1,3 +1,12 @@
+---
+title: Tilstandsdiagrammer
+description: State machine diagrammes
+layout: default
+permalink: /webstack/backend/statemachine/
+nav_exclude: true
+---
+
+
 # UML State Machine Diagrams
 
 UML State Diagrams, also known as State Machine Diagrams or simply State Diagrams, capture the different states of an object and the transitions between these states. They are especially useful for modeling objects that have a significant number of different states, like a thread, a process, or even higher-level entities like order systems.
@@ -22,7 +31,7 @@ Here are the key components and aspects of UML State Diagrams:
    - Depicted as a filled circle inside a larger hollow circle.
 
 5. **Composite State**:
-   - Represents a state that is composed of nested sub-states. 
+   - Represents a state that is composed of nested sub-states.
    - Useful for simplifying complex state diagrams where a state might have several distinct sub-states or phases.
 
 6. **Guard Condition**:
@@ -35,19 +44,22 @@ Here are the key components and aspects of UML State Diagrams:
 
 8. **Event**:
    - A significant occurrence that can trigger a state transition.
-   
+
 9. **Action**:
    - A function or task performed in a particular state or when transitioning between states.
 
 10. **Entry/Exit Point**:
-   - An action or event that occurs upon entering (entry) or leaving (exit) a state.
+
+- An action or event that occurs upon entering (entry) or leaving (exit) a state.
 
 **Why Use State Diagrams?**:
+
 - To model the lifecycle of an object, detailing its various states and how it transitions between them.
 - To find potential issues in the life cycle or identify possible improvements.
 - To provide clarity for complex objects with many states and transitions.
 
 **Example Use Cases**:
+
 - Modeling a vending machine's operation, detailing states like "waiting for selection," "processing payment," "dispensing item," etc.
 - Detailing the lifecycle of a software process or thread (e.g., "starting," "running," "waiting," "terminated").
 - Tracking the stages of an order in an e-commerce system (e.g., "placed," "processed," "shipped," "delivered").
@@ -73,4 +85,3 @@ Note the Cooling substate
 ### A Website Navigation Diagram II
 
 ![Statemachinediagram](./images/statemachinediagram04.webp)
-
