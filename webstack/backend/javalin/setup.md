@@ -1,3 +1,12 @@
+---
+title: Javalin setup
+description: Tutorial for setting up a maven project
+layout: default
+permalink: /webstack/backend/javalin-setup/
+nav_exclude: true
+---
+
+
 # Creating a brand new Javalin web project in IntelliJ
 
 Learn how to get started building websites with Javalin and Thymeleaf.
