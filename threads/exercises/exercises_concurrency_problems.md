@@ -12,7 +12,7 @@ permalink: /threads/exercises/concurrency/
 
 Det lyder næsten som et socialrealistisk drama fra 70'erne. Men det handler om nogle af de problemer vi kan komme ud for i forbindelse med trådprogrammering. Og der er mange. Vi tager blot de mest oplagte. Vi anvender de engelske termer, da det er lettest at finde hjælp og kodeeksempler på nettet til dem. De tilsvarende dansker termer nævnes, hvor det er relevant.
 
-Hvis du har tid og lyst, så læs, forstå og kør eksempler herunder. De er hentet fra ChatGpt og giver et godt samlet overblik.
+Hvis du har tid og lyst, så læs, forstå og kør eksempler herunder. De er hentet fra ChatGPT og giver et godt samlet overblik.
 
 1. [Race condition](#1-race-condition)
 2. [Memory Visibility problem](#2-memory-visibility-problem)
