@@ -1,9 +1,10 @@
 ---
-title: Deployment
+title: 8. Deployment
 description: Blå og rød pille
 layout: default
 parent: Linux & Deployment
 permalink: /linux/deployment/
+nav_order: 9
 ---
 
 # Deploy din web applikation på en Droplet

@@ -1,3 +1,12 @@
+---
+title: 5. Java
+description: Installer Java på Droplet
+layout: default
+parent: Linux & Deployment
+permalink: /linux/java/
+nav_order: 6
+---
+
 # Installation af Java 17 m.m. på Droplet
 
 Den her er let nok:

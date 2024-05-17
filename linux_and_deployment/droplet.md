@@ -1,3 +1,12 @@
+---
+title: 2. Opret Droplet
+description: Lav ny Droplet hos Digital Ocean
+layout: default
+parent: Linux & Deployment
+permalink: /linux/droplet/
+nav_order: 3
+---
+
 # Opret en Droplet hos Digital Ocean
 
 Vi skal til at oprette en virtuel maskine hos Digital Ocean. En såkaldt "Droplet".

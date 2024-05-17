@@ -1,3 +1,12 @@
+---
+title: 3. Log på Ubuntu med ssh
+description: Log på Droplet via ssh
+layout: default
+parent: Linux & Deployment
+permalink: /linux/login/
+nav_order: 4
+---
+
 # Log på din Droplet første gang
 
 Når din Droplet er klar, skal du kopiere IP-nummeret på maskinen.

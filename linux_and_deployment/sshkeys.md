@@ -1,3 +1,12 @@
+---
+title: 1. SSH
+description: Lav en ssh nøgle
+layout: default
+parent: Linux & Deployment
+permalink: /linux/ssh/
+nav_order: 2
+---
+
 # Opret (eller find din) ssh nøgle
 
 Når vi skal udføre kommandoer på vores Droplet gøres det gennem en terminal. I Windows bruges Git-Bash, på en Mac bruges terminalvinduet.

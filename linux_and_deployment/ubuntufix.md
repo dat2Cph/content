@@ -1,3 +1,12 @@
+---
+title: 4. Opret bruger
+description: Opret Jetty bruger i Ubuntu
+layout: default
+parent: Linux & Deployment
+permalink: /linux/user/
+nav_order: 5
+---
+
 # Opret ny bruger i Ubuntu og konfigurer en firewall
 
 ## Lav en ekstra bruger (som ikke er root)

@@ -1,3 +1,11 @@
+---
+title: 6. Postgres
+description: Opsætning Postgres på Droplet
+layout: default
+parent: Linux & Deployment
+permalink: /linux/postgres/
+nav_order: 7
+---
 # Opsætning af Postgres i en Docker container på en Droplet
 
 Vi har allerede oprettet en Droplet med Ubuntu og Docker hos Digital Ocean. Ideen er nu

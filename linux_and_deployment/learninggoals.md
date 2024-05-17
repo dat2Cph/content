@@ -1,3 +1,12 @@
+---
+title: Læringsmål
+description: Læringsmål for Linux og Deployment
+layout: default
+parent: Linux & Deployment
+nav_order: 1
+permalink: /databases/learningobjectives/
+---
+
 # Læringsmål for uge med Virtuelle maskiner, deployment og Linux
 
 Efter denne uge er det meningen at:

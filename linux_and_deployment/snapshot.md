@@ -1,3 +1,12 @@
+---
+title: 7. Snapshot
+description: Snapshot af Droplet
+layout: default
+parent: Linux & Deployment
+permalink: /linux/snapshot/
+nav_order: 8
+---
+
 # Tag et snapshot
 
 Når du har installeret din Droplet og alt ser ud til at virke, er det et perfekt tidspunkt at tage et såkaldt "snapshot". Hvis din Droplet fejler, eller noget går galt, kan du altid geninstallere en identisk kopi fra et snapshot. Du skal slukke for din droplet for at igangsætte et snapshot. Se herunder hvor det gøres:
