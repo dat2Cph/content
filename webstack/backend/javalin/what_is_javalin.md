@@ -1,3 +1,13 @@
+---
+title: What is Javalin?
+description: Javalins oprindelse og formål
+layout: default
+nav_order: 3
+parent: Backend
+grand_parent: Webstack
+permalink: /webstack/backend/what-is-javalin
+---
+
 # What is Javalin?
 
 Javalin describes itself as "A simple web framework for Java and Kotlin". Javalin is a so called "micro framework".

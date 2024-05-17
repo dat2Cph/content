@@ -1,3 +1,13 @@
+---
+title: Ressourcer
+description: Diverse links og materialer om Frontend
+layout: default
+nav_order: 2
+parent: Frontend
+grand_parent: Webstack
+permalink: /webstack/frontend/resources/
+---
+
 # Ressourcer
 
 ## Jons videoserie til Frontend-ugen
@@ -23,10 +33,12 @@
 - [MDN webdocs](https://developer.mozilla.org/en-US/docs/Web/HTML)
 
 ## CSS
+
 - [W3Schools CSS](https://www.w3schools.com/css/default.asp)
 - [MDN webdocs](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
 ## Responsivt webdesign (RWD)
+
 - [RWD: 10 basics you need to know (6:37)](https://www.youtube.com/watch?v=zF6VSky4SIc)
 - [A complete guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [Flexbox in 15 minutes](https://www.youtube.com/watch?v=fYq5PXgSsbE)

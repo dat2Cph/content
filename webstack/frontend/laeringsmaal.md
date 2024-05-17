@@ -1,3 +1,13 @@
+---
+title: Læringsmål
+description: Læringsmål for frontend uge
+layout: default
+nav_order: 1
+parent: Frontend
+grand_parent: Webstack
+permalink: /webstack/frontend/learningsobjectives/
+---
+
 # Læringsmål for Frontend-uge
 
 Efter denne uge er det meningen at du kan:

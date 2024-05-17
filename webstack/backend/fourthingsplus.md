@@ -1,3 +1,12 @@
+---
+title: Fourthingsplus tutorial
+description: Javalin tutorial
+layout: default
+parent: Backend
+grand_parent: Webstack
+permalink: /webstack/backend/fourthingsplus/
+---
+
 # Four Things Plus
 
 Denne tutorial er tænkt om et "selvstudium", hvor du sideløbende med undervisningen på skolen, kan sidde i ro og mag og arbejde dig igennem en længere sammenhængende case. F.eks. på de dage, hvor vi ikke har undervisning.

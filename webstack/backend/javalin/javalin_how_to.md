@@ -1,4 +1,14 @@
-<img alt="javalin" src="images/javalinlogo.svg" width="100" align="right" />
+---
+title: Javalin Cookbook
+description: Javalin opslagsværk
+layout: default
+nav_order: 2
+parent: Backend
+grand_parent: Webstack
+permalink: /webstack/backend/javalin-cookbook
+---
+
+![Javalin Logo](./images/javalinlogo.svg){: width="100" .float-right}
 
 # Javalin Cookbook
 
@@ -315,7 +325,7 @@ This example assumed that a list of user objects are passed from Javalin:
 </table>
 ```
 
-That how the `th:each` attribute works. It's is important that you spell the attribute names correctly. `username`,
+That's how the `th:each` attribute works. It's is important that you spell the attribute names correctly. `username`,
 `password`, and `role` should be attributes in the Java User class.
 
 ### 5. How to use conditionals (if ...)

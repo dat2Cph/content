@@ -1,3 +1,14 @@
+---
+title: Læringsmål
+description: Læringsmål for backend uge
+layout: default
+nav_order: 1
+parent: Backend
+grand_parent: Webstack
+permalink: /webstack/backend/learningobjectives/
+---
+
+
 # Læringsmål for Backend-uge
 
 Efter denne uge er det meningen at du kan:

@@ -1,3 +1,13 @@
+---
+title: Request handling
+description: Gennemgang af hvordan en request/response cyclus fungerer
+layout: default
+nav_order: 4
+parent: Backend
+grand_parent: Webstack
+permalink: /webstack/backend/request-response
+---
+
 # How a request/response cycle is handled
 
 This is a rough description of a request/response cycle. The focus is on where the responsibility for each part of the handling is carried out:

@@ -3,7 +3,7 @@ title: Forretningsforståelse
 description: Optakt til semesterprojekt
 layout: default
 has_children: true
-nav_order: 7
+nav_order: 9
 permalink: /business/
 ---
 
