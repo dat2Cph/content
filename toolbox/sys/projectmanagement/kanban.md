@@ -1,3 +1,13 @@
+---
+title: Kanban
+description: Teori om Kanban
+layout: default
+parent: SYS
+grand_parent: Toolbox
+nav_order: 5
+permalink: /toolbox/sys/kanban/
+---
+
 # Kanban
 
 ## Introvideoer (ca. 60 min)

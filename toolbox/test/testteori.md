@@ -1,3 +1,12 @@
+---
+title: Test
+description: Teori om test
+layout: default
+parent: Toolbox
+nav_order: 3
+permalink: /toolbox/test/
+---
+
 # Hvordan sikrer I jer, at jeres kode virker?
 
 Formålet med undervisningen er at give en mere systematisk tilgang til test og sikring af kvalitet i sin kode.

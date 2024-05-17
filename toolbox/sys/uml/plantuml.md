@@ -1,3 +1,13 @@
+---
+title: PlantUML
+description: Objektorienteret modellering med plantUML
+layout: default
+parent: SYS
+grand_parent: Toolbox
+nav_order: 2
+permalink: /toolbox/sys/plantuml
+---
+
 # PlantUML
 
 Der er mange værktøjer til at tegne diagrammer. Denne note vil kort beskrive et af disse - et som egner sig godt til brug på git og github.

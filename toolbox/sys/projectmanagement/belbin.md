@@ -1,3 +1,13 @@
+---
+title: Belbin
+description: Teori om Belbin
+layout: default
+parent: SYS
+grand_parent: Toolbox
+nav_order: 4
+permalink: /toolbox/sys/belbin/
+---
+
 # Belbin
 
 * [Belbin Team Roles for Beginners](https://www.youtube.com/watch?t=1&v=oplI3Dg68es)

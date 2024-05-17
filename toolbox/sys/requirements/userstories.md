@@ -1,3 +1,13 @@
+---
+title: User stories
+description: Teori om User stories
+layout: default
+parent: SYS
+grand_parent: Toolbox
+nav_order: 6
+permalink: /toolbox/sys/user-stories/
+---
+
 # User stories og accept-kriterier
 
 Er en kort simpel beskrivelse af en feature, som en potentiel bruger ville formulere det. Typisk en bruger eller en kunde.

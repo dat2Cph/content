@@ -1,4 +1,14 @@
-# UML tutorials
+---
+title: UML tutorials
+description: Video tutorials med UML
+layout: default
+parent: SYS
+grand_parent: Toolbox
+nav_order: 3
+permalink: /toolbox/sys/uml-tutorials/
+---
+
+# UML videotutorials
 
 ## Diagrammer og objektorienteret design
 
