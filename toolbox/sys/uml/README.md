@@ -1,3 +1,12 @@
+---
+title: UML
+description: Objektorienteret modellering
+layout: default
+parent: SYS
+grand_parent: Toolbox
+nav_order: 1
+permalink: /toolbox/sys/uml
+---
 # UML på Datamatikeruddannelsen
 
 Vi har samlet en række nyttige vejledninger,  videoer, artikler med mere, som vi trækker på i løbet af 2. semester. Den er ikke helt opdateret- Det bliver nok aldrig, men vi er på vej ;-)
@@ -8,7 +17,7 @@ UML er en forkortelse for Unified Modeling Language. Det er en standard for udse
 
 Her ses en oversigt over alle UML diagrammerne. De røde og blå er dem vi fortrinsvis anvender på Datamatikerstudiet:
 
-![](https://i.imgur.com/8IApVIX.png)
+![UML oversigt](https://i.imgur.com/8IApVIX.png)
 
 ## Læs mere om UML
 

@@ -4,6 +4,7 @@ description: Værktøjer og teori til SYS
 layout: default
 parent: Toolbox
 nav_order: 2
+has_children: true
 permalink: /toolbox/sys/
 ---
 
