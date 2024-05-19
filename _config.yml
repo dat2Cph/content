@@ -9,6 +9,7 @@ aux_links:
 nav_enabled: true
 heading_anchors: true
 search_enabled: true
+ga_tracking: G-BYSHS79QFS
 plugins:
   - jekyll-relative-links
   - jekyll-readme-index
