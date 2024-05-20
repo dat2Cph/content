@@ -2,6 +2,7 @@
 title: Opgave i normalisering og modellering
 description: Indledende opgave i normalisering og modellering
 layout: default
+permalink: /databases/exercise-normalization/
 nav_exclude: true
 ---
 

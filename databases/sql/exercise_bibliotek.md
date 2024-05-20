@@ -3,6 +3,7 @@ title: Opgave i SQL
 description: Indledende opgave i SQL
 layout: default
 nav_exclude: true
+permalink: /databases/exercise-sql/
 ---
 
 # Databaser og SQL: torsdagsopgave

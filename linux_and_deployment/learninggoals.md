@@ -4,7 +4,7 @@ description: Læringsmål for Linux og Deployment
 layout: default
 parent: Linux & Deployment
 nav_order: 1
-permalink: /databases/learningobjectives/
+permalink: /linux/learningobjectives/
 ---
 
 # Læringsmål for uge med Virtuelle maskiner, deployment og Linux
