@@ -9,6 +9,8 @@ permalink: /projekter/carport/
 ---
 ## Carport projekt - inpiration og hjælp til opgaven
 
+Selve oplægget til eksamensopgaven finder du på Moodle i det sidste flow. På denne side kan du finde en række ekstra materialer og lidt tips og tricks til opgaven.
+
 ## Styklisteberegner
 
 Når I skal beregne de enkelte rækker i styklisten, er det en god idé, at I begynder med stolper, remme og spær. Det er også en fordel, at lave unit-tests undervejs. Det gør blandt andet, at I ikke behøver at køre web-applikation hver gang I afprøver en beregning. I stedet kan I bare køre en unit-test. Se mere nedenfor.

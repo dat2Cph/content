@@ -1,3 +1,13 @@
+---
+title: Git installation
+description: Installationsguide til Git
+layout: default
+grand_parent: Toolbox
+parent: Git
+nav_order: 1
+permalink: /toolbox/git/installation
+---
+
 # Install and configure git
 
 - [Install git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)

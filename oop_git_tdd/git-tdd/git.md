@@ -1,13 +1,13 @@
 ---
-title: Git Kursus
-description: Git kursus
+title: Git oversigt
+description: Git oversigt
 layout: default
 parent: OOP, GIT og TDD
 nav_order: 2
-permalink: /oop-git-tdd/git/course
+permalink: /oop-git-tdd/git/overview
 ---
 
-# Git Course
+# Git Overview
 
 ## Topics
 

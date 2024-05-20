@@ -1,9 +1,9 @@
 ---
-title: TDD
+title: TDD exercise
 description: Test Driven Development with Unit test
 layout: default
 parent: OOP, GIT og TDD
-nav_order: 2
+nav_order: 4
 permalink: /oop-git-tdd/tdd
 ---
 

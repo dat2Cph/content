@@ -2,9 +2,9 @@
 title: Git exercise
 description: Git øvelse
 layout: default
-nav_order: 2
+nav_order: 5
+parent: OOP, GIT og TDD
 permalink: /oop-git-tdd/git/exercise
-nav_exclude: true
 ---
 
 # Git exercises
