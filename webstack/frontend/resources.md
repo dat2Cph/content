@@ -10,6 +10,17 @@ permalink: /webstack/frontend/resources/
 
 # Ressourcer
 
+## Opgaver
+
+- [Carpool](./carpool.md)
+- [Bookingformular](./bookingform.md)
+- [Cupcake template](./cupcake.md)
+- [Carpool Responsive Design](./carpoolresponsive.md)
+
+## Slides
+
+- [Slides om UI/UX](UX_UI.pdf)
+
 ## Jons videoserie til Frontend-ugen
 
 - [Intro til www's historie (13:03)](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f3f1894d-05fc-4b9c-8b7f-b083010c1da1)
