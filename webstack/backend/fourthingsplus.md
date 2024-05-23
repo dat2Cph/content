@@ -3,6 +3,8 @@ title: Fourthingsplus tutorial
 description: Javalin tutorial
 layout: default
 permalink: /webstack/backend/fourthingsplus/
+parent: Backend
+grand_parent: Webstack
 nav_exclude: true
 ---
 

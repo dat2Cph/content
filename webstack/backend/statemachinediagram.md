@@ -3,6 +3,8 @@ title: Tilstandsdiagrammer
 description: State machine diagrammes
 layout: default
 permalink: /webstack/backend/statemachine/
+parent: Backend
+grand_parent: Webstack
 nav_exclude: true
 ---
 

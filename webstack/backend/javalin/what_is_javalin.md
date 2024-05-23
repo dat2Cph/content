@@ -10,6 +10,8 @@ permalink: /webstack/backend/what-is-javalin
 
 # What is Javalin?
 
+![Javalin Logo](./images/javalinlogo.svg){: width="100" .float-right}
+
 Javalin describes itself as "A simple web framework for Java and Kotlin". Javalin is a so called "micro framework".
 
 ## What is a Java micro framework?

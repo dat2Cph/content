@@ -4,6 +4,8 @@ description: Small backend project for class
 layout: default
 permalink: /webstack/backend/second-hand/
 nav_exclude: true
+parent: Backend
+grand_parent: Webstack
 ---
 
 
