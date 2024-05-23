@@ -5,7 +5,7 @@ layout: default
 nav_order: 1
 parent: Frontend
 grand_parent: Webstack
-permalink: /webstack/bookingform/
+permalink: /webstack/frontend/bookingform/
 nav_exclude: true
 ---
 

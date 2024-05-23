@@ -5,7 +5,7 @@ layout: default
 nav_order: 2
 parent: Frontend
 grand_parent: Webstack
-permalink: /webstack/carpool/
+permalink: /webstack/frontend/carpool/
 nav_exclude: true
 ---
 
