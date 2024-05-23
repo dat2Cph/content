@@ -70,7 +70,7 @@ are made static for ease of use.
 
 Add a connection pool with 3 JDBC Postgresql connections. Create a package called `persistence` and drop the ConnectionPool class and the rest of DB classes into it:
 
-```Java
+```java
 package app.persistence;
 
 import com.zaxxer.hikari.HikariConfig;
@@ -176,7 +176,7 @@ public class ConnectionPool
 
 Add to beginning of Main-class:
 
-```Java
+```java
 private static final String USER = "postgres";
 private static final String PASSWORD = "postgres";
 private static final String URL = "jdbc:postgresql://localhost:5432/%s?currentSchema=public";
@@ -188,7 +188,7 @@ private static final ConnectionPool connectionPool = ConnectionPool.getInstance(
 
 Then the database can be accessed like this:
 
-```Java
+```java
 public static List<User> getAllUsers(ConnectionPool connectionPool) throws DatabaseException
     {
         List<User> userList = new ArrayList<>();
