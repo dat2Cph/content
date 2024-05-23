@@ -13,5 +13,6 @@ permalink: /toolbox/databases/
 ## Indhold
 
 - [Kodeskabeloner til CRUD og JDBC](./jdbc_templates.md)
+- [Installation af Postgres og PgAdmin på localhost](https://github.com/dat2Cph/2semDockerSetupLocal)
 
 ![DB Postgres Client/Server](./images/database_postgres.webp)
