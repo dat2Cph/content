@@ -5,7 +5,7 @@ layout: default
 nav_order: 4
 parent: Frontend
 grand_parent: Webstack
-permalink: /webstack/cupcake/
+permalink: /webstack/frontend/cupcake/
 nav_exclude: true
 ---
 

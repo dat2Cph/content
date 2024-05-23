@@ -5,7 +5,7 @@ layout: default
 nav_order: 1
 parent: Webstack
 has_children: true
-permalink: /webstack/frontend
+permalink: /webstack/frontend/
 ---
 # Frontend
 
