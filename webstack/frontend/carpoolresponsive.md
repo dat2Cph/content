@@ -1,3 +1,14 @@
+---
+title: Carpool Responsive opgave
+description: Carpool Responsive HTML opgave
+layout: default
+nav_order: 3
+parent: Frontend
+grand_parent: Webstack
+permalink: /webstack/carpool_responsive/
+nav_exclude: true
+---
+
 # Carpool II (responsiv version)
 
 Du skal lave en responsiv udgave af [designet fra opgaven](./carpool.md) vi lavede i Figma forleden. Dvs, at du skal bruge html og css.

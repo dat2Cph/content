@@ -1,3 +1,14 @@
+---
+title: Cupcake HTML opgave
+description: Cupcake Responsive HTML opgave
+layout: default
+nav_order: 4
+parent: Frontend
+grand_parent: Webstack
+permalink: /webstack/cupcake/
+nav_exclude: true
+---
+
 # Cupcake responsiv mockup
 
 Vi har modtaget en mockup til en forside og lidt headergrafik. For at gøre os klar til opgaven,
@@ -19,4 +30,3 @@ skal du lave en skabelon (template) som vi kan bruge til projektet. Her er krav 
 ## Headergrafik
 
 ![headergrafik](./images/cupcakelogo.png)
-

@@ -1,3 +1,14 @@
+---
+title: Carpool opgave
+description: Carpool HTML opgave
+layout: default
+nav_order: 2
+parent: Frontend
+grand_parent: Webstack
+permalink: /webstack/carpool/
+nav_exclude: true
+---
+
 # Øvelse i UI design
 
 ## Carpool på Bornholm
