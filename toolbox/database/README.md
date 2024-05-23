@@ -8,7 +8,7 @@ has_children: true
 permalink: /toolbox/databases/
 ---
 
-# Databaser (Postgres)
+# Databaser (Postgresql)
 
 ## Indhold
 
