@@ -2,6 +2,8 @@
 title: Opgave i integrationstest (bibliotek)
 description: Indledende opgave i integrationstest på localhost
 layout: default
+parent: Databaser
+permalink: /databases/exercise_bibliotek_jdbc/
 nav_exclude: true
 ---
 
