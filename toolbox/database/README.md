@@ -1,3 +1,13 @@
+---
+title: Databases
+description: Værktøjer og teori til Databaser
+layout: default
+parent: Toolbox
+nav_order: 4
+has_children: true
+permalink: /toolbox/databases/
+---
+
 # Databaser (Postgres)
 
 ## Indhold

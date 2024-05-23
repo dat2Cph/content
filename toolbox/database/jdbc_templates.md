@@ -1,3 +1,13 @@
+---
+title: JDBC templates
+description: Code snippets for jdbc methods
+layout: default
+parent: Databases
+grand_parent: Toolbox
+nav_order: 1
+permalink: /toolbox/databases/jdbc_snippets/
+---
+
 # Diverse DB-CRUD fra Java
 
 Disse beskrivelser er generelle anvisninger i brugen af JDBC. Først vises hvordan vi laver en forbindelse til Postgres fra Java. Senere på semestret skal vi af effektivitetshensyn anvende en såkaldt `ConnectionPool`, men først gør vi det så enkelt som muligt - og laver en enkelt forbindelse, der åbnes og lukkes hver gang vi skal have fat i databasen.
