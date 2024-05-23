@@ -6,10 +6,9 @@ permalink: /webstack/backend/javalin-setup/
 nav_exclude: true
 ---
 
+![Javalin Logo](./images/javalinlogo.svg){: width="100" .float-right}
 
 # Creating a brand new Javalin web project in IntelliJ
-
-![Javalin Logo](./images/javalinlogo.svg){: width="100" .float-right}
 
 Learn how to get started building websites with Javalin and Thymeleaf.
 

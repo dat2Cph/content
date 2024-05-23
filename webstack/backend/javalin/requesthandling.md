@@ -8,6 +8,8 @@ grand_parent: Webstack
 permalink: /webstack/backend/request-response
 ---
 
+![Javalin Logo](./images/javalinlogo.svg){: width="100" .float-right}
+
 # How a request/response cycle is handled
 
 This is a rough description of a request/response cycle. The focus is on where the responsibility for each part of the handling is carried out:
