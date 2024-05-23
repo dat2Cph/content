@@ -1,0 +1,14 @@
+/* Default styling for screens smaller than 500px */
+.responsive-image {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styling for screens larger than 500px */
+@media (min-width: 500px) {
+    .responsive-image {
+        width: 50%;
+    }
+}
