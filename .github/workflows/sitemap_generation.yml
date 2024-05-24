@@ -30,8 +30,8 @@ jobs:
       - name: Commit and push
         run: |
           if [[ `git status --porcelain sitemap.xml` ]]; then
-            git config --global user.name 'Vincent A. Cicirello'
-            git config --global user.email 'cicirello@users.noreply.github.com'
+            git config --global user.name 'Jon Bertelsen'
+            git config --global user.email 'jobe@cphbusiness.dk'
             git add sitemap.xml
             git commit -m "Automated sitemap update" sitemap.xml
             git push
