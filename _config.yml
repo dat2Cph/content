@@ -31,6 +31,9 @@ back_to_top_text: 'Top'
 # For copy button on code
 enable_copy_code_button: true
 
+footer_content: "2. semester forår 2024 <a href="https://app.customgpt.ai/projects/33053/ask-me-anything?embed=1&shareable_slug=d9d5671cb9f0c994caf22ac4506cdd93">customGPT</a>"
+
+
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: true
 
