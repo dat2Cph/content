@@ -9,3 +9,4 @@ gem "just-the-docs", "0.8.2" # pinned to the current release
 gem "jekyll-relative-links"
 gem "jekyll-readme-index"
 gem "jekyll-default-layout"
+gem "jekyll-sitemap"

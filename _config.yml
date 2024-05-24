@@ -14,6 +14,8 @@ plugins:
   - jekyll-relative-links
   - jekyll-readme-index
   - jekyll-default-layout
+  - jekyll-sitemap
+
 readme_index:
   enabled: true
   remove_originals: true
