@@ -20,6 +20,7 @@ permalink: /
 9. [Linux og deployment](./linux_and_deployment/README.md)
 10. [Forretningsforståelse](./business/README.md)
 11. [Fog Carport eksamensprojekt](./projects/carport/README.md)
+12. [Eksamen](./eksamen/README.md)
 
 ## Bonus materiale og selvstudier
 

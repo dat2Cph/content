@@ -6,6 +6,8 @@ RUN apt-get update -y && apt-get install -y build-essential nodejs
 # Install Jekyll and Bundler
 RUN gem install jekyll bundler
 
+# RUN gem install jekyll-sitemap
+
 # Set the working directory
 WORKDIR /usr/src/app
 
