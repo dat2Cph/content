@@ -50,8 +50,8 @@ permalink: /toolbox/
 | Emne | Kommentar | Semester |
 |------|-----------|----------|
 |[Tutorial](../linux_and_deployment/README.md)|How to set up a VM on Digital Ocean| 2 |
-|[Commands](linux/linuxcommands.md) | Most used Linux commands | 2 + 3 |
-|[Cheat Sheet](linux/linuxcommands.pdf)|Linux cheat sheet| 2 + 3 |
+|[Commands](./linux/linuxcommands.md) | Most used Linux commands | 2 + 3 |
+|[Cheat Sheet](./linux/linuxcommands.pdf)|Linux cheat sheet| 2 + 3 |
 |[Add Swap disk on Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-22-04)|Make your Droplet more robust| 2 + 3 |
 
 ## Databaser
@@ -72,7 +72,7 @@ permalink: /toolbox/
 
 | Emne | Kommentar | Semester |
 |------|-----------|----------|
-|[Git install guide](git_install.md)|How to setup git|2-5|
+|[Git install guide](./git/README.md)|How to setup git|2-5|
 
 ## UML og modellering
 

@@ -1,3 +1,13 @@
+---
+title: Linux Commands
+description: Short cuts to Linux commands
+layout: default
+nav_order: 1
+parent: Linux
+grand_parent: Toolbox
+permalink: /toolbox/linux/commands/
+---
+
 # Useful Linux commands
 
 |command | comment|
