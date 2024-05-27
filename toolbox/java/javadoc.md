@@ -1,3 +1,13 @@
+---
+title: Java Doc
+description: Lær at lave dokumentation i Java med Java Doc
+layout: default
+nav_order: 6
+parent: Java
+grand_parent: Toolbox
+permalink: /toolbox/java/javadoc/
+---
+
 # Java Doc dokumentation
 
 One part of documentation is _internal_ documentation. Internal documentation is documentation which is written inside the program itself. The target group of this documentation is programmers.

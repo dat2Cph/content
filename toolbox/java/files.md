@@ -1,3 +1,13 @@
+---
+title: Filer i Java
+description: Lær at arbejde med filer i Java
+layout: default
+nav_order: 5
+parent: Java
+grand_parent: Toolbox
+permalink: /toolbox/java/filer/
+---
+
 # Læsning til og fra filer i Java
 
 Lidt teori og eksempler på brug af filer i Java til at gemme indhold fra datastrukturer.

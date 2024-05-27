@@ -1,3 +1,12 @@
+---
+title: 3D print
+description: Vejledninger til 3D print
+layout: default
+nav_order: 5
+parent: Toolbox
+permalink: /toolbox/3dprint/
+---
+
 # 3D print
 
 I foråret 2023 har vi indført en introduktion til 3D Print. Her er lidt dokumentation.

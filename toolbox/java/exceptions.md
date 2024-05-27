@@ -1,3 +1,13 @@
+---
+title: Exceptions i Java
+description: Lær at lave exceptions i Java
+layout: default
+nav_order: 3
+parent: Java
+grand_parent: Toolbox
+permalink: /toolbox/java/exceptions/
+---
+
 # Exceptions in Java
 
 Lidt teori og eksempler på brug af exceptions i Java:

@@ -1,3 +1,13 @@
+---
+title: Java Doc i IntelliJ
+description: Lær at lave dokumentation i Java med Java Doc i IntelliJ
+layout: default
+nav_order: 7
+parent: Java
+grand_parent: Toolbox
+permalink: /toolbox/java/javadoc-intellij/
+---
+
 # JavaDoc in IntelliJ
 
 Javadoc has been a part of the standard java toolbox since 1995, and has been used for all libraries since.

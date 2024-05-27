@@ -16,7 +16,7 @@ Når man skal deploye et Javalin projekt kan de gøres på flere måder. Lad din
 Vælger du den blå pille, skal du følge vejledningen på denne side. Det er den letteste udgave,
 men du kan desværre ikke bruge dit eget domænenavn, men derimod ip-nummer + portnummer.
 
-Hvis du vælger den røde pille, skal du følge [denne vejledning](https://github.com/dat2Cph/caddy_deployment). Den er noget mere kringlet at forstå, men giver nogle ekstra muligheder på hånden. Blandt andet for https og brug af domænenavne og subdomæner.
+Hvis du vælger den røde pille, skal du følge [denne vejledning](deployment_red.md). Den er noget mere kringlet at forstå, men giver nogle ekstra muligheder på hånden. Blandt andet for https og brug af domænenavne og subdomæner.
 
 ## Den blå pille: IP + port og service-fil
 

@@ -1,3 +1,13 @@
+---
+title: Java Time API
+description: Diverse materialer om Java Time API
+layout: default
+nav_order: 8
+parent: Java
+grand_parent: Toolbox
+permalink: /toolbox/java/timeapi/
+---
+
 # Java 8 Dates
 
 The Java Time API, introduced in Java 8, provides a modern way to work with dates, times, and time intervals. It addresses many of the shortcomings of the older `java.util.Date` and `java.util.Calendar` classes.
