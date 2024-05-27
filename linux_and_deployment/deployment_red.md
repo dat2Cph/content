@@ -1,18 +1,18 @@
 ---
 title: Deployment - red pill
-description: Den røde pille
+description: Den røde pille - deployment med eget domænenavn
 layout: default
 parent: 8. Deployment
 grand_parent: Linux & Deployment
 permalink: /linux/deployment/red-pill/
-nav_order: 1
+nav_order: 2
 ---
 
 # Deployment on Droplet with Docker and Caddy
 
 You have chosen the `red pill`. Good choice. Now you will end up with a website running on you own domain name. If you prefer going back to the `blue pill` solution, you can still [opt out now](deployment.md).
 
-![Red or Blue](./images/redblue.webp)
+![Red or Blue](./images/red.webp)
 
 Okay, time to dive in:
 
