@@ -14,3 +14,5 @@ Eksamen er en individuel, mundtlig eksamen, hvor vi tager udgangspunkt i jeres s
 - Se en [liste af spørgsmål](./questions.md) vi kunne komme til at tale om til eksamen. Den er god at støtte sig til når I skal læse op til eksamen.
 
 - Her er den officielle [beskrivelse af formatet](./formalities.md) fra eksamenskataloget, hvor I kan se hvordan selve eksamen foregår.
+
+- Her er [studieordningen](./docs/dat_cba_studieordning_2019_rev2024.pdf) vi kører efter
