@@ -27,5 +27,6 @@ Prøv f.eks.
 - kan du foreslå accepttests til denne user story: US-1: Som kunde kan jeg bestille og betale cupcakes med en valgfri bund og top, sådan at jeg senere kan køre forbi butikken i Olsker og hente min ordre
 - stil mig 5 spørgsmål om unitest
 - kan du give et svar på spørgsmål nr. 4
+- stil mig 10 forskellige eksamensspørgsmål og gerne om forskellige emner
 
 Så kan du selv fortsætte .....
