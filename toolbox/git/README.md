@@ -9,3 +9,5 @@ has_children: true
 ---
 
 # Git tutorials and guides
+
+Needs to be elaborated upon
