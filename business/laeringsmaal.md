@@ -1,5 +1,6 @@
 ---
 title: Læringsmål
+description: Læringsmål for forretningsforståelse
 layout: default
 parent: Forretningsforståelse
 permalink: /business/learningobjectives/
