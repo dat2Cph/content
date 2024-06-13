@@ -11,7 +11,7 @@ permalink: /
 
 1. [OOP, GIT og TDD](./oop_git_tdd/README.md)
 2. [HTTP protokollen og netværk](./http_network/README.md)
-3. [Tråde og performance](./threads/Other/README.md)
+3. [Tråde og performance](./threads/README.md)
 4. [Databaser](./databases/README.md)
 5. [Frontend](./webstack/frontend/README.md)
 6. [Backend](./webstack/backend/README.md)
