@@ -129,36 +129,3 @@ På samme måde som vi har en klasse der kan bruges til at læse et request med,
 ### Standard server protokoller
 
 Protokoller som `http, tcp, udp, smtp, ftp` m.fl. er store og komplicerede sager, og man skal som regel ikke forsøge sig med at implementere dem i sin helhed selv, men finde et bibliotek der gør det for dig.
-
-------
-
-## Build & Resourcer
-
-Et helt andet emne, som vi bliver nødt til at få på plads, hedder *resource*. Det handler om de filer der skal bruges i et program. For webservere er det specielt de html sider der skal kunne sendes til brugerens browser.
-
-Men hvor skal vi lægge disse filer? Hvis man angiver en *absolut sti*, f.eks. `"D:\\voresfiler\minside.html"` er problemet at programmet kun fungerer på den maskine udvikleren (dig) bruger. Hvis man i stedet bruger den sti, der angiver hvor de er på den maskine programmet skal bruge når det er afleveret til kunden, så er det svært for dig som udvikler at prøve programmet af.
-
-Det er heldigvis let at løse, og i Java er der et særligt begreb for disse filer som programmet skal bruge, og de kaldes **resources**.
-
-Når man oversætter et java program laves der en række oversatte (kompilerede) filer der hedder noget med `.class`. Disse lægges så af java oversætteren et specielt sted `X`. Man kan så lave det sådan at man samme sted som oversætteren laver disse `.class` filer laver et fil katalog der hedder `resources`.
-
-Med lidt Java magi kan man så læse en sådan *resource file*. Metoden `getResourceFileContents` nedenfor læser indholdet af en resource fil og returnerer indholdet som en String.
-
-```java
-    private static String getResourceFileContents( String fileName ) throws Exception {
-        //Get file from resources folder
-        ClassLoader classLoader = ClassLoader.getSystemClassLoader();
-        URL url = classLoader.getResource( fileName );
-        File file = new File( url.getFile() );
-        String content = new String( Files.readAllBytes( file.toPath() ) );
-        return content;
-    }
-```
-
-OBS! Det er ikke *datamatiker pensum* hvordan denne kode virker, men I kan bruge den til at læse resource filer.
-
-### Ressourcer og IntelliJ
-
-På andet semester bruger vi Maven til at bygge vores IntelliJ projekter. For at gøre det med resourcer lige en tand nemmere at bruge, så laver man sin resource folder i projekt kataloget under `src/main`som vist her:
-
-![resources](img/resourcesIntelliJ.jpg)
