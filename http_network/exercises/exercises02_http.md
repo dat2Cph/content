@@ -75,7 +75,7 @@ anvender samme klasse som den du lavede i demo 04.
 du kan ændre demo 05, så du i stedet for klienten, kan kalde serveren
 fra en browser. Brug IntelliJ's TODO fanebladsfunktion til at finde de steder du skal refaktorere. Du skal bare udkommentere linie 54+55 og indkommentere 57-61. Så ruller det.
 
-4.5 Kør `RequestFileServer` og send et request fra din favoritbrowser. Du skal hente [http://localhost:9090/pages/index.html](http://localhost:9090/pages/loginform.html). Klik evt. bare her.
+4.5 Kør `RequestFileServer` og send et request fra din favoritbrowser. Du skal hente [http://localhost:9090/pages/index.html](http://localhost:9090/pages/index.html). Klik evt. bare her.
 
 4.6 Lav en ekstra fil i `resources/pages og kald den`login.html`. Lav en htmlside med indholdet:
 
