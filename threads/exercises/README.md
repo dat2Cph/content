@@ -16,6 +16,6 @@ Dette sker ved at operativ systemet har flere processer. Den kører så hver pro
 
 Java tillader os at skrive programmer der benytter sig af mere end en process. I Java kaldes processer for **Threads** - på dansk **tråde**. Programmering med mere end en tråd kaldes **concurrent**, tråd eller **parallel programmering**. Der er nogle der mener der er forskel på de forskellige betegnelser - I praksis mener alle cirka det samme, og ingen har kunne definere et standard ordbrug alle er blevet enige om.
 
-Vi skal i denne uge arbejde med **concurrency**, men ikke med den primitive Java tråd, men med et bibliotek der tilbyder noget der kaldes Executors som gør det nemmere at programmere de opgaver man typisk har brug for at løse vha. tråde.
+Vi skal i denne uge arbejde med **concurrency**, men ikke kun med den primitive Java tråd, men med et bibliotek der tilbyder noget der kaldes Executors som gør det nemmere at programmere de opgaver man typisk har brug for at løse vha. tråde.
 
 Men til en start skal vi prøve at anvende Javas mest simple udgave af tråde.
