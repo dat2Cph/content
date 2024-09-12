@@ -21,8 +21,8 @@ CREATE TABLE employees (
     officeCode varchar(10) NOT NULL,
     reportsTo int,
     jobTitle varchar(50) NOT NULL,
-    CONSTRAINT employees_reportsTo_fkey FOREIGN KEY (reportsTo) REFERENCES employees (employeeNumber) ON DELETE CASCADE,
-    CONSTRAINT employees_officeCode_fkey FOREIGN KEY (officeCode) REFERENCES offices (officeCode) ON DELETE CASCADE
+    CONSTRAINT employees_reportsTo_fkey FOREIGN KEY (reportsTo) REFERENCES employees (employeeNumber) ,
+    CONSTRAINT employees_officeCode_fkey FOREIGN KEY (officeCode) REFERENCES offices (officeCode) 
 );
 
 -- Create the 'customers' table
@@ -40,7 +40,7 @@ CREATE TABLE customers (
     country varchar(50) NOT NULL,
     salesRepEmployeeNumber int,
     creditLimit numeric(10,2),
-    CONSTRAINT customers_salesRepEmployeeNumber_fkey FOREIGN KEY (salesRepEmployeeNumber) REFERENCES employees (employeeNumber) ON DELETE CASCADE
+    CONSTRAINT customers_salesRepEmployeeNumber_fkey FOREIGN KEY (salesRepEmployeeNumber) REFERENCES employees (employeeNumber) 
 );
 
 -- Create the 'productlines' table
@@ -62,7 +62,7 @@ CREATE TABLE products (
     quantityInStock smallint NOT NULL,
     buyPrice numeric(10,2) NOT NULL,
     MSRP numeric(10,2) NOT NULL,
-    CONSTRAINT products_productLine_fkey FOREIGN KEY (productLine) REFERENCES productlines (productLine) ON DELETE CASCADE
+    CONSTRAINT products_productLine_fkey FOREIGN KEY (productLine) REFERENCES productlines (productLine) 
 );
 
 -- Create the 'orders' table
@@ -74,7 +74,7 @@ CREATE TABLE orders (
     status varchar(15) NOT NULL,
     comments text,
     customerNumber int NOT NULL,
-    CONSTRAINT orders_customerNumber_fkey FOREIGN KEY (customerNumber) REFERENCES customers (customerNumber) ON DELETE CASCADE
+    CONSTRAINT orders_customerNumber_fkey FOREIGN KEY (customerNumber) REFERENCES customers (customerNumber) 
 );
 
 -- Create the 'orderdetails' table
@@ -85,8 +85,8 @@ CREATE TABLE orderdetails (
     priceEach numeric(10,2) NOT NULL,
     orderLineNumber smallint NOT NULL,
     PRIMARY KEY (orderNumber, productCode),
-    CONSTRAINT orderdetails_orderNumber_fkey FOREIGN KEY (orderNumber) REFERENCES orders (orderNumber) ON DELETE CASCADE,
-    CONSTRAINT orderdetails_productCode_fkey FOREIGN KEY (productCode) REFERENCES products (productCode) ON DELETE CASCADE
+    CONSTRAINT orderdetails_orderNumber_fkey FOREIGN KEY (orderNumber) REFERENCES orders (orderNumber) ,
+    CONSTRAINT orderdetails_productCode_fkey FOREIGN KEY (productCode) REFERENCES products (productCode) 
 );
 
 -- Create the 'payments' table
@@ -96,7 +96,7 @@ CREATE TABLE payments (
     paymentDate date NOT NULL,
     amount numeric(10,2) NOT NULL,
     PRIMARY KEY (customerNumber, checkNumber),
-    CONSTRAINT payments_customerNumber_fkey FOREIGN KEY (customerNumber) REFERENCES customers (customerNumber) ON DELETE CASCADE
+    CONSTRAINT payments_customerNumber_fkey FOREIGN KEY (customerNumber) REFERENCES customers (customerNumber) 
 );
 
 /*Data for the table offices */
