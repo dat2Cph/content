@@ -1,28 +1,3 @@
--- Drop the 'payments' table and its dependent foreign keys and referencing tables
-DROP TABLE IF EXISTS payments CASCADE;
-
--- Drop the 'orderdetails' table and its dependent foreign keys and referencing tables
-DROP TABLE IF EXISTS orderdetails CASCADE;
-
--- Drop the 'orders' table and its dependent foreign keys and referencing tables
-DROP TABLE IF EXISTS orders CASCADE;
-
--- Drop the 'products' table and its dependent foreign keys and referencing tables
-DROP TABLE IF EXISTS products CASCADE;
-
--- Drop the 'productlines' table and its dependent foreign keys and referencing tables
-DROP TABLE IF EXISTS productlines CASCADE;
-
--- Drop the 'customers' table and its dependent foreign keys and referencing tables
-DROP TABLE IF EXISTS customers CASCADE;
-
--- Drop the 'employees' table and its dependent foreign keys and referencing tables
-DROP TABLE IF EXISTS employees CASCADE;
-
--- Drop the 'offices' table (no dependent tables, so CASCADE is optional)
-DROP TABLE IF EXISTS offices;
-
-
 -- Create the 'offices' table
 CREATE TABLE offices (
     officeCode varchar(10) NOT NULL PRIMARY KEY,
@@ -46,8 +21,8 @@ CREATE TABLE employees (
     officeCode varchar(10) NOT NULL,
     reportsTo int,
     jobTitle varchar(50) NOT NULL,
-    CONSTRAINT employees_reportsTo_fkey FOREIGN KEY (reportsTo) REFERENCES employees (employeeNumber),
-    CONSTRAINT employees_officeCode_fkey FOREIGN KEY (officeCode) REFERENCES offices (officeCode)
+    CONSTRAINT employees_reportsTo_fkey FOREIGN KEY (reportsTo) REFERENCES employees (employeeNumber) ON DELETE CASCADE,
+    CONSTRAINT employees_officeCode_fkey FOREIGN KEY (officeCode) REFERENCES offices (officeCode) ON DELETE CASCADE
 );
 
 -- Create the 'customers' table
@@ -65,7 +40,7 @@ CREATE TABLE customers (
     country varchar(50) NOT NULL,
     salesRepEmployeeNumber int,
     creditLimit numeric(10,2),
-    CONSTRAINT customers_salesRepEmployeeNumber_fkey FOREIGN KEY (salesRepEmployeeNumber) REFERENCES employees (employeeNumber)
+    CONSTRAINT customers_salesRepEmployeeNumber_fkey FOREIGN KEY (salesRepEmployeeNumber) REFERENCES employees (employeeNumber) ON DELETE CASCADE
 );
 
 -- Create the 'productlines' table
@@ -87,7 +62,7 @@ CREATE TABLE products (
     quantityInStock smallint NOT NULL,
     buyPrice numeric(10,2) NOT NULL,
     MSRP numeric(10,2) NOT NULL,
-    CONSTRAINT products_productLine_fkey FOREIGN KEY (productLine) REFERENCES productlines (productLine)
+    CONSTRAINT products_productLine_fkey FOREIGN KEY (productLine) REFERENCES productlines (productLine) ON DELETE CASCADE
 );
 
 -- Create the 'orders' table
@@ -99,7 +74,7 @@ CREATE TABLE orders (
     status varchar(15) NOT NULL,
     comments text,
     customerNumber int NOT NULL,
-    CONSTRAINT orders_customerNumber_fkey FOREIGN KEY (customerNumber) REFERENCES customers (customerNumber)
+    CONSTRAINT orders_customerNumber_fkey FOREIGN KEY (customerNumber) REFERENCES customers (customerNumber) ON DELETE CASCADE
 );
 
 -- Create the 'orderdetails' table
@@ -110,8 +85,8 @@ CREATE TABLE orderdetails (
     priceEach numeric(10,2) NOT NULL,
     orderLineNumber smallint NOT NULL,
     PRIMARY KEY (orderNumber, productCode),
-    CONSTRAINT orderdetails_orderNumber_fkey FOREIGN KEY (orderNumber) REFERENCES orders (orderNumber),
-    CONSTRAINT orderdetails_productCode_fkey FOREIGN KEY (productCode) REFERENCES products (productCode)
+    CONSTRAINT orderdetails_orderNumber_fkey FOREIGN KEY (orderNumber) REFERENCES orders (orderNumber) ON DELETE CASCADE,
+    CONSTRAINT orderdetails_productCode_fkey FOREIGN KEY (productCode) REFERENCES products (productCode) ON DELETE CASCADE
 );
 
 -- Create the 'payments' table
@@ -121,7 +96,7 @@ CREATE TABLE payments (
     paymentDate date NOT NULL,
     amount numeric(10,2) NOT NULL,
     PRIMARY KEY (customerNumber, checkNumber),
-    CONSTRAINT payments_customerNumber_fkey FOREIGN KEY (customerNumber) REFERENCES customers (customerNumber)
+    CONSTRAINT payments_customerNumber_fkey FOREIGN KEY (customerNumber) REFERENCES customers (customerNumber) ON DELETE CASCADE
 );
 
 /*Data for the table offices */
