@@ -29,7 +29,7 @@ Den overordnede opgavebeskrivelse lyder således:
 
 Her er nogle punkter, som kan hjælpe dig på vej:
 
-1. Kig normaliseringsartiklen igennem og byg en database i Postgres' diagram-editor, som svarer til biblioteksdatabasen på 3NF. Fordi artiklen gradvist normaliserer tabellerne, skal du holde tungen lige i munden. Hint: Jeg vil mene du skal ende med 5 tabeller.
+1. Kig normaliseringsartiklen igennem og byg en database i Postgres' diagram-editor, som svarer til biblioteksdatabasen på 3NF. Fordi artiklen gradvist normaliserer tabellerne, skal du holde tungen lige i munden. 
 2. "Forward engineer" diagrammet til en database.
 3. Fyld lidt data i tabellerne. Kig evt. i artiklen for at finde inspiration til bogtitler og lånere.'
 4. Lav følgende SQL-forespørgsler i Query Tool:
