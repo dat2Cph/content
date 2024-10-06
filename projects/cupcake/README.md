@@ -70,7 +70,7 @@ Det første kundemøde mundede ud i en række såkaldte user-stories. De beskriv
 Her kan I finde rapportskabelonen. Medtag de artefakter I finder relevante (og realistiske at medtage):
 
 - [Rapportskabelon](./rapportskabelon.md)
-- [Gruppekontrakt](../teamwork/gruppekontrakt.docx)
+- [Gruppekontrakt](.../teamwork/gruppekontrakt.docx)
 
 #### UI stuff
 
