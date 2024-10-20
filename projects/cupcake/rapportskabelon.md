@@ -45,7 +45,7 @@ En kort beskrivelse af hvilke teknologier der er brugt (jdbc, Postgresql, Java �
 
 ## Krav
 
-Dette afsnit vender vi tilbage til senere i semesteret. Der er to dele i dette afsnit:
+Der er to dele i dette afsnit:
 
 - Hvad er firmaets håb med dette system (hvad er deres vision for systemet eller hvilken værdi er det jeres system skal tilføre deres virksomhed).
 - User stories. Disse er udleveret i opgaven, så dem kan I bare sætte ind som de er.
