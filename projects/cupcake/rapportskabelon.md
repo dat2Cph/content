@@ -84,7 +84,7 @@ Det som brugeren oplever er en række websider, hvor man kan indtaste oplysninge
 - Hvis man har benyttet sig af en “fælles navigations bar” i toppen af alle sider, skal man forklare det.
 - Hvis nogle sider kun kan nåes af nogle brugere (dem der har konto, dem der er logget ind, dem der arbejder i butikken,…), så skal det fremgå.
 
-Navigationsdiagrammer laves som UML Tilstandsmaskiner [state machine diagram](https://github.com/dat2Cph/content/edit/main/webstack/backend/statemachinediagram.md). Bemærk specielt at det, der hedder “composite state”, er meget velegnet til at indkapsle at man er logget ind.
+Navigationsdiagrammer laves som UML Tilstandsmaskiner [state machine diagram](https://github.com/dat2Cph/content/blob/main/webstack/backend/statemachinediagram.md). Bemærk specielt at det, der hedder “composite state”, er meget velegnet til at indkapsle at man er logget ind.
 
 ## Særlige forhold
 
