@@ -52,7 +52,7 @@ Der er to dele i dette afsnit:
 
 ## Aktivitetsdiagram
 
-Tidligt i et projektforløb kan det være nyttigt at lave et aktivitetsdiagram, som beskriver det overordnede workflow i forretningen. Det kan være med eller uden svømmebaner. Det kan senere tjene som inspiration til domænemodellen og til at forstå hvad det er for nogle forretningsprocesser vi skal digitalisere. Nogle gange laver man to versioner. En som kaldes for "AS-IS", altså som deres forretning ser ud lige nu, og så en "TO-BE", som viser hvordan workflowet kan blive når vi har leveret vores system. Du kan se [tutorials om UML her](../toolbox/sys/uml/README.md).
+Tidligt i et projektforløb kan det være nyttigt at lave et aktivitetsdiagram, som beskriver det overordnede workflow i forretningen. Det kan være med eller uden svømmebaner. Det kan senere tjene som inspiration til domænemodellen og til at forstå hvad det er for nogle forretningsprocesser vi skal digitalisere. Nogle gange laver man to versioner. En som kaldes for "AS-IS", altså som deres forretning ser ud lige nu, og så en "TO-BE", som viser hvordan workflowet kan blive når vi har leveret vores system. Du kan se [tutorials om UML her]([.(https://github.com/dat2Cph/content/tree/main/toolbox/sys/uml)).
 
 ## Domæne model og ER diagram
 
