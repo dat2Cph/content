@@ -55,13 +55,13 @@ som kører lokalt på vores laptops. Det kræver at vi opretter, tilpasser og ek
 
 5. Gem og luk filen med `Ctrl+X` og `Y` og `Enter`
 
-6. Kør `docker-compose`:
+6. Kør `docker compose`:
 
     ```bash
-    sudo docker-compose up -d
+    sudo docker compose up -d
     ```
 
-Så skulle postgres gerne køre. Du kan tjekke det ved at køre `docker ps` og se om containeren `db2` kører.
+Så skulle postgres gerne køre. Du kan tjekke det ved at køre `docker ps` og se om containeren `db` kører.
 
 ### 4. Tilføj den nye remote Postgres server i PgAdmin (på din lokale maskine)
 
@@ -80,7 +80,7 @@ Så skulle postgres gerne køre. Du kan tjekke det ved at køre `docker ps` og s
 (-v) // remove volumes
 
 ```bash
- sudo docker-compose down -v 
+ sudo docker compose down -v 
 ```
 
 ```bash
