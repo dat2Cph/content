@@ -112,27 +112,19 @@ ssh jetty@ip
 
 Hvis det går godt, så læg mærke til at prompten hedder noget i stil med `jetty@dropletnavn:~$`
 
-### 5. Konfigurer en firewall (ufw)
-
-Vi lukker kun trafik ind til ssh, postgres fra specifikke IP-numre (hvor du arbejder fra). Når du senere skal deploye dit Javalin website, har vi to måder at gøre det på. Den første kræver at mindst port 7070 er åben. Den anden at port 80 og 443 er åbne. Det gør vi senere.
-
-```bash
-sudo ufw status (viser de åbne porte - 22, 2375, 2376)
-sudo ufw allow ssh
-sudo ufw allow from <ip> to any port 5432 proto tcp
-sudo ufw status
-sudo ufw enable
-```
-
-TIP! Find IP nummer hvorfra du sidder via [https://www.myip.com/](https://www.myip.com/). Det er det IP du skal indsætte i `<ip>` ovenfor. Hvis du vil tilgå din Droplet andre steder fra, så skal du også tilføje de IP-numre.
-
-### 6. Login fra localhost
+### 5. Login fra localhost
 
 Fremover kan du logge på din Droplet via den nyligt oprettede `jetty` bruger:
 
 ```bash
 ssh jetty@ip
 ```
+
+### 6. Opsætning af firewall
+
+For at sikre vores installation, så vil vi opsætte en firewall. Det er specielt Postgres, som er sårbar for angreb, hvis den er åben for alle. Vi anvender Digital Ocean's firewall, som er en del af deres tjeneste.
+
+- [Følg denne video tutorial for at holde skidtet fra døren](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=b2178213-1924-4325-85c6-b15a00aba65e)
 
 ## Videre herfra
 
