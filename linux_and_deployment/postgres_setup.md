@@ -36,21 +36,17 @@ som kører lokalt på vores laptops. Det kræver at vi opretter, tilpasser og ek
     db:
         image: postgres:16.2
         container_name: db
-        mem_limit: 1536MB
-        mem_reservation: 1024MB
         restart: unless-stopped
         environment:
         POSTGRES_USER: postgres
         POSTGRES_PASSWORD: <dit_sikre_password> # Change this password and pick a hard one
         volumes:
-        - ./data:/var/lib/postgresql/data/
-        - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+        - ./postgres_data:/var/lib/postgresql/data/
         ports:
         - "5432:5432"
         
     volumes:
-    data:
-    db:
+        postgres_data:
     ```
 
 5. Gem og luk filen med `Ctrl+X` og `Y` og `Enter`
@@ -69,13 +65,17 @@ Så skulle postgres gerne køre. Du kan tjekke det ved at køre `docker ps` og s
 - Port: 5432
 - password: <dit_password> (se docker-compose.yml på din Droplet)
 
-### Hvis du ønsker at stoppe Docker
+Husk at du skal have åbnet port 5432 i din Droplet Firewall for at kunne tilgå Postgres fra din lokale maskine. Dvs, fra IP nummeret på ydersiden af din router.
+
+### 5. Bonus Docker Compose kommandoer
+
+#### Hvis du ønsker at stoppe Docker
 
 ```bash
   sudo docker compose down
 ```
 
-### Nulstilling af Postgres (fjerner alle databaserne)
+#### Nulstilling af Postgres (fjerner alle databaserne)
 
 (-v) // remove volumes
 
@@ -85,6 +85,12 @@ Så skulle postgres gerne køre. Du kan tjekke det ved at køre `docker ps` og s
 
 ```bash
  sudo  rm -rf ./data
+```
+
+#### Tjek loggen for postgres containeren
+
+```bash
+ sudo docker logs db
 ```
 
 ## Videre herfra
