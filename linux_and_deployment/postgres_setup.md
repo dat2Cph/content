@@ -63,6 +63,30 @@ som kører lokalt på vores laptops. Det kræver at vi opretter, tilpasser og ek
 
 Så skulle postgres gerne køre. Du kan tjekke det ved at køre `docker ps` og se om containeren `db2` kører.
 
+### 4. Tilføj den nye remote Postgres server i PgAdmin (på din lokale maskine)
+
+- Host name/address: <dit IP nummer på Dropletten>
+- Port: 5432
+- password: <dit_password> (se docker-compose.yml på din Droplet)
+
+### Hvis du ønsker at stoppe Docker
+
+```bash
+  sudo docker compose down
+```
+
+### Nulstilling af Postgres (fjerner alle databaserne)
+
+(-v) // remove volumes
+
+```bash
+ sudo docker-compose down -v 
+```
+
+```bash
+ sudo  rm -rf ./data
+```
+
 ## Videre herfra
 
 - [Næste trin](./snapshot.md)
