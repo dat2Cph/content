@@ -10,6 +10,16 @@ nav_order: 2
 
 # Create static pages for your portfolio website
 
+The site will be served by Caddy on the main domain name. The Javalin webapps will be served on  subdomains. This is setup in the Caddyfile that we configured previously in step 7 in the [deployment guide](./deployment_red.md).
+
+## Portfolio page
+
+It's a simple design, responsive though, and will look like this:
+
+![Portfolio](./images/portfoliosite.png)
+
+## Setup
+
 Switch into the `~jetty/deployment/site` folder, and use nano to edit the static files. First we create an `index.html` file:
 
 ```bash
