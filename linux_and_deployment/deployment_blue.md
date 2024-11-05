@@ -6,6 +6,7 @@ parent: 8. Deployment
 grand_parent: Linux & Deployment
 permalink: /linux/deployment/blue-pill/
 nav_order: 1
+nav_exclude: true
 ---
 
 ## Den blå pille: IP + port og service-fil

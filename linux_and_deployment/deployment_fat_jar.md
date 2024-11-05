@@ -1,11 +1,11 @@
 ---
-title: 8. Deployment
-description: Den røde pille - deployment med eget domænenavn
+title: Fat Jar
+description: Create a fat jar with Maven
 layout: default
-parent: Linux & Deployment
-permalink: /linux/deployment/
-has_children: true
-nav_order: 10
+parent: 8. Deployment
+grand_parent: Linux & Deployment
+permalink: /linux/deployment/fat-jar
+nav_order: 1
 ---
 
 # Deployment on Droplet with Docker and Caddy
@@ -27,8 +27,9 @@ This is how you can deploy a [Javalin](https://javalin.io/) webproject on a virt
 - A configured Virtual Machine setup up after this [tutorial](https://dat2cph.github.io/content/linux/) step 1-7. The VM is running on [Digital Ocean](https://www.digitalocean.com/)
 - A Postgresql database running in a docker container on port 5432
 - A Javalin webproject ready to run on port 7070
-- A domain name or subdomain with DNS set to the IP of your VM. [Video-tutorial is here](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=f8e7ebbb-8d17-480b-9ac2-b15600a699f2).
-- A firewall that allows access for port 80 and 443 (http and https). [Video-tutorial is here](https://cphbusiness.cloud.panopto.eu/Panopto/Pages/Viewer.aspx?id=b2178213-1924-4325-85c6-b15a00aba65e)
+- A built version of the Javalin project created as a "fat jar"
+- A domain name or subdomain with DNS set to the IP of your VM
+- A firewall that allows access for port 80 and 443 (http and https)
 - A ssh connection to the VM
 
 ## Goal
@@ -47,7 +48,58 @@ As a showcase we will use this Javalin webapp: [Fourthingsplus](https://github.c
 
 ### 2. Build your webproject to create a "fat jar"
 
-The instructions for [building a fat jar can be found here](./deployment_fat_jar.md).
+We need to build our Javalin project in a way that all the code is collected in on big `fat jar` file in the `/target` folder. Maven can do that. So add this into your `pom.xml`:
+
+```xml
+ <build>
+        <finalName>fourthingsplus</finalName>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.1</version>
+                <configuration>
+                    <source>17</source>
+                    <target>17</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.4.1</version>
+                <configuration>
+                    <transformers>
+                        <transformer
+                            implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                            <mainClass>app.Main</mainClass>
+                        </transformer>
+                    </transformers>
+                    <filters>
+                        <filter>
+                            <artifact>*:*</artifact>
+                            <excludes>
+                                <exclude>META-INF/*.SF</exclude>
+                                <exclude>META-INF/*.DSA</exclude>
+                                <exclude>META-INF/*.RSA</exclude>
+                            </excludes>
+                        </filter>
+                    </filters>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+```
+
+Build the fat jar with `Maven Package`. Now you have a `app.jar` fil in the project's target folder. You can execute `Maven Package` in IntelliJ by opening the Maven tab, Lifecycle, and double clicking on `package`.
 
 ### 3. Prepare your VM
 
@@ -192,9 +244,167 @@ are injected into the Javalin container. It's of course important to match the c
 
 ### 9. Setup a static portfolio page
 
-You can this now - or wait until you feel like it. But it's a good idea to have a static page that can be used as a portfolio page. This is the main page that will be shown when you access your domain name. The static page can link to your Javalin webapps.
+Switch into the `site` folder, and use nano to edit the static files. First we create an `index.html` file:
 
-The tutorial for [setting up a static page can be found here](./deployment_static_pages.md).
+```bash
+cd ~jetty/deployment
+mkdir site
+cd site
+nano index.html
+```
+
+Then insert some html code. You can use the following:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet" />
+    <title>Portfolio</title>
+</head>
+
+  <body>
+      <h1>Portfolio</h1>
+      <div class="page">
+          <div class="projects">
+              <div class="cards">
+                  <div class="card">
+                      <img class="card-image" alt="fourthingsplus" src="images/fourthingsplus.png" />
+                      <div class="card-copy">Four Things Plus</div>
+                      <a class="card-link" href="https://fourthings.jonbertelsen.dk" />Todos on steroids</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </body>
+
+</html>
+```
+
+The only you need to change is the link to the Javalin webapp. Swap `fourthings.jonbertelsen.dk` to your own domain name.
+
+Then create a `css` folder and a `styles.css` file:
+
+```bash
+mkdir css
+cd css
+nano styles.css
+```
+
+Insert the following css code:
+
+```css
+html * {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    padding:8px;
+    border: 1px solid silver;
+    min-height: 600px;
+    gap:10px;
+}
+
+h1 {
+    font-size: 2.125rem;
+}
+
+h2 {
+   font-size: 1.875rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    min-width:100px;
+    max-width:200px;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid silver;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0px 0px;
+    border-bottom: 1px solid silver;
+    padding:5px;
+}
+
+.card-link {
+    font-family: "Helvetica Neue";
+    padding: 10px;
+    font-size: 0.85rem;
+    color: white;
+    border: solid 1px silver;
+    text-decoration: none;
+    background-color: darkblue;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.card-link:hover {
+    background-color: #2566ac;
+}
+
+.card-copy {
+    font-family: "Helvetica Neue";
+    padding: 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+@media (max-width: 450px) {
+    .card {
+        min-width: 100px;
+        max-width: 150px;
+    }
+}
+```
+
+As the last thing, create an `images` folder and download the fourthings logo into the folder. This can be done in many ways, but here we use `curl`:
+
+```bash
+mkdir images
+cd images
+curl -O https://raw.githubusercontent.com/dat2Cph/caddy_deployment/main/site/images/fourthingsplus.png
+ls
+```
+
+When we spin up the docker containers, the static page will be served by Caddy on the main domain name. The Javalin webapp will be served on the subdomain. This is setup in the Caddyfile that we configured in step 7.
 
 ### 10. Setup you DNS
 
