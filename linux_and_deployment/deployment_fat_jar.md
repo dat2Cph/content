@@ -14,7 +14,7 @@ We need to build our Javalin project in a way that all the code is collected in 
 
 ```xml
  <build>
-        <finalName>fourthingsplus</finalName>
+        <finalName>app</finalName>
 
         <plugins>
             <plugin>

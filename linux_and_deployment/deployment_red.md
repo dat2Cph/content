@@ -10,11 +10,11 @@ nav_order: 10
 
 # Deployment on Droplet with Docker and Caddy
 
-When you have a Javalin project ready to deploy, there are several ways to do it. In the old days, deployed our Java projects on an [Apache Tomcat Server](https://tomcat.apache.org/), and we accessed it by <http://ip:port>. We called it the `blue pill` solution. But things have changed. So welcome to the days of the `red pill` solution.
+When you have a Javalin project ready to deploy, there are several ways to do it. In the old days, we deployed our Java projects on an [Apache Tomcat Server](https://tomcat.apache.org/), and we accessed it by <http://ip:port>. We called it the `blue pill` solution. But things have changed. So welcome to the days of the `red pill` solution.
 
 ![Red or Blue](./images/red.webp)
 
-We want to be able to access our Javalin project through a domain name. And we want to use https. And we also want to host a static page on the main domain name. The idea is that the static webpage can be used as a portfolio content page, that links to your Javalin webapplications each running on their own subdomain. The setup will be able to handle a number of Javalin webapplications and static webpages, but as a beginning we set up only one. Each webapplication will run in an isolated Docker container.
+We want to be able to access our Javalin project through a domain name. And we want to use **https**. And we also want to host a static page on the main domain name. The idea is that the static webpage can be used as a portfolio content page, that links to your Javalin webapplications each running on their own subdomain. The setup will be able to handle a number of Javalin webapplications and static webpages, but as a beginning we set up only one. Each webapplication will run in an isolated Docker container.
 
 Since you are still here, we assume that you are ready to take the next step.
 
