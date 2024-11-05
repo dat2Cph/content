@@ -68,7 +68,7 @@ Do like you did on the local Postgres instance: Create a `fourthingsplus` databa
 Open a terminal / shell on the local dev machine in the `target` folder of the webproject. If you use the `ls` command, you should now be able to see the `app.jar` file, a.k.a. "the fat jar". Now copy the file to your VM using rsync (remote sync). The syntax is like this:
 
 ```bash
-rsync -av app.jar jetty@161.35.193.101:~/deployment/fourthingsplus/
+rsync -av app.jar jetty@161.35.193.101:~/deployment/fourthings/
 ```
 
 That's it! Now the fat jar is copied to the VM. More precisely into the `~jetty/deployment/fourthingsplus` folder.
@@ -120,12 +120,9 @@ You should change the `showcode.dk` to your own domain name. The container name 
 
 ### 8. Configure the docker-compose.yml
 
-Open the `docker-compose.yml` file in nano. Now we will add your Javalin webapp to the services, and Caddy as well. Since we already have a Postgres service running, we just add to what is already there. The total file should look like this:
+Open the `docker-compose.yml` file in nano. Now we will add your Javalin webapp to the services, and Caddy as well. Since we already have a Postgres service running, we just add to what is already there. The total file should look like this - and remember to change the password placeholder `<dit_sikre_password>` to a real password:
 
 ```yml
-
-version: '3'
-
 services:
 
   db:
@@ -133,8 +130,8 @@ services:
     container_name: db
     restart: unless-stopped
     environment:
-    POSTGRES_USER: postgres
-    POSTGRES_PASSWORD: <dit_sikre_password> # Change this password and pick a hard one
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: <dit_sikre_password> # Change this password and pick a hard one
     volumes:
     - ./postgres_data:/var/lib/postgresql/data/
     ports:
@@ -161,19 +158,17 @@ services:
     environment:
       - DEPLOYED=PROD
       - JDBC_USER=postgres
-      - JDBC_PASSWORD=datdat2024!
+      - JDBC_PASSWORD=datdat2024!!
       - JDBC_CONNECTION_STRING=jdbc:postgresql://db:5432/%s?currentSchema=public
       - JDBC_DB=fourthingsplus
     ports:
       - "7070:7070"
-    networks:
-      - backend
     restart: unless-stopped
 
-  volumes:
-    postgres_data:
-      caddy_data:
-      caddy_config:
+volumes:
+  postgres_data:
+  caddy_data:
+  caddy_config:
 ```
 
 You don't need to change this for now. But notice the container_name is called `fourthings`. Also,
