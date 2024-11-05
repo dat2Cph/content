@@ -29,24 +29,36 @@ som kører lokalt på vores laptops. Det kræver at vi opretter, tilpasser og ek
 4. Indsæt følgende indhold i `docker-compose.yml` (husk at ændre password):
 
     ```yaml
-    version: '3.9'
+# Localhost Docker Compose fil for 2. semester på datamatiker uddannelsen i Lyngby forår 2024
+# Opretter en container: 
+# db: Postgresql data base server som kører på port 5432
 
-    services:
+version: '3.9'
 
-    db:
-        image: postgres:16.2
-        container_name: db
-        restart: unless-stopped
-        environment:
-        POSTGRES_USER: postgres
-        POSTGRES_PASSWORD: <dit_sikre_password> # Change this password and pick a hard one
-        volumes:
-        - ./postgres_data:/var/lib/postgresql/data/
-        ports:
-        - "5432:5432"
-        
+services:
+
+  db:
+    image: postgres:16.2
+    container_name: db2sem
+    mem_limit: 1536MB
+    mem_reservation: 1024MB
+    restart: unless-stopped
+    networks:
+      - backend
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: <KODEORD> # Change this password and pick a hard one
     volumes:
-        postgres_data:
+      - ./data:/var/lib/postgresql/data/
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+
+networks:
+  backend:
+    name: backend
+    internal: false # in production, it should be true if you don't want to expose this network to the outside world
+    driver: bridge
     ```
 
 5. Gem og luk filen med `Ctrl+X` og `Y` og `Enter`
