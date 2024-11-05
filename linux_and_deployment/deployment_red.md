@@ -103,9 +103,13 @@ Navigate back to the `deployment` folder. Open a `Caddyfile` with nano.
 nano Caddyfile
 ```
 
-It should look like this:
+It should look like this (change the email to your own):
 
 ```plaintext
+{
+    email jobe@cphbusiness.dk
+}
+
 fourthings.showcode.dk {
   reverse_proxy fourthings:7070
 }
