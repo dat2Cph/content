@@ -46,9 +46,60 @@ As a last thing, we also want to use a [Postgresql database](https://www.postgre
 
 As a showcase we will use this Javalin webapp: [Fourthingsplus](https://github.com/jonbertelsen/fourthingsplus_spring_2024). Clone the project, follow the instructions and create a database. Finally, try to run the project locally, and see that it works.
 
-### 2. Build your webproject to create a fat jar
+### 2. Build your webproject to create a "fat jar"
 
-Build the fat jar with Maven Package. Now you have a `app.jar` fil in the project's target folder.
+We need to build our Javalin project in a way that all the code is collected in on big `fat jar` file in the `/target` folder. Maven can do that. So add this into your `pom.xml`:
+
+```xml
+ <build>
+        <finalName>fourthingsplus</finalName>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.1</version>
+                <configuration>
+                    <source>17</source>
+                    <target>17</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.4.1</version>
+                <configuration>
+                    <transformers>
+                        <transformer
+                            implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                            <mainClass>app.Main</mainClass>
+                        </transformer>
+                    </transformers>
+                    <filters>
+                        <filter>
+                            <artifact>*:*</artifact>
+                            <excludes>
+                                <exclude>META-INF/*.SF</exclude>
+                                <exclude>META-INF/*.DSA</exclude>
+                                <exclude>META-INF/*.RSA</exclude>
+                            </excludes>
+                        </filter>
+                    </filters>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+```
+
+Build the fat jar with `Maven Package`. Now you have a `app.jar` fil in the project's target folder.
 
 ### 3. Prepare your VM
 
