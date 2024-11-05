@@ -65,10 +65,10 @@ Do like you did on the local Postgres instance: Create a `fourthingsplus` databa
 
 ### 5. Copy the fat jar to the VM using scp
 
-Open a terminal / shell on the local dev machine in the `target` folder of the webproject. If you use the `ls` command, you should now be able to see the `app.jar` file, a.k.a. "the fat jar". Now copy the file to your VM using secure copy (scp)
+Open a terminal / shell on the local dev machine in the `target` folder of the webproject. If you use the `ls` command, you should now be able to see the `app.jar` file, a.k.a. "the fat jar". Now copy the file to your VM using rsync (remote sync). The syntax is like this:
 
 ```bash
-scp app.jar jetty@ip:~jetty/deployment/fourthingsplus
+rsync -av app.jar jetty@161.35.193.101:~/deployment/fourthingsplus/
 ```
 
 That's it! Now the fat jar is copied to the VM. More precisely into the `~jetty/deployment/fourthingsplus` folder.
