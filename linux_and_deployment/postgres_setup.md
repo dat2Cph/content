@@ -29,10 +29,6 @@ som kører lokalt på vores laptops. Det kræver at vi opretter, tilpasser og ek
 4. Indsæt følgende indhold i `docker-compose.yml` (husk at ændre password):
 
     ```yaml
-# Localhost Docker Compose fil for 2. semester på datamatiker uddannelsen i Lyngby forår 2024
-# Opretter en container: 
-# db: Postgresql data base server som kører på port 5432
-
 version: '3.9'
 
 services:
