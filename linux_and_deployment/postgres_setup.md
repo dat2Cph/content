@@ -41,8 +41,8 @@ som kører lokalt på vores laptops. Det kræver at vi opretter, tilpasser og ek
        container_name: db
        restart: unless-stopped
        environment:
-       POSTGRES_USER: postgres
-       POSTGRES_PASSWORD: <dit_sikre_password> # Change this password and pick a hard one
+         POSTGRES_USER: postgres
+         POSTGRES_PASSWORD: <dit_sikre_password> # Change this password and pick a hard one
        volumes:
        - ./postgres_data:/var/lib/postgresql/data/
        ports:
