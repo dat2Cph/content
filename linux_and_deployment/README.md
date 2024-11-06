@@ -16,7 +16,8 @@ permalink: /linux/
 5. [Installation af Java 17 på Droplet](./java.md)
 6. [Installation af Postgres 16.2 i en Docker container](./postgres_setup.md)
 7. [Tag et snapshot af din Droplet](./snapshot.md)
-8. [Deploy dit website](./deployment_red.md.md)
+8. [Deploy dit website](./deployment)
+
 
 Her er en oversigt over den overordnede system arkitektur:
 
